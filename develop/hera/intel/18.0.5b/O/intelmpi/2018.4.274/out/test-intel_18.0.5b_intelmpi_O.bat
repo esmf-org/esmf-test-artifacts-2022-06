@@ -1,9 +1,9 @@
-Thu Mar 24 07:05:45 UTC 2022
+Tue Mar 29 22:57:41 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o test-intel_18.0.5b_intelmpi_O.bat_%j.o
 #SBATCH -e test-intel_18.0.5b_intelmpi_O.bat_%j.e
-#SBATCH --time=1:00:00
+#SBATCH --time=2:00:00
 #SBATCH --partition=hera
 #SBATCH --qos=batch
 #SBATCH --nodes=1
@@ -39,7 +39,7 @@ cd ../src/addon/ESMPy
 
 export PATH=$PATH:$HOME/.local/bin
 python3 setup.py build 2>&1 | tee python_build.log
-ssh hfe06 /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/runpython.sh 2>&1 | tee python_build.log
+ssh hfe12 /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/runpython.sh 2>&1 | tee python_build.log
 python3 setup.py test 2>&1 | tee python_test.log
 python3 setup.py test_examples 2>&1 | tee python_examples.log
 python3 setup.py test_regrid_from_file 2>&1 | tee python_regrid.log
