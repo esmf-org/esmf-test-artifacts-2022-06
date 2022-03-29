@@ -1,4 +1,4 @@
-Thu Mar 24 07:49:44 UTC 2022
+Tue Mar 29 22:48:31 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o build-pgi_19.1_mpiuni_g.bat_%j.o
@@ -12,6 +12,7 @@ Thu Mar 24 07:49:44 UTC 2022
 export JOBID=$SLURM_JOBID
 
 module load cmake
+export ESMF_MPIRUN=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_g_develop/src/Infrastructure/stubs/mpiuni/mpirun
 module load pgi/19.10  
 
 module list >& module-build.log

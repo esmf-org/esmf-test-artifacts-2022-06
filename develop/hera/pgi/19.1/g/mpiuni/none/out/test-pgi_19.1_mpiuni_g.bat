@@ -1,9 +1,9 @@
-Thu Mar 24 07:49:44 UTC 2022
+Tue Mar 29 22:48:31 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o test-pgi_19.1_mpiuni_g.bat_%j.o
 #SBATCH -e test-pgi_19.1_mpiuni_g.bat_%j.e
-#SBATCH --time=2:00:00
+#SBATCH --time=4:00:00
 #SBATCH --partition=hera
 #SBATCH --qos=batch
 #SBATCH --nodes=1
