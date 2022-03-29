@@ -1,9 +1,9 @@
-Thu Mar 24 08:36:35 UTC 2022
+Tue Mar 29 22:35:53 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o test-pgi_19.1_intelmpi_O.bat_%j.o
 #SBATCH -e test-pgi_19.1_intelmpi_O.bat_%j.e
-#SBATCH --time=2:00:00
+#SBATCH --time=4:00:00
 #SBATCH --partition=hera
 #SBATCH --qos=batch
 #SBATCH --nodes=1
