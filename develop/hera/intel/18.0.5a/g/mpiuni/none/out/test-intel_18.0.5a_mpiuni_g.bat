@@ -1,9 +1,9 @@
-Thu Mar 24 06:48:40 UTC 2022
+Wed Mar 30 00:18:45 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o test-intel_18.0.5a_mpiuni_g.bat_%j.o
 #SBATCH -e test-intel_18.0.5a_mpiuni_g.bat_%j.e
-#SBATCH --time=1:00:00
+#SBATCH --time=2:00:00
 #SBATCH --partition=hera
 #SBATCH --qos=batch
 #SBATCH --nodes=1
