@@ -1,9 +1,9 @@
-Thu Mar 24 07:13:08 UTC 2022
+Wed Mar 30 00:18:48 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o build-intel_18.0.5b_intelmpi_g.bat_%j.o
 #SBATCH -e build-intel_18.0.5b_intelmpi_g.bat_%j.e
-#SBATCH --time=1:00:00
+#SBATCH --time=2:00:00
 #SBATCH --partition=hera
 #SBATCH --qos=batch
 #SBATCH --nodes=1
