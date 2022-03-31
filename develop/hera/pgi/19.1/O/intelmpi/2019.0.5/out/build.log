@@ -1,4 +1,4 @@
-Thu Mar 31 06:29:22 UTC 2022
+Thu Mar 31 17:36:18 UTC 2022
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.3.0 beta snapshot
@@ -11,8 +11,8 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
 	build-pgi_19.1_intelmpi_O.bat
-	build-pgi_19.1_intelmpi_O.bat_30021682.e
-	build-pgi_19.1_intelmpi_O.bat_30021682.o
+	build-pgi_19.1_intelmpi_O.bat_30038086.e
+	build-pgi_19.1_intelmpi_O.bat_30038086.o
 	nuopc-app-prototypes/
 	test-pgi_19.1_intelmpi_O.bat
 
@@ -219,15 +219,15 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Thu Mar 31 05:50:46 UTC 2022 on h25c17
-Machine characteristics: Linux h25c17 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Thu Mar 31 16:56:43 UTC 2022 on h16c36
+Machine characteristics: Linux h16c36 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 make[1]: Entering directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop'
 Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/lib/libO/Linux.pgi.64.intelmpi.default for library
 Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include for include files
 Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/mod/modO/Linux.pgi.64.intelmpi.default for *.mod files
-Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default for build-pgi_19.1_intelmpi_O.bat_30021682.o files
+Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default for build-pgi_19.1_intelmpi_O.bat_30038086.o files
 cd /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop ;\
 make ACTION=tree_include tree
 make[2]: Entering directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop'
@@ -1546,44 +1546,6 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
     SpawnArg *sarg = (SpawnArg *)ssarg;
               ^
 
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include
-          /json.hpp", line 14370: warning: pointless comparison of unsigned
-          integer with zero
-          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
-                                                                                               ^
-          detected during:
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
-                      (NumberType) [with
-                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
-                      std::string, bool, int64_t, uint64_t, double,
-                      std::allocator, nlohmann::adl_serializer>,
-                      NumberType=uint64_t, <unnamed>=0]" at line 14005
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump(const
-                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
-                      [with BasicJsonType=nlohmann::basic_json<std::map,
-                      std::vector, std::string, bool, int64_t, uint64_t,
-                      double, std::allocator, nlohmann::adl_serializer>]" at
-                      line 16570
-            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
-                      StringType, BooleanType, NumberIntegerType,
-                      NumberUnsignedType, NumberFloatType, AllocatorType,
-                      JSONSerializer>::string_t
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::dump(int, char, bool,
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::error_handler_t) const [with
-                      ObjectType=std::map, ArrayType=std::vector,
-                      StringType=std::string, BooleanType=bool,
-                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
-                      NumberFloatType=double, AllocatorType=std::allocator,
-                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
-
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
           ructure/VM/src/ESMCI_VMKernel.C", line 4229: warning: variable
           "pipcmp" was declared but never referenced
@@ -1698,17 +1660,43 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
       FD_ZERO(&recvfds);
       ^
 
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
-          ructure/VM/src/ESMCI_VM.C", line 76: warning: variable "version" was
-          declared but never referenced
-  static const char *const version = "$Id$";
-                           ^
-
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
-          ructure/VM/src/ESMCI_VM.C", line 171: warning: function
-          "ESMCI::VMKeyFirstBitFromLeft" was declared but never referenced
-  static unsigned VMKeyFirstBitFromLeft(unsigned char *vmKey){
-                  ^
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include
+          /json.hpp", line 14370: warning: pointless comparison of unsigned
+          integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
+          detected during:
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
 
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include
           /json.hpp", line 14370: warning: pointless comparison of unsigned
@@ -1747,6 +1735,18 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
                       NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
                       NumberFloatType=double, AllocatorType=std::allocator,
                       JSONSerializer=nlohmann::adl_serializer]" at line 22647
+
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
+          ructure/VM/src/ESMCI_VM.C", line 76: warning: variable "version" was
+          declared but never referenced
+  static const char *const version = "$Id$";
+                           ^
+
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
+          ructure/VM/src/ESMCI_VM.C", line 171: warning: function
+          "ESMCI::VMKeyFirstBitFromLeft" was declared but never referenced
+  static unsigned VMKeyFirstBitFromLeft(unsigned char *vmKey){
+                  ^
 
 make[8]: Leaving directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/mod/modO/Linux.pgi.64.intelmpi.default'
 make[7]: Leaving directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/mod/modO/Linux.pgi.64.intelmpi.default'
@@ -2955,12 +2955,6 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
                       JSONSerializer=nlohmann::adl_serializer]" at line 22647
 
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
-          ructure/Base/src/ESMCI_Base.C", line 46: warning: variable "version"
-          was declared but never referenced
-  static const char *const version = "$Id$";
-                           ^
-
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
           ructure/Base/src/ESMCI_Info.C", line 1434: warning: variable
           "location_nc" was declared but never referenced
       const json *location_nc = nullptr;
@@ -2971,6 +2965,12 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
           "location_tu" was declared but never referenced
       json *location_tu = nullptr;
             ^
+
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
+          ructure/Base/src/ESMCI_Base.C", line 46: warning: variable "version"
+          was declared but never referenced
+  static const char *const version = "$Id$";
+                           ^
 
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include
           /json.hpp", line 14370: warning: pointless comparison of unsigned
@@ -3080,24 +3080,13 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
                       [with BasicJsonType=nlohmann::basic_json<std::map,
                       std::vector, std::string, bool, int64_t, uint64_t,
                       double, std::allocator, nlohmann::adl_serializer>]" at
-                      line 16570
-            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
-                      StringType, BooleanType, NumberIntegerType,
-                      NumberUnsignedType, NumberFloatType, AllocatorType,
-                      JSONSerializer>::string_t
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::dump(int, char, bool,
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::error_handler_t) const [with
-                      ObjectType=std::map, ArrayType=std::vector,
-                      StringType=std::string, BooleanType=bool,
-                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
-                      NumberFloatType=double, AllocatorType=std::allocator,
-                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
+                      line 20653
+
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
+          ructure/Base/src/ESMC_InfoCDef.C", line 42: warning: variable
+          "version" was declared but never referenced
+   static const char *const version = "$Id$";
+                            ^
 
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include
           /json.hpp", line 14370: warning: pointless comparison of unsigned
@@ -3118,13 +3107,24 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
                       [with BasicJsonType=nlohmann::basic_json<std::map,
                       std::vector, std::string, bool, int64_t, uint64_t,
                       double, std::allocator, nlohmann::adl_serializer>]" at
-                      line 20653
-
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
-          ructure/Base/src/ESMC_InfoCDef.C", line 42: warning: variable
-          "version" was declared but never referenced
-   static const char *const version = "$Id$";
-                            ^
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
 
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
           ructure/Base/src/ESMC_InfoCDefGeneric.C", line 52: warning: variable
@@ -6623,7 +6623,6 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
                       JSONSerializer=nlohmann::adl_serializer]" at line 22647
 
 mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/IO/interface -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/IO/interface/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/IO/interface"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/IO/interface/ESMC_IO_Scrip.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMC_IO_Scrip.o
-mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/IO/interface -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/IO/interface/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/IO/interface"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/IO/interface/ESMCI_IO_YAML_F.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_IO_YAML_F.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include
           /json.hpp", line 14370: warning: pointless comparison of unsigned
           integer with zero
@@ -6662,6 +6661,7 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
                       NumberFloatType=double, AllocatorType=std::allocator,
                       JSONSerializer=nlohmann::adl_serializer]" at line 22647
 
+mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/IO/interface -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/IO/interface/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/IO/interface"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/IO/interface/ESMCI_IO_YAML_F.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_IO_YAML_F.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include
           /json.hpp", line 14370: warning: pointless comparison of unsigned
           integer with zero
@@ -8060,13 +8060,6 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
                       JSONSerializer=nlohmann::adl_serializer]" at line 22647
 
 mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_MeshRedist.o
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
-          ructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C", line 1216: warning:
-          function "cnsrv_check_for_mesh_errors" was declared but never
-          referenced
-  static void cnsrv_check_for_mesh_errors(Mesh &mesh, bool ignore_degenerate, bool *concave, bool *clockwise, bool *degenerate) {
-              ^
-
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include
           /json.hpp", line 14370: warning: pointless comparison of unsigned
           integer with zero
@@ -8104,6 +8097,13 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
                       NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
                       NumberFloatType=double, AllocatorType=std::allocator,
                       JSONSerializer=nlohmann::adl_serializer]" at line 22647
+
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
+          ructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C", line 1216: warning:
+          function "cnsrv_check_for_mesh_errors" was declared but never
+          referenced
+  static void cnsrv_check_for_mesh_errors(Mesh &mesh, bool ignore_degenerate, bool *concave, bool *clockwise, bool *degenerate) {
+              ^
 
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
           ructure/Mesh/src/ESMCI_Mesh.C", line 2088: warning: pointless
@@ -8170,12 +8170,6 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
 
 mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_Regrid_Nearest.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
-          ructure/Mesh/src/ESMCI_OTree.C", line 41: warning: variable "version"
-          was declared but never referenced
-  static const char *const version = "$Id$";
-                           ^
-
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
           ructure/Mesh/src/ESMCI_MeshCXX.C", line 296: warning: expression has
           no effect
      for (ni2; ni2 != ne2; ++ni2) {
@@ -8204,6 +8198,12 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
           no effect
     for (ni2; ni2 != ne2; ++ni2) {
          ^
+
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
+          ructure/Mesh/src/ESMCI_OTree.C", line 41: warning: variable "version"
+          was declared but never referenced
+  static const char *const version = "$Id$";
+                           ^
 
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include
           /json.hpp", line 14370: warning: pointless comparison of unsigned
@@ -8385,13 +8385,13 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
     const double RAD2DEG = 180.0/M_PI;
                  ^
 
-mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_MBMesh_Dual.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
           ructure/Mesh/src/ESMCI_Search_NearestNPnts.C", line 42: warning:
           variable "version" was declared but never referenced
   static const char *const version = "$Id$";
                            ^
 
+mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_MBMesh_Dual.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
           ructure/Mesh/src/ESMCI_MBMesh.C", line 244: warning: variable
           "localrc" was declared but never referenced
@@ -8963,6 +8963,24 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
                  ^
 
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
+          ructure/Mesh/src/ESMCI_MBMesh_Glue.C", line 2198: warning: variable
+          "merr" was declared but never referenced
+      int localrc, merr;
+                   ^
+
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
+          ructure/Mesh/src/ESMCI_MBMesh_Glue.C", line 2271: warning: variable
+          "msg" was declared but never referenced
+      char msg[256];
+           ^
+
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
+          ructure/Mesh/src/ESMCI_MBMesh_Glue.C", line 2508: warning: variable
+          "orig_sdim" was declared but never referenced
+      int orig_sdim=meshp->orig_sdim;
+          ^
+
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
           ructure/Mesh/src/ESMCI_MBMesh_GToM_Glue.C", line 184: warning:
           integer conversion resulted in a change of sign
         int elem_gid=GTOM_BAD_ID;
@@ -9004,25 +9022,83 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
      int nonde_index[2];
          ^
 
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
-          ructure/Mesh/src/ESMCI_MBMesh_Glue.C", line 2198: warning: variable
-          "merr" was declared but never referenced
-      int localrc, merr;
-                   ^
-
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
-          ructure/Mesh/src/ESMCI_MBMesh_Glue.C", line 2271: warning: variable
-          "msg" was declared but never referenced
-      char msg[256];
-           ^
-
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
-          ructure/Mesh/src/ESMCI_MBMesh_Glue.C", line 2508: warning: variable
-          "orig_sdim" was declared but never referenced
-      int orig_sdim=meshp->orig_sdim;
-          ^
-
 mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_MBMesh_Regrid_Glue.o
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include
+          /json.hpp", line 14370: warning: pointless comparison of unsigned
+          integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
+          detected during:
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
+
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include
+          /json.hpp", line 14370: warning: pointless comparison of unsigned
+          integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
+          detected during:
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
+
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
           ructure/Mesh/src/ESMCI_MBMesh_Mapping.C", line 878: warning:
           statement is unreachable
@@ -9035,84 +9111,32 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
     int pdim=2, sdim=2, ndof=2;
                         ^
 
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include
-          /json.hpp", line 14370: warning: pointless comparison of unsigned
-          integer with zero
-          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
-                                                                                               ^
-          detected during:
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
-                      (NumberType) [with
-                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
-                      std::string, bool, int64_t, uint64_t, double,
-                      std::allocator, nlohmann::adl_serializer>,
-                      NumberType=uint64_t, <unnamed>=0]" at line 14005
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump(const
-                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
-                      [with BasicJsonType=nlohmann::basic_json<std::map,
-                      std::vector, std::string, bool, int64_t, uint64_t,
-                      double, std::allocator, nlohmann::adl_serializer>]" at
-                      line 16570
-            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
-                      StringType, BooleanType, NumberIntegerType,
-                      NumberUnsignedType, NumberFloatType, AllocatorType,
-                      JSONSerializer>::string_t
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::dump(int, char, bool,
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::error_handler_t) const [with
-                      ObjectType=std::map, ArrayType=std::vector,
-                      StringType=std::string, BooleanType=bool,
-                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
-                      NumberFloatType=double, AllocatorType=std::allocator,
-                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
-
 mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_MBMesh_Rendez_Elem.o
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include
-          /json.hpp", line 14370: warning: pointless comparison of unsigned
-          integer with zero
-          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
-                                                                                               ^
-          detected during:
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
-                      (NumberType) [with
-                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
-                      std::string, bool, int64_t, uint64_t, double,
-                      std::allocator, nlohmann::adl_serializer>,
-                      NumberType=uint64_t, <unnamed>=0]" at line 14005
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump(const
-                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
-                      [with BasicJsonType=nlohmann::basic_json<std::map,
-                      std::vector, std::string, bool, int64_t, uint64_t,
-                      double, std::allocator, nlohmann::adl_serializer>]" at
-                      line 16570
-            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
-                      StringType, BooleanType, NumberIntegerType,
-                      NumberUnsignedType, NumberFloatType, AllocatorType,
-                      JSONSerializer>::string_t
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::dump(int, char, bool,
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::error_handler_t) const [with
-                      ObjectType=std::map, ArrayType=std::vector,
-                      StringType=std::string, BooleanType=bool,
-                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
-                      NumberFloatType=double, AllocatorType=std::allocator,
-                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
-
 mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_MBMesh_Rendez_EtoP.o
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
+          ructure/Mesh/src/ESMCI_MBMesh_Glue.C", line 52: warning: variable
+          "version" was declared but never referenced
+   static const char *const version = "$Id$";
+                            ^
+
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
+          ructure/Mesh/src/ESMCI_MBMesh_Patch.C", line 70: warning: variable
+          "merr" was declared but never referenced
+      int localrc, merr;
+                   ^
+
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
+          ructure/Mesh/src/ESMCI_MBMesh_Patch.C", line 235: warning: dynamic
+          initialization in unreachable code
+      MBMesh *mbmp_regrid=mbmp;
+              ^
+
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
+          ructure/Mesh/src/ESMCI_MBMesh_Patch.C", line 220: warning: variable
+          "merr" was declared but never referenced
+      int localrc, merr;
+                   ^
+
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
           ructure/Mesh/src/ESMCI_MBMesh_Mapping.C", line 317: warning:
           statement is unreachable
@@ -9191,12 +9215,6 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
                       PARAMETRIC_DIM=2]" at line 624
 
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
-          ructure/Mesh/src/ESMCI_MBMesh_Glue.C", line 52: warning: variable
-          "version" was declared but never referenced
-   static const char *const version = "$Id$";
-                            ^
-
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
           ructure/Mesh/src/ESMCI_MBMesh_Mapping.C", line 317: warning:
           statement is unreachable
       if (is_outside_hex_sph3D_xyz(mdata, point)) {
@@ -9208,24 +9226,6 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
                     SFUNC_TYPE=ESMCI::tet_shape_func,
                     MPTRAITS=ESMCI::MBTraits<double, double>, SPATIAL_DIM=3,
                     PARAMETRIC_DIM=3]" at line 659
-
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
-          ructure/Mesh/src/ESMCI_MBMesh_Patch.C", line 70: warning: variable
-          "merr" was declared but never referenced
-      int localrc, merr;
-                   ^
-
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
-          ructure/Mesh/src/ESMCI_MBMesh_Patch.C", line 235: warning: dynamic
-          initialization in unreachable code
-      MBMesh *mbmp_regrid=mbmp;
-              ^
-
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
-          ructure/Mesh/src/ESMCI_MBMesh_Patch.C", line 220: warning: variable
-          "merr" was declared but never referenced
-      int localrc, merr;
-                   ^
 
 mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoE.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_MBMesh_Search_EtoE.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
@@ -9412,13 +9412,13 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
   static const char *const version = "$Id$";
                            ^
 
-mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_ShapeFunc.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_MBMesh_ShapeFunc.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
           ructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C", line 260: warning:
           variable "rc" was set but never used
     int rc, localrc;
         ^
 
+mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_ShapeFunc.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_MBMesh_ShapeFunc.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include
           /json.hpp", line 14370: warning: pointless comparison of unsigned
           integer with zero
@@ -9785,6 +9785,12 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
 
 mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEField.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_MEField.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
+          ructure/Mesh/src/Legacy/ESMCI_MCoord.C", line 18: warning: variable
+          "version" was declared but never referenced
+  static const char *const version = "$Id$";
+                           ^
+
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
           ructure/Mesh/src/Legacy/ESMCI_HAdapt.C", line 29: warning: variable
           "version" was declared but never referenced
   static const char *const version = "$Id$";
@@ -9795,12 +9801,6 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
           "ESMCI::OldProlongField" was declared but never referenced
   static void OldProlongField(std::vector<MeshObj*> &elems, MEField<> &coord) {
               ^
-
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
-          ructure/Mesh/src/Legacy/ESMCI_MCoord.C", line 18: warning: variable
-          "version" was declared but never referenced
-  static const char *const version = "$Id$";
-                           ^
 
 mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEImprint.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_MEImprint.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
@@ -9984,13 +9984,13 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
   static const char *const version = "$Id$";
                            ^
 
-mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_MEValues.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
           ructure/Mesh/src/Legacy/ESMCI_MeshPNC.C", line 28: warning: variable
           "version" was declared but never referenced
   static const char *const version = "$Id$";
                            ^
 
+mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_MEValues.o
 mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_Migrator.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_Migrator.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
           ructure/Mesh/src/Legacy/ESMCI_MeshRead.C", line 33: warning: variable
@@ -10315,16 +10315,16 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
 
 mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Regridding"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_CreepFill.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
-          ructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C", line 1302:
-          warning: variable "pole_id" was declared but never referenced
-    long pole_id;
-         ^
-
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
           ructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C", line 39:
           warning: variable "version" was declared but never referenced
   static const char *const version = "$Id$";
                            ^
+
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
+          ructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C", line 1302:
+          warning: variable "pole_id" was declared but never referenced
+    long pole_id;
+         ^
 
 mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Regridding"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_Extrap.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
@@ -10972,14 +10972,13 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
                             ^
 
 mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Regridding"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_Regrid_Helper.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_Regrid_Helper.o
-mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Regridding"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_Search.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
           ructure/Mesh/src/Regridding/ESMCI_Interp.C", line 43: warning:
           variable "version" was declared but never referenced
     static const char *const version = "$Id$";
                              ^
 
-mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Regridding"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_SearchNearestDToSLGC.o
+mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Regridding"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_Search.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
           ructure/Mesh/src/Regridding/ESMCI_CreepFill.C", line 45: warning:
           variable "version" was declared but never referenced
@@ -10999,14 +10998,14 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
     static void _add_weights_from_CreepNode(CreepNode *cnode, WMat &wts) {
                 ^
 
-mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Regridding"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestLGC.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_SearchNearestLGC.o
+mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Regridding"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_SearchNearestDToSLGC.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
           ructure/Mesh/src/Regridding/ESMCI_Extrap.C", line 21: warning:
           variable "version" was declared but never referenced
    static const char *const version = "$Id$";
                             ^
 
-mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Regridding"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_SearchNearestNPntsLGC.o
+mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Regridding"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestLGC.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_SearchNearestLGC.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
           ructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C", line 24: warning:
           variable "version" was declared but never referenced
@@ -11051,7 +11050,7 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
                       NumberFloatType=double, AllocatorType=std::allocator,
                       JSONSerializer=nlohmann::adl_serializer]" at line 22647
 
-mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Regridding"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_ShapeFunc.o
+mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Regridding"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_SearchNearestNPntsLGC.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
           ructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C", line 790:
           warning: variable "info" was declared but never referenced
@@ -11076,16 +11075,17 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
   static const char *const version = "$Id$";
                            ^
 
+mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Regridding"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_ShapeFunc.o
 mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Regridding"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_SpaceDir.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_SpaceDir.o
 mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Regridding"' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/obj/objO/Linux.pgi.64.intelmpi.default/ESMCI_WMat.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
-          ructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C", line 20: warning:
+          ructure/Mesh/src/Regridding/ESMCI_Search.C", line 45: warning:
           variable "version" was declared but never referenced
   static const char *const version = "$Id$";
                            ^
 
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
-          ructure/Mesh/src/Regridding/ESMCI_Search.C", line 45: warning:
+          ructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C", line 20: warning:
           variable "version" was declared but never referenced
   static const char *const version = "$Id$";
                            ^
@@ -11097,14 +11097,14 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
                            ^
 
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
-          ructure/Mesh/src/Regridding/ESMCI_SpaceDir.C", line 41: warning:
-          variable "version" was declared but never referenced
+          ructure/Mesh/src/Regridding/ESMCI_SearchNearestLGC.C", line 40:
+          warning: variable "version" was declared but never referenced
   static const char *const version = "$Id$";
                            ^
 
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
-          ructure/Mesh/src/Regridding/ESMCI_SearchNearestLGC.C", line 40:
-          warning: variable "version" was declared but never referenced
+          ructure/Mesh/src/Regridding/ESMCI_SpaceDir.C", line 41: warning:
+          variable "version" was declared but never referenced
   static const char *const version = "$Id$";
                            ^
 
@@ -12921,6 +12921,12 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
                       NumberFloatType=double, AllocatorType=std::allocator,
                       JSONSerializer=nlohmann::adl_serializer]" at line 22647
 
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
+          ructure/Field/interface/ESMCI_Field_F.C", line 38: warning: variable
+          "version" was declared but never referenced
+   static const char *const version =
+                            ^
+
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include
           /json.hpp", line 14370: warning: pointless comparison of unsigned
           integer with zero
@@ -12958,12 +12964,6 @@ mpipgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/rol
                       NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
                       NumberFloatType=double, AllocatorType=std::allocator,
                       JSONSerializer=nlohmann::adl_serializer]" at line 22647
-
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
-          ructure/Field/interface/ESMCI_Field_F.C", line 38: warning: variable
-          "version" was declared but never referenced
-   static const char *const version =
-                            ^
 
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrast
           ructure/Field/interface/ESMCI_Field.C", line 50: warning: variable
@@ -15531,6 +15531,6 @@ make[2]: Leaving directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_inte
 make[1]: Leaving directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop'
 make[1]: Entering directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop'
 make[1]: Leaving directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop'
-ESMF library built successfully on Thu Mar 31 06:29:15 UTC 2022
+ESMF library built successfully on Thu Mar 31 17:36:13 UTC 2022
 To verify, build and run the unit and system tests with: make check
  or the more extensive: make all_tests
