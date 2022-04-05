@@ -1,0 +1,65 @@
+build time -- 2022-04-05 01:14:05.170202
+0:   Beginning Test, file ESMF_VMBarrierUTest.F90, line 66
+1:   Beginning Test, file ESMF_VMBarrierUTest.F90, line 66
+1:   NUMBER_OF_PROCESSORS           4
+3:   Beginning Test, file ESMF_VMBarrierUTest.F90, line 66
+3:   NUMBER_OF_PROCESSORS           4
+2:   Beginning Test, file ESMF_VMBarrierUTest.F90, line 66
+2:   NUMBER_OF_PROCESSORS           4
+1:  timing precision is:   1.415610313415527E-007
+2:  timing precision is:   1.415610313415527E-007
+3:  timing precision is:   1.341104507446289E-007
+0:   NUMBER_OF_PROCESSORS           4
+0:  timing precision is:   1.266598701477051E-007
+0:  max timing precision is:   1.415610313415527E-007
+1:  max timing precision is:   1.415610313415527E-007
+1:   PASS  Timer Precision test, ESMF_VMBarrierUTest.F90, line 87
+2:  max timing precision is:   1.415610313415527E-007
+2:   PASS  Timer Precision test, ESMF_VMBarrierUTest.F90, line 87
+3:  max timing precision is:   1.415610313415527E-007
+0:   PASS  Timer Precision test, ESMF_VMBarrierUTest.F90, line 87
+3:   PASS  Timer Precision test, ESMF_VMBarrierUTest.F90, line 87
+0:  slow Pet=           0 Pet=           0 time delay =    1.00007472187281      
+1:  slow Pet=           0 Pet=           1 time delay =    1.00006829202175      
+1:  [  -- should be >=    1.00000000000000      --  ]
+2:  slow Pet=           0 Pet=           2 time delay =    1.00007138401270      
+2:  [  -- should be >=    1.00000000000000      --  ]
+3:  slow Pet=           0 Pet=           3 time delay =    1.00001198798418      
+3:  [  -- should be >=    1.00000000000000      --  ]
+0:  [  -- should be >=    1.00000000000000      --  ]
+0:  slow Pet=           1 Pet=           0 time delay =    1.00000954419374      
+0:  [  -- should be >=    1.00000000000000      --  ]
+1:  slow Pet=           1 Pet=           1 time delay =    1.00006422400475      
+2:  slow Pet=           1 Pet=           2 time delay =    1.00006535649300      
+2:  [  -- should be >=    1.00000000000000      --  ]
+3:  slow Pet=           1 Pet=           3 time delay =    1.00006501376629      
+3:  [  -- should be >=    1.00000000000000      --  ]
+1:  [  -- should be >=    1.00000000000000      --  ]
+0:  slow Pet=           2 Pet=           0 time delay =    1.00006736814976      
+0:  [  -- should be >=    1.00000000000000      --  ]
+1:  slow Pet=           2 Pet=           1 time delay =    1.00001046806574      
+1:  [  -- should be >=    1.00000000000000      --  ]
+2:  slow Pet=           2 Pet=           2 time delay =    1.00006733834743      
+3:  slow Pet=           2 Pet=           3 time delay =    1.00006818026304      
+3:  [  -- should be >=    1.00000000000000      --  ]
+2:  [  -- should be >=    1.00000000000000      --  ]
+0:  slow Pet=           3 Pet=           0 time delay =    1.00007661432028      
+0:  [  -- should be >=    1.00000000000000      --  ]
+1:  slow Pet=           3 Pet=           1 time delay =    1.00007525831461      
+1:  [  -- should be >=    1.00000000000000      --  ]
+1:   PASS  Barrier Test, ESMF_VMBarrierUTest.F90, line 122
+2:  slow Pet=           3 Pet=           2 time delay =    1.00001024454832      
+2:  [  -- should be >=    1.00000000000000      --  ]
+2:   PASS  Barrier Test, ESMF_VMBarrierUTest.F90, line 122
+3:  slow Pet=           3 Pet=           3 time delay =    1.00007467716932      
+0:   PASS  Barrier Test, ESMF_VMBarrierUTest.F90, line 122
+0:   Ending Test, file ESMF_VMBarrierUTest.F90, line 124
+1:   Ending Test, file ESMF_VMBarrierUTest.F90, line 124
+2:   Ending Test, file ESMF_VMBarrierUTest.F90, line 124
+3:  [  -- should be >=    1.00000000000000      --  ]
+3:   PASS  Barrier Test, ESMF_VMBarrierUTest.F90, line 122
+3:   Ending Test, file ESMF_VMBarrierUTest.F90, line 124
+1:   PET           1  Test Elapsed Time    4000.69900000000       msec.
+2:   PET           2  Test Elapsed Time    4000.68500000000       msec.
+3:   PET           3  Test Elapsed Time    4000.65200000000       msec.
+0:   PET           0  Test Elapsed Time    4000.51800000000       msec.
