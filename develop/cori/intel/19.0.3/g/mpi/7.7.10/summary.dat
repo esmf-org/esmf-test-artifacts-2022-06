@@ -4,10 +4,10 @@ Build for = intel_19.0.3_mpi_g_develop, mpi version 7.7.10 on cori esmf_os: Unic
 Build time = 2022-04-09 05:03:01
 git hash = v8.3.0b12-1-g7c85d54
 
-unit test results   	-1 -1
-system test results 	-1 -1
-example test results 	-1 -1
-nuopc test results 	PASS -1 	FAIL -1
+unit test results   	PASS 13647	FAIL 0
+system test results 	PASS 49 	FAIL 0
+example test results 	PASS 80 	FAIL 0
+nuopc test results 	PASS 50 	FAIL 0
 
 
 ===================================================================
@@ -47,15 +47,23 @@ Your branch is up to date with 'origin/develop'.
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 	build-intel_19.0.3_mpi_g.bat
+	build-intel_19.0.3_mpi_g.bat_57156452.e
+	build-intel_19.0.3_mpi_g.bat_57156452.o
 	getres-build.sh
 	getres-test.sh
 	nuopc-app-prototypes/
+	src/Infrastructure/IO/PIO/Build/
+	src/Infrastructure/IO/PIO/Install/
+	src/Infrastructure/Mesh/tests/ESMC_MeshCapGenUTest.C
+	src/Infrastructure/Mesh/tests/ESMC_MeshCapRegridGenUTest.C
 	test-intel_19.0.3_mpi_g.bat
 	test-intel_19.0.3_mpi_g.bat_57123856.e
 	test-intel_19.0.3_mpi_g.bat_57123856.o
+	test-intel_19.0.3_mpi_g.bat_57156454.e
+	test-intel_19.0.3_mpi_g.bat_57156454.o
 
 
-It took 8.79 seconds to enumerate untracked files. 'status -uno'
+It took 5.40 seconds to enumerate untracked files. 'status -uno'
 may speed it up, but you have to be careful not to forget to add
 new files yourself (see 'git help status').
 nothing added to commit but untracked files present (use "git add" to track)
@@ -254,8 +262,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Sat Apr 9 04:08:04 PDT 2022 on nid00765
-Machine characteristics: Linux nid00765 5.3.18-24.46_6.0.27-cray_ari_c #1 SMP Mon Sep 13 06:25:03 UTC 2021 (afa39b6) x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Sat Apr 9 06:13:32 PDT 2022 on nid02148
+Machine characteristics: Linux nid02148 5.3.18-24.46_6.0.27-cray_ari_c #1 SMP Mon Sep 13 06:25:03 UTC 2021 (afa39b6) x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
 
 
