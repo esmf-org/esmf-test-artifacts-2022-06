@@ -1,4 +1,4 @@
-Tue Apr 12 06:01:59 UTC 2022
+Tue Apr 12 22:10:05 UTC 2022
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.3.0 beta snapshot
@@ -11,8 +11,8 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
 	build-pgi_19.1_mpiuni_O.bat
-	build-pgi_19.1_mpiuni_O.bat_30439000.e
-	build-pgi_19.1_mpiuni_O.bat_30439000.o
+	build-pgi_19.1_mpiuni_O.bat_30466494.e
+	build-pgi_19.1_mpiuni_O.bat_30466494.o
 	nuopc-app-prototypes/
 	test-pgi_19.1_mpiuni_O.bat
 
@@ -201,15 +201,15 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Tue Apr 12 05:50:02 UTC 2022 on h13c23
-Machine characteristics: Linux h13c23 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Tue Apr 12 21:58:52 UTC 2022 on h22c46
+Machine characteristics: Linux h22c46 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 make[1]: Entering directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop'
 Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/lib/libO/Linux.pgi.64.mpiuni.default for library
 Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/include for include files
 Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/mod/modO/Linux.pgi.64.mpiuni.default for *.mod files
-Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default for build-pgi_19.1_mpiuni_O.bat_30439000.o files
+Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default for build-pgi_19.1_mpiuni_O.bat_30466494.o files
 cd /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop ;\
 make ACTION=tree_include tree
 make[2]: Entering directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop'
@@ -3111,33 +3111,6 @@ pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.e
                     const T *, const int *, bool, std::string *, bool) const
                     [with T=float]" at line 839
 
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
-          cture/Base/src/ESMCI_Info.C", line 766: warning: variable "ret" is
-          used before its value is set
-                try { check_overflow(ret, at_index); }
-                                     ^
-          detected during instantiation of "T ESMCI::Info::get(ESMCI::key_t &,
-                    const T *, const int *, bool, std::string *, bool) const
-                    [with T=double]" at line 840
-
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
-          cture/Base/src/ESMCI_Info.C", line 766: warning: variable "ret" is
-          used before its value is set
-                try { check_overflow(ret, at_index); }
-                                     ^
-          detected during instantiation of "T ESMCI::Info::get(ESMCI::key_t &,
-                    const T *, const int *, bool, std::string *, bool) const
-                    [with T=int]" at line 841
-
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
-          cture/Base/src/ESMCI_Info.C", line 766: warning: variable "ret" is
-          used before its value is set
-                try { check_overflow(ret, at_index); }
-                                     ^
-          detected during instantiation of "T ESMCI::Info::get(ESMCI::key_t &,
-                    const T *, const int *, bool, std::string *, bool) const
-                    [with T=long]" at line 842
-
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/include/j
           son.hpp", line 14370: warning: pointless comparison of unsigned
           integer with zero
@@ -3166,13 +3139,40 @@ pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.e
                                      ^
           detected during instantiation of "T ESMCI::Info::get(ESMCI::key_t &,
                     const T *, const int *, bool, std::string *, bool) const
-                    [with T=bool]" at line 843
+                    [with T=double]" at line 840
 
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
           cture/Base/src/ESMC_InfoCDef.C", line 42: warning: variable "version"
           was declared but never referenced
    static const char *const version = "$Id$";
                             ^
+
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
+          cture/Base/src/ESMCI_Info.C", line 766: warning: variable "ret" is
+          used before its value is set
+                try { check_overflow(ret, at_index); }
+                                     ^
+          detected during instantiation of "T ESMCI::Info::get(ESMCI::key_t &,
+                    const T *, const int *, bool, std::string *, bool) const
+                    [with T=int]" at line 841
+
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
+          cture/Base/src/ESMCI_Info.C", line 766: warning: variable "ret" is
+          used before its value is set
+                try { check_overflow(ret, at_index); }
+                                     ^
+          detected during instantiation of "T ESMCI::Info::get(ESMCI::key_t &,
+                    const T *, const int *, bool, std::string *, bool) const
+                    [with T=long]" at line 842
+
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
+          cture/Base/src/ESMCI_Info.C", line 766: warning: variable "ret" is
+          used before its value is set
+                try { check_overflow(ret, at_index); }
+                                     ^
+          detected during instantiation of "T ESMCI::Info::get(ESMCI::key_t &,
+                    const T *, const int *, bool, std::string *, bool) const
+                    [with T=bool]" at line 843
 
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
           cture/Base/src/ESMCI_Info.C", line 44: warning: variable "version"
@@ -7727,26 +7727,26 @@ pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.e
     double lon_r,lat_r;
                  ^
 
-pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/stubs/mpiuni -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-59-ge6bf2211df"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshCap.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
           cture/Mesh/src/ESMCI_MathUtil.C", line 3282: warning: incompatible
           redefinition of macro "DOT_PRODUCT3D" (declared at line 1061)
   #define DOT_PRODUCT3D(a,b) (a[0]*b[0]+a[1]*b[1]+a[2]*b[2])
           ^
 
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/stubs/mpiuni -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-59-ge6bf2211df"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshCap.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
           cture/Mesh/src/ESMCI_Mesh_Glue.C", line 77: warning: variable "rc"
           was declared but never referenced
    int rc;
        ^
 
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/stubs/mpiuni -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-59-ge6bf2211df"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshCXX.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
           cture/Mesh/src/ESMCI_Mesh_Glue.C", line 258: warning: variable
           "node_mask" was set but never used
       IOField<NodalField> *node_mask;
                            ^
 
-pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/build_config/Linux.pgi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/stubs/mpiuni -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-59-ge6bf2211df"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshCXX.o
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
           cture/Mesh/src/ESMCI_Mesh_Glue.C", line 406: warning: variable "rc"
           was declared but never referenced
@@ -7790,11 +7790,19 @@ pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.e
           ^
 
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
+          cture/IO/include/ESMCI_PIO_Handler.h", line 45: catastrophic error:
+          cannot open source file "pio.h"
+  #include <pio.h>
+                  ^
+
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
           cture/Mesh/src/ESMCI_Mesh_Glue.C", line 1615: warning: variable "rc"
           was declared but never referenced
    int rc;
        ^
 
+1 catastrophic error detected in the compilation of "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/ESMCI_FileIO_Util.C".
+Compilation terminated.
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
           cture/Mesh/src/ESMCI_Mesh_Glue.C", line 1681: warning: variable "rc"
           was declared but never referenced
@@ -7831,22 +7839,14 @@ pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch1/NCEPDEV/stmp2/role.e
    int rc;
        ^
 
+make[8]: *** [/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_FileIO_Util.o] Error 2
+make[8]: *** Waiting for unfinished jobs....
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
           cture/Mesh/src/ESMCI_Mesh_Glue.C", line 3000: warning: variable "rc"
           was declared but never referenced
    int rc;
        ^
 
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
-          cture/IO/include/ESMCI_PIO_Handler.h", line 45: catastrophic error:
-          cannot open source file "pio.h"
-  #include <pio.h>
-                  ^
-
-1 catastrophic error detected in the compilation of "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/ESMCI_FileIO_Util.C".
-Compilation terminated.
-make[8]: *** [/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_FileIO_Util.o] Error 2
-make[8]: *** Waiting for unfinished jobs....
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
           cture/Mesh/src/ESMCI_Mesh_Glue.C", line 6308: warning: variable
           "pdim" was declared but never referenced
@@ -7886,6 +7886,12 @@ make[8]: *** [/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/o
 1 catastrophic error detected in the compilation of "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh_FileIO.C".
 Compilation terminated.
 make[8]: *** [/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_Mesh_FileIO.o] Error 2
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
+          cture/Mesh/src/ESMCI_MathUtil.C", line 33: warning: variable
+          "version" was declared but never referenced
+  static const char *const version = "$Id$";
+                           ^
+
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/include/j
           son.hpp", line 14370: warning: pointless comparison of unsigned
           integer with zero
@@ -7923,12 +7929,6 @@ make[8]: *** [/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/o
                       NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
                       NumberFloatType=double, AllocatorType=std::allocator,
                       JSONSerializer=nlohmann::adl_serializer]" at line 22647
-
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
-          cture/Mesh/src/ESMCI_MathUtil.C", line 33: warning: variable
-          "version" was declared but never referenced
-  static const char *const version = "$Id$";
-                           ^
 
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
           cture/Mesh/src/ESMCI_Mesh_GToM_Glue.C", line 590: warning: variable
@@ -7947,44 +7947,6 @@ make[8]: *** [/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/o
           conversion resulted in a change of sign
       int proc=BAD_PROC;
                ^
-
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/include/j
-          son.hpp", line 14370: warning: pointless comparison of unsigned
-          integer with zero
-          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
-                                                                                               ^
-          detected during:
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
-                      (NumberType) [with
-                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
-                      std::string, bool, int64_t, uint64_t, double,
-                      std::allocator, nlohmann::adl_serializer>,
-                      NumberType=uint64_t, <unnamed>=0]" at line 14005
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump(const
-                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
-                      [with BasicJsonType=nlohmann::basic_json<std::map,
-                      std::vector, std::string, bool, int64_t, uint64_t,
-                      double, std::allocator, nlohmann::adl_serializer>]" at
-                      line 16570
-            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
-                      StringType, BooleanType, NumberIntegerType,
-                      NumberUnsignedType, NumberFloatType, AllocatorType,
-                      JSONSerializer>::string_t
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::dump(int, char, bool,
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::error_handler_t) const [with
-                      ObjectType=std::map, ArrayType=std::vector,
-                      StringType=std::string, BooleanType=bool,
-                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
-                      NumberFloatType=double, AllocatorType=std::allocator,
-                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
 
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
           cture/Mesh/src/ESMCI_Mesh_GToM_Glue.C", line 2162: warning: variable
@@ -8028,6 +7990,44 @@ make[8]: *** [/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/o
       int rc;
           ^
 
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/include/j
+          son.hpp", line 14370: warning: pointless comparison of unsigned
+          integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
+          detected during:
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
+
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
           cture/Mesh/src/ESMCI_Mesh_Regrid_Glue.C", line 116: warning: variable
           "srcarray" was declared but never referenced
@@ -8059,12 +8059,6 @@ make[8]: *** [/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/o
           ^
 
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
-          cture/Mesh/src/ESMCI_Mesh_XGrid_Glue.C", line 117: warning: variable
-          "iiptr" was declared but never referenced
-      ESMCI::InterArray<int> *iiptr = &ii;
-                              ^
-
-"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
           cture/Mesh/src/ESMCI_Mesh_Glue.C", line 52: warning: variable
           "version" was declared but never referenced
    static const char *const version = "$Id$";
@@ -8075,6 +8069,12 @@ make[8]: *** [/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/o
           "triangulate" was declared but never referenced
   static void triangulate(int sdim, int num_p, double *p, double *td, int *ti, int *tri_ind,
               ^
+
+"/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastru
+          cture/Mesh/src/ESMCI_Mesh_XGrid_Glue.C", line 117: warning: variable
+          "iiptr" was declared but never referenced
+      ESMCI::InterArray<int> *iiptr = &ii;
+                              ^
 
 "/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/include/j
           son.hpp", line 14370: warning: pointless comparison of unsigned
