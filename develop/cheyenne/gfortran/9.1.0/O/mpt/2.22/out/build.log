@@ -1,4 +1,4 @@
-Tue Apr 12 05:53:01 MDT 2022
+Tue Apr 12 17:20:16 MDT 2022
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.3.0 beta snapshot
@@ -215,14 +215,14 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Tue Apr 12 05:47:10 MDT 2022 on r1i4n6
-Machine characteristics: Linux r1i4n6 4.12.14-95.51-default #1 SMP Fri Apr 17 08:14:12 UTC 2020 (c6bab98) x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Tue Apr 12 17:14:26 MDT 2022 on r8i5n22
+Machine characteristics: Linux r8i5n22 4.12.14-95.51-default #1 SMP Fri Apr 17 08:14:12 UTC 2020 (c6bab98) x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 make[1]: Entering directory '/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_mpt_O_develop'
 Making directory /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_mpt_O_develop/lib/libO/Linux.gfortran.64.mpt.default for library
-Making directory /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_mpt_O_develop/src/include for include files
 Making directory /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_mpt_O_develop/mod/modO/Linux.gfortran.64.mpt.default for *.mod files
+Making directory /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_mpt_O_develop/src/include for include files
 Making directory /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_mpt_O_develop/obj/objO/Linux.gfortran.64.mpt.default for *.o files
 cd /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_mpt_O_develop ;\
 make ACTION=tree_include tree
@@ -1522,8 +1522,7 @@ In file included from /glade/u/apps/ch/opt/gnu/9.1.0/include/c++/9.1.0/backward/
                  from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_mpt_O_develop/src/include/ESMCI_VMKernel.h:28,
                  from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_mpt_O_develop/src/include/ESMCI_VM.h:41,
                  from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_mpt_O_develop/src/Infrastructure/Base/src/../include/ESMCI_Base.h:27,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_mpt_O_develop/src/Infrastructure/Base/src/../include/ESMCI_Info.h:24,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_mpt_O_develop/src/Infrastructure/Base/src/ESMCI_Info.C:27:
+                 from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_mpt_O_develop/src/Infrastructure/Base/src/ESMC_InfoCDefGeneric.C:36:
 /glade/u/apps/ch/opt/gnu/9.1.0/include/c++/9.1.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
@@ -1539,7 +1538,8 @@ In file included from /glade/u/apps/ch/opt/gnu/9.1.0/include/c++/9.1.0/backward/
                  from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_mpt_O_develop/src/include/ESMCI_VMKernel.h:28,
                  from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_mpt_O_develop/src/include/ESMCI_VM.h:41,
                  from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_mpt_O_develop/src/Infrastructure/Base/src/../include/ESMCI_Base.h:27,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_mpt_O_develop/src/Infrastructure/Base/src/ESMC_InfoCDefGeneric.C:36:
+                 from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_mpt_O_develop/src/Infrastructure/Base/src/../include/ESMCI_Info.h:24,
+                 from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_mpt_O_develop/src/Infrastructure/Base/src/ESMCI_Info.C:27:
 /glade/u/apps/ch/opt/gnu/9.1.0/include/c++/9.1.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
