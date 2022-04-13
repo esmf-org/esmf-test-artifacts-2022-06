@@ -1,0 +1,15 @@
+Wed Apr 13 06:00:31 MDT 2022
+/bin/sh: line 0: [: -ge: unary operator expected
+/bin/sh: line 0: [: -ge: unary operator expected
+ 
+Installing ESMF:
+ 
+mkdir -p /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/DEFAULTINSTALLDIR/include
+cp -f /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/src/include/ESMC.h /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/DEFAULTINSTALLDIR/include
+cp -f /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/src/include/ESMC_*.h /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/DEFAULTINSTALLDIR/include
+cp -f /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/build_config/Linux.intel.default/ESMC_Conf.h /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/DEFAULTINSTALLDIR/include
+mkdir -p /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/DEFAULTINSTALLDIR/mod/modO/Linux.intel.64.mpiuni.default
+cp -f /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/mod/modO/Linux.intel.64.mpiuni.default/*.mod /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/DEFAULTINSTALLDIR/mod/modO/Linux.intel.64.mpiuni.default
+cp: cannot stat '/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/mod/modO/Linux.intel.64.mpiuni.default/*.mod': No such file or directory
+makefile:688: recipe for target 'install' failed
+make: *** [install] Error 1
