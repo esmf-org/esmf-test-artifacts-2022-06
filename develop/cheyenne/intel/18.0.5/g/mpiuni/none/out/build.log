@@ -1,4 +1,4 @@
-Wed Apr 13 05:58:28 MDT 2022
+Wed Apr 13 15:12:24 MDT 2022
 /bin/sh: line 0: [: -ge: unary operator expected
 /bin/sh: line 0: [: -ge: unary operator expected
  
@@ -266,16 +266,16 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Wed Apr 13 05:52:38 MDT 2022 on r9i4n4
-Machine characteristics: Linux r9i4n4 4.12.14-95.51-default #1 SMP Fri Apr 17 08:14:12 UTC 2020 (c6bab98) x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Wed Apr 13 15:06:34 MDT 2022 on r2i3n23
+Machine characteristics: Linux r2i3n23 4.12.14-95.51-default #1 SMP Fri Apr 17 08:14:12 UTC 2020 (c6bab98) x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 make[1]: Entering directory '/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop'
 /bin/sh: line 0: [: -ge: unary operator expected
 /bin/sh: line 0: [: -ge: unary operator expected
 Making directory /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/lib/libg/Linux.intel.64.mpiuni.default for library
-Making directory /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/include for include files
 Making directory /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/mod/modg/Linux.intel.64.mpiuni.default for *.mod files
+Making directory /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/include for include files
 Making directory /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default for *.o files
 cd /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop ;\
 make ACTION=tree_include tree
@@ -1814,6 +1814,7 @@ icpc -c -std=c++11 -g -traceback -Wcheck -fPIC -debug minimal -m64 -mcmodel=smal
 icpc -c -std=c++11 -g -traceback -Wcheck -fPIC -debug minimal -m64 -mcmodel=small -pthread  -openmp -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/src -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/src/../include -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build_config/Linux.intel.default -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Infrastructure -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Superstructure -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Infrastructure/stubs/mpiuni -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-61-g0687c4c862"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop -D__SDIR__='"src/prologue/yaml-cpp/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/src/scantoken.cpp -o /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/scantoken.o
 icpc -c -std=c++11 -g -traceback -Wcheck -fPIC -debug minimal -m64 -mcmodel=small -pthread  -openmp -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/src -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/src/../include -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build_config/Linux.intel.default -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Infrastructure -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Superstructure -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Infrastructure/stubs/mpiuni -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-61-g0687c4c862"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop -D__SDIR__='"src/prologue/yaml-cpp/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/src/emit.cpp -o /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/emit.o
 icpc -c -std=c++11 -g -traceback -Wcheck -fPIC -debug minimal -m64 -mcmodel=small -pthread  -openmp -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/src -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/src/../include -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build_config/Linux.intel.default -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Infrastructure -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Superstructure -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Infrastructure/stubs/mpiuni -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-61-g0687c4c862"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop -D__SDIR__='"src/prologue/yaml-cpp/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/src/memory.cpp -o /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/memory.o
+icpc -c -std=c++11 -g -traceback -Wcheck -fPIC -debug minimal -m64 -mcmodel=small -pthread  -openmp -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/src -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/src/../include -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build_config/Linux.intel.default -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Infrastructure -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Superstructure -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Infrastructure/stubs/mpiuni -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-61-g0687c4c862"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop -D__SDIR__='"src/prologue/yaml-cpp/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/src/parse.cpp -o /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/parse.o
 
 Error: A license for Comp-CL is not available now (-97,121).
 
@@ -1826,7 +1827,19 @@ license file is being used, or if the port or hostname in the license
 file has changed.
 
 License file(s) used were (in this order):
-icpc -c -std=c++11 -g -traceback -Wcheck -fPIC -debug minimal -m64 -mcmodel=small -pthread  -openmp -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/src -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/src/../include -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build_config/Linux.intel.default -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Infrastructure -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Superstructure -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Infrastructure/stubs/mpiuni -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-61-g0687c4c862"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop -D__SDIR__='"src/prologue/yaml-cpp/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/src/parse.cpp -o /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/parse.o
+
+Error: A license for Comp-CL is not available now (-97,121).
+
+A connection to the license server could not be made.  You should
+make sure that your license daemon process is running: both an
+lmgrd process and an INTEL process should be running
+if your license limits you to a specified number of licenses in use
+at a time.  Also, check to see if the wrong port@host or the wrong
+license file is being used, or if the port or hostname in the license
+file has changed.
+
+License file(s) used were (in this order):
+icpc -c -std=c++11 -g -traceback -Wcheck -fPIC -debug minimal -m64 -mcmodel=small -pthread  -openmp -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/src -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/src/../include -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build_config/Linux.intel.default -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Infrastructure -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Superstructure -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/Infrastructure/stubs/mpiuni -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-61-g0687c4c862"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop -D__SDIR__='"src/prologue/yaml-cpp/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/prologue/yaml-cpp/src/simplekey.cpp -o /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/simplekey.o
 **  1.  28518@128.117.177.41
 **  2.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/../../Licenses
 **  3.  /glade/u/home/rlong/Licenses
@@ -1836,32 +1849,20 @@ icpc -c -std=c++11 -g -traceback -Wcheck -fPIC -debug minimal -m64 -mcmodel=smal
 
 Please refer http://software.intel.com/sites/support/ for more information..
 
+icpc: error #10052: could not checkout FLEXlm license
+**  1.  28518@128.117.177.41
+**  2.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/../../Licenses
+**  3.  /glade/u/home/rlong/Licenses
+**  4.  /opt/intel/licenses
+**  5.  /Users/Shared/Library/Application Support/Intel/Licenses
+**  6.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/*.lic
 
-Error: A license for Comp-CL is not available now (-97,121).
+Please refer http://software.intel.com/sites/support/ for more information..
 
-A connection to the license server could not be made.  You should
-make sure that your license daemon process is running: both an
-lmgrd process and an INTEL process should be running
-if your license limits you to a specified number of licenses in use
-at a time.  Also, check to see if the wrong port@host or the wrong
-license file is being used, or if the port or hostname in the license
-file has changed.
-
-License file(s) used were (in this order):
 icpc: error #10052: could not checkout FLEXlm license
 /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build/common.mk:3840: recipe for target '/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/binary.o' failed
 make[8]: *** [/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/binary.o] Error 1
 make[8]: *** Waiting for unfinished jobs....
-**  1.  28518@128.117.177.41
-**  2.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/../../Licenses
-**  3.  /glade/u/home/rlong/Licenses
-**  4.  /opt/intel/licenses
-**  5.  /Users/Shared/Library/Application Support/Intel/Licenses
-**  6.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/*.lic
-
-Please refer http://software.intel.com/sites/support/ for more information..
-
-icpc: error #10052: could not checkout FLEXlm license
 /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build/common.mk:3840: recipe for target '/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/emitterutils.o' failed
 make[8]: *** [/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/emitterutils.o] Error 1
 
@@ -1876,6 +1877,30 @@ license file is being used, or if the port or hostname in the license
 file has changed.
 
 License file(s) used were (in this order):
+
+Error: A license for Comp-CL is not available now (-97,121).
+
+A connection to the license server could not be made.  You should
+make sure that your license daemon process is running: both an
+lmgrd process and an INTEL process should be running
+if your license limits you to a specified number of licenses in use
+at a time.  Also, check to see if the wrong port@host or the wrong
+license file is being used, or if the port or hostname in the license
+file has changed.
+
+License file(s) used were (in this order):
+
+Error: A license for Comp-CL is not available now (-97,121).
+
+A connection to the license server could not be made.  You should
+make sure that your license daemon process is running: both an
+lmgrd process and an INTEL process should be running
+if your license limits you to a specified number of licenses in use
+at a time.  Also, check to see if the wrong port@host or the wrong
+license file is being used, or if the port or hostname in the license
+file has changed.
+
+License file(s) used were (in this order):
 **  1.  28518@128.117.177.41
 **  2.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/../../Licenses
 **  3.  /glade/u/home/rlong/Licenses
@@ -1886,32 +1911,8 @@ License file(s) used were (in this order):
 Please refer http://software.intel.com/sites/support/ for more information..
 
 icpc: error #10052: could not checkout FLEXlm license
-
-Error: A license for Comp-CL is not available now (-97,121).
-
-A connection to the license server could not be made.  You should
-make sure that your license daemon process is running: both an
-lmgrd process and an INTEL process should be running
-if your license limits you to a specified number of licenses in use
-at a time.  Also, check to see if the wrong port@host or the wrong
-license file is being used, or if the port or hostname in the license
-file has changed.
-
-License file(s) used were (in this order):
 /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build/common.mk:3840: recipe for target '/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/nodeevents.o' failed
 make[8]: *** [/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/nodeevents.o] Error 1
-
-Error: A license for Comp-CL is not available now (-97,121).
-
-A connection to the license server could not be made.  You should
-make sure that your license daemon process is running: both an
-lmgrd process and an INTEL process should be running
-if your license limits you to a specified number of licenses in use
-at a time.  Also, check to see if the wrong port@host or the wrong
-license file is being used, or if the port or hostname in the license
-file has changed.
-
-License file(s) used were (in this order):
 **  1.  28518@128.117.177.41
 **  2.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/../../Licenses
 **  3.  /glade/u/home/rlong/Licenses
@@ -1924,6 +1925,18 @@ Please refer http://software.intel.com/sites/support/ for more information..
 icpc: error #10052: could not checkout FLEXlm license
 /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build/common.mk:3840: recipe for target '/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/scanscalar.o' failed
 make[8]: *** [/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/scanscalar.o] Error 1
+**  1.  28518@128.117.177.41
+**  2.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/../../Licenses
+**  3.  /glade/u/home/rlong/Licenses
+**  4.  /opt/intel/licenses
+**  5.  /Users/Shared/Library/Application Support/Intel/Licenses
+**  6.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/*.lic
+
+Please refer http://software.intel.com/sites/support/ for more information..
+
+icpc: error #10052: could not checkout FLEXlm license
+/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build/common.mk:3840: recipe for target '/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/convert.o' failed
+make[8]: *** [/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/convert.o] Error 1
 
 Error: A license for Comp-CL is not available now (-97,121).
 
@@ -1946,20 +1959,20 @@ License file(s) used were (in this order):
 Please refer http://software.intel.com/sites/support/ for more information..
 
 icpc: error #10052: could not checkout FLEXlm license
-/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build/common.mk:3840: recipe for target '/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/convert.o' failed
-make[8]: *** [/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/convert.o] Error 1
-**  1.  28518@128.117.177.41
-**  2.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/../../Licenses
-**  3.  /glade/u/home/rlong/Licenses
-**  4.  /opt/intel/licenses
-**  5.  /Users/Shared/Library/Application Support/Intel/Licenses
-**  6.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/*.lic
-
-Please refer http://software.intel.com/sites/support/ for more information..
-
-icpc: error #10052: could not checkout FLEXlm license
 /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build/common.mk:3840: recipe for target '/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/exceptions.o' failed
 make[8]: *** [/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/exceptions.o] Error 1
+
+Error: A license for Comp-CL is not available now (-97,121).
+
+A connection to the license server could not be made.  You should
+make sure that your license daemon process is running: both an
+lmgrd process and an INTEL process should be running
+if your license limits you to a specified number of licenses in use
+at a time.  Also, check to see if the wrong port@host or the wrong
+license file is being used, or if the port or hostname in the license
+file has changed.
+
+License file(s) used were (in this order):
 
 Error: A license for Comp-CL is not available now (-97,121).
 
@@ -1996,18 +2009,6 @@ license file is being used, or if the port or hostname in the license
 file has changed.
 
 License file(s) used were (in this order):
-**  1.  28518@128.117.177.41
-**  2.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/../../Licenses
-**  3.  /glade/u/home/rlong/Licenses
-**  4.  /opt/intel/licenses
-**  5.  /Users/Shared/Library/Application Support/Intel/Licenses
-**  6.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/*.lic
-
-Please refer http://software.intel.com/sites/support/ for more information..
-
-icpc: error #10052: could not checkout FLEXlm license
-/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build/common.mk:3840: recipe for target '/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/scantag.o' failed
-make[8]: *** [/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/scantag.o] Error 1
 
 Error: A license for Comp-CL is not available now (-97,121).
 
@@ -2032,42 +2033,6 @@ Please refer http://software.intel.com/sites/support/ for more information..
 icpc: error #10052: could not checkout FLEXlm license
 /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build/common.mk:3840: recipe for target '/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/directives.o' failed
 make[8]: *** [/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/directives.o] Error 1
-
-Error: A license for Comp-CL is not available now (-97,121).
-
-A connection to the license server could not be made.  You should
-make sure that your license daemon process is running: both an
-lmgrd process and an INTEL process should be running
-if your license limits you to a specified number of licenses in use
-at a time.  Also, check to see if the wrong port@host or the wrong
-license file is being used, or if the port or hostname in the license
-file has changed.
-
-License file(s) used were (in this order):
-
-Error: A license for Comp-CL is not available now (-97,121).
-
-A connection to the license server could not be made.  You should
-make sure that your license daemon process is running: both an
-lmgrd process and an INTEL process should be running
-if your license limits you to a specified number of licenses in use
-at a time.  Also, check to see if the wrong port@host or the wrong
-license file is being used, or if the port or hostname in the license
-file has changed.
-
-License file(s) used were (in this order):
-
-Error: A license for Comp-CL is not available now (-97,121).
-
-A connection to the license server could not be made.  You should
-make sure that your license daemon process is running: both an
-lmgrd process and an INTEL process should be running
-if your license limits you to a specified number of licenses in use
-at a time.  Also, check to see if the wrong port@host or the wrong
-license file is being used, or if the port or hostname in the license
-file has changed.
-
-License file(s) used were (in this order):
 **  1.  28518@128.117.177.41
 **  2.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/../../Licenses
 **  3.  /glade/u/home/rlong/Licenses
@@ -2078,6 +2043,8 @@ License file(s) used were (in this order):
 Please refer http://software.intel.com/sites/support/ for more information..
 
 icpc: error #10052: could not checkout FLEXlm license
+/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build/common.mk:3840: recipe for target '/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/scantag.o' failed
+make[8]: *** [/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/scantag.o] Error 1
 **  1.  28518@128.117.177.41
 **  2.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/../../Licenses
 **  3.  /glade/u/home/rlong/Licenses
@@ -2088,8 +2055,6 @@ icpc: error #10052: could not checkout FLEXlm license
 Please refer http://software.intel.com/sites/support/ for more information..
 
 icpc: error #10052: could not checkout FLEXlm license
-/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build/common.mk:3840: recipe for target '/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/ostream_wrapper.o' failed
-make[8]: *** [/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/ostream_wrapper.o] Error 1
 /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build/common.mk:3840: recipe for target '/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/exp.o' failed
 make[8]: *** [/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/exp.o] Error 1
 
@@ -2104,18 +2069,6 @@ license file is being used, or if the port or hostname in the license
 file has changed.
 
 License file(s) used were (in this order):
-**  1.  28518@128.117.177.41
-**  2.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/../../Licenses
-**  3.  /glade/u/home/rlong/Licenses
-**  4.  /opt/intel/licenses
-**  5.  /Users/Shared/Library/Application Support/Intel/Licenses
-**  6.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/*.lic
-
-Please refer http://software.intel.com/sites/support/ for more information..
-
-icpc: error #10052: could not checkout FLEXlm license
-/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build/common.mk:3840: recipe for target '/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/emit.o' failed
-make[8]: *** [/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/emit.o] Error 1
 
 Error: A license for Comp-CL is not available now (-97,121).
 
@@ -2128,6 +2081,42 @@ license file is being used, or if the port or hostname in the license
 file has changed.
 
 License file(s) used were (in this order):
+
+Error: A license for Comp-CL is not available now (-97,121).
+
+A connection to the license server could not be made.  You should
+make sure that your license daemon process is running: both an
+lmgrd process and an INTEL process should be running
+if your license limits you to a specified number of licenses in use
+at a time.  Also, check to see if the wrong port@host or the wrong
+license file is being used, or if the port or hostname in the license
+file has changed.
+
+License file(s) used were (in this order):
+
+Error: A license for Comp-CL is not available now (-97,121).
+
+A connection to the license server could not be made.  You should
+make sure that your license daemon process is running: both an
+lmgrd process and an INTEL process should be running
+if your license limits you to a specified number of licenses in use
+at a time.  Also, check to see if the wrong port@host or the wrong
+license file is being used, or if the port or hostname in the license
+file has changed.
+
+License file(s) used were (in this order):
+**  1.  28518@128.117.177.41
+**  2.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/../../Licenses
+**  3.  /glade/u/home/rlong/Licenses
+**  4.  /opt/intel/licenses
+**  5.  /Users/Shared/Library/Application Support/Intel/Licenses
+**  6.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/*.lic
+
+Please refer http://software.intel.com/sites/support/ for more information..
+
+icpc: error #10052: could not checkout FLEXlm license
+/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build/common.mk:3840: recipe for target '/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/ostream_wrapper.o' failed
+make[8]: *** [/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/ostream_wrapper.o] Error 1
 **  1.  28518@128.117.177.41
 **  2.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/../../Licenses
 **  3.  /glade/u/home/rlong/Licenses
@@ -2150,8 +2139,44 @@ make[8]: *** [/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/ob
 Please refer http://software.intel.com/sites/support/ for more information..
 
 icpc: error #10052: could not checkout FLEXlm license
+/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build/common.mk:3840: recipe for target '/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/emit.o' failed
+make[8]: *** [/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/emit.o] Error 1
+**  1.  28518@128.117.177.41
+**  2.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/../../Licenses
+**  3.  /glade/u/home/rlong/Licenses
+**  4.  /opt/intel/licenses
+**  5.  /Users/Shared/Library/Application Support/Intel/Licenses
+**  6.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/*.lic
+
+Please refer http://software.intel.com/sites/support/ for more information..
+
+icpc: error #10052: could not checkout FLEXlm license
 /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build/common.mk:3840: recipe for target '/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/memory.o' failed
 make[8]: *** [/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/memory.o] Error 1
+
+Error: A license for Comp-CL is not available now (-97,121).
+
+A connection to the license server could not be made.  You should
+make sure that your license daemon process is running: both an
+lmgrd process and an INTEL process should be running
+if your license limits you to a specified number of licenses in use
+at a time.  Also, check to see if the wrong port@host or the wrong
+license file is being used, or if the port or hostname in the license
+file has changed.
+
+License file(s) used were (in this order):
+**  1.  28518@128.117.177.41
+**  2.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/../../Licenses
+**  3.  /glade/u/home/rlong/Licenses
+**  4.  /opt/intel/licenses
+**  5.  /Users/Shared/Library/Application Support/Intel/Licenses
+**  6.  /glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/bin/intel64/*.lic
+
+Please refer http://software.intel.com/sites/support/ for more information..
+
+icpc: error #10052: could not checkout FLEXlm license
+/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build/common.mk:3840: recipe for target '/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/parse.o' failed
+make[8]: *** [/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/parse.o] Error 1
 make[8]: *** wait: No child processes.  Stop.
 /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop/build/common.mk:2277: recipe for target 'esmflib' failed
 make[7]: *** [esmflib] Error 2
