@@ -1,4 +1,4 @@
-Tue Apr 12 01:13:12 EDT 2022
+Wed Apr 13 01:16:56 EDT 2022
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.3.0 beta snapshot
@@ -10,8 +10,8 @@ Your branch is up to date with 'origin/develop'.
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 	build-pgi_20.4_mpiuni_O.bat
-	build-pgi_20.4_mpiuni_O.bat_55026931.e
-	build-pgi_20.4_mpiuni_O.bat_55026931.o
+	build-pgi_20.4_mpiuni_O.bat_55100009.e
+	build-pgi_20.4_mpiuni_O.bat_55100009.o
 	getres-build.sh
 	getres-test.sh
 	nuopc-app-prototypes/
@@ -214,15 +214,15 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Tue Apr 12 00:58:17 EDT 2022 on borgv050
-Machine characteristics: Linux borgv050 4.4.180-94.100-default #1 SMP Tue Jul 9 19:57:20 UTC 2019 (1569ffb) x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Wed Apr 13 01:02:58 EDT 2022 on borgm035
+Machine characteristics: Linux borgm035 4.4.180-94.100-default #1 SMP Tue Jul 9 19:57:20 UTC 2019 (1569ffb) x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 make[1]: Entering directory '/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop'
 Making directory /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/lib/libO/Linux.pgi.64.mpiuni.default for library
 Making directory /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/include for include files
 Making directory /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/mod/modO/Linux.pgi.64.mpiuni.default for *.mod files
-Making directory /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default for build-pgi_20.4_mpiuni_O.bat_55026931.o files
+Making directory /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default for build-pgi_20.4_mpiuni_O.bat_55100009.o files
 cd /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop ;\
 make ACTION=tree_include tree
 make[2]: Entering directory '/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop'
@@ -1262,13 +1262,13 @@ pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/gpfsm/dnb04/projects/p98/mpot
       if ((src == NULL) || (src[0] == '\0') || (slen < 0) ||
                                                      ^
 
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Util/src -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Util/src/../include -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/build_config/Linux.pgi.default -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Superstructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/pthread  -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/include   -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/mpiuni -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-59-ge6bf2211df"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop -D__SDIR__='"src/Infrastructure/Util/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=4 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Util/src/ESMCI_F90Interface.C -o /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_F90Interface.o
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
           ture/Util/src/ESMCI_Util.C", line 45: warning: variable "version" was
           declared but never referenced
   static const char *const version = "$Id$";
                            ^
 
-pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Util/src -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Util/src/../include -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/build_config/Linux.pgi.default -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Superstructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/pthread  -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/include   -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/mpiuni -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-59-ge6bf2211df"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop -D__SDIR__='"src/Infrastructure/Util/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=4 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Util/src/ESMCI_F90Interface.C -o /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_F90Interface.o
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
           ture/Util/src/ESMCI_Fraction.C", line 257: warning: variable "i" was
           declared but never referenced
@@ -2904,13 +2904,13 @@ make[8]: Entering directory '/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiu
 pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Base/src -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Base/src/../include -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/build_config/Linux.pgi.default -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Superstructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/pthread  -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/include   -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/mpiuni -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-59-ge6bf2211df"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop -D__SDIR__='"src/Infrastructure/Base/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=4 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Base/src/ESMCI_Base.C -o /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_Base.o
 pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Base/src -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Base/src/../include -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/build_config/Linux.pgi.default -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Superstructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/pthread  -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/include   -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/mpiuni -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-59-ge6bf2211df"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop -D__SDIR__='"src/Infrastructure/Base/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=4 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Base/src/ESMCI_Info.C -o /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_Info.o
 pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Base/src -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Base/src/../include -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/build_config/Linux.pgi.default -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Superstructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/pthread  -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/include   -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/mpiuni -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-59-ge6bf2211df"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop -D__SDIR__='"src/Infrastructure/Base/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=4 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Base/src/ESMC_InfoCDef.C -o /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMC_InfoCDef.o
-pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Base/src -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Base/src/../include -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/build_config/Linux.pgi.default -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Superstructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/pthread  -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/include   -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/mpiuni -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-59-ge6bf2211df"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop -D__SDIR__='"src/Infrastructure/Base/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=4 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Base/src/ESMC_InfoCDefGeneric.C -o /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMC_InfoCDefGeneric.o
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
           ture/Base/src/../include/ESMCI_Base.h", line 140: warning: delete of
           pointer to incomplete class
       void ESMC_BaseDeleteInfo(void) {if (!infoalias) delete info;}
                                                              ^
 
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Base/src -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Base/src/../include -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/build_config/Linux.pgi.default -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Superstructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/pthread  -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/include   -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/mpiuni -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-59-ge6bf2211df"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop -D__SDIR__='"src/Infrastructure/Base/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=4 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Base/src/ESMC_InfoCDefGeneric.C -o /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMC_InfoCDefGeneric.o
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
           ture/Base/src/ESMCI_Base.C", line 256: warning: variable "localrc"
           was set but never used
@@ -3016,12 +3016,6 @@ pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/gpfsm/dnb04/projects/p98/mpot
                       JSONSerializer=nlohmann::adl_serializer]" at line 22647
 
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
-          ture/Base/src/ESMCI_Base.C", line 46: warning: variable "version" was
-          declared but never referenced
-  static const char *const version = "$Id$";
-                           ^
-
-"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
           ture/Base/src/ESMCI_Info.C", line 1434: warning: variable
           "location_nc" was declared but never referenced
       const json *location_nc = nullptr;
@@ -3033,6 +3027,12 @@ pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/gpfsm/dnb04/projects/p98/mpot
       json *location_tu = nullptr;
             ^
 
+"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
+          ture/Base/src/ESMCI_Base.C", line 46: warning: variable "version" was
+          declared but never referenced
+  static const char *const version = "$Id$";
+                           ^
+
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/include/js
           on.hpp", line 14370: warning: pointless comparison of unsigned
           integer with zero
@@ -3108,39 +3108,6 @@ pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/gpfsm/dnb04/projects/p98/mpot
                       NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
                       NumberFloatType=double, AllocatorType=std::allocator,
                       JSONSerializer=nlohmann::adl_serializer]" at line 22647
-
-"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
-          ture/Base/src/ESMC_InfoCDefGeneric.C", line 52: warning: variable
-          "version" was declared but never referenced
-   static const char *const version = "$Id$";
-                            ^
-
-"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/include/js
-          on.hpp", line 14370: warning: pointless comparison of unsigned
-          integer with zero
-          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
-                                                                                               ^
-          detected during:
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
-                      (NumberType) [with
-                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
-                      std::string, bool, int64_t, uint64_t, double,
-                      std::allocator, nlohmann::adl_serializer>,
-                      NumberType=uint64_t, <unnamed>=0]" at line 14005
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump(const
-                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
-                      [with BasicJsonType=nlohmann::basic_json<std::map,
-                      std::vector, std::string, bool, int64_t, uint64_t,
-                      double, std::allocator, nlohmann::adl_serializer>]" at
-                      line 20653
-
-"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
-          ture/Base/src/ESMC_InfoCDef.C", line 42: warning: variable "version"
-          was declared but never referenced
-   static const char *const version = "$Id$";
-                            ^
 
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
           ture/Base/src/ESMCI_Info.C", line 766: warning: variable "ret" is
@@ -3186,6 +3153,39 @@ pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/gpfsm/dnb04/projects/p98/mpot
           detected during instantiation of "T ESMCI::Info::get(ESMCI::key_t &,
                     const T *, const int *, bool, std::string *, bool) const
                     [with T=bool]" at line 843
+
+"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
+          ture/Base/src/ESMC_InfoCDefGeneric.C", line 52: warning: variable
+          "version" was declared but never referenced
+   static const char *const version = "$Id$";
+                            ^
+
+"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/include/js
+          on.hpp", line 14370: warning: pointless comparison of unsigned
+          integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
+          detected during:
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 20653
+
+"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
+          ture/Base/src/ESMC_InfoCDef.C", line 42: warning: variable "version"
+          was declared but never referenced
+   static const char *const version = "$Id$";
+                            ^
 
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
           ture/Base/src/ESMCI_Info.C", line 44: warning: variable "version" was
@@ -7440,24 +7440,6 @@ pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/gpfsm/dnb04/projects/p98/mpot
           ^
 
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
-          ture/Grid/interface/ESMC_Grid.C", line 184: warning: variable
-          "gridXCoord" was set but never used
-    double *gridXCoord;
-            ^
-
-"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
-          ture/Grid/interface/ESMC_Grid.C", line 188: warning: variable
-          "gridYCoord" was set but never used
-    double *gridYCoord;
-            ^
-
-"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
-          ture/Grid/interface/ESMC_Grid.C", line 405: warning: variable
-          "localDE_l" was set but never used
-    int localDE_l = 0;
-        ^
-
-"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
           ture/Grid/interface/ESMCI_Grid_F.C", line 2467: warning: variable
           "localrc" was set but never used
       int localrc;
@@ -7558,6 +7540,24 @@ pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/gpfsm/dnb04/projects/p98/mpot
           "dimCount" was declared but never referenced
       int dimCount;
           ^
+
+"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
+          ture/Grid/interface/ESMC_Grid.C", line 184: warning: variable
+          "gridXCoord" was set but never used
+    double *gridXCoord;
+            ^
+
+"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
+          ture/Grid/interface/ESMC_Grid.C", line 188: warning: variable
+          "gridYCoord" was set but never used
+    double *gridYCoord;
+            ^
+
+"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
+          ture/Grid/interface/ESMC_Grid.C", line 405: warning: variable
+          "localDE_l" was set but never used
+    int localDE_l = 0;
+        ^
 
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/include/js
           on.hpp", line 14370: warning: pointless comparison of unsigned
@@ -7725,20 +7725,6 @@ pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/gpfsm/dnb04/projects/p98/mpot
 
 pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/../include -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/build_config/Linux.pgi.default -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Superstructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/pthread  -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/include   -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/mpiuni -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-59-ge6bf2211df"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=4 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/ESMCI_GToM_Util.C -o /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_GToM_Util.o
 pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/../include -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/build_config/Linux.pgi.default -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Superstructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/pthread  -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/include   -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/mpiuni -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-59-ge6bf2211df"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=4 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C -o /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_Mesh_GToM_Glue.o
-pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/../include -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/build_config/Linux.pgi.default -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Superstructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/pthread  -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/include   -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/mpiuni -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-59-ge6bf2211df"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=4 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C -o /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_Mesh_Regrid_Glue.o
-pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/../include -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/build_config/Linux.pgi.default -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Superstructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/pthread  -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/include   -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/mpiuni -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-59-ge6bf2211df"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=4 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C -o /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_Mesh_XGrid_Glue.o
-"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
-          ture/Mesh/src/ESMCI_Mesh_Glue.C", line 77: warning: variable "rc" was
-          declared but never referenced
-   int rc;
-       ^
-
-"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
-          ture/Mesh/src/ESMCI_Mesh_Glue.C", line 258: warning: variable
-          "node_mask" was set but never used
-      IOField<NodalField> *node_mask;
-                           ^
-
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
           ture/Mesh/src/ESMCI_MathUtil.C", line 1499: warning: variable "lon_r"
           was declared but never referenced
@@ -7750,6 +7736,25 @@ pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/gpfsm/dnb04/projects/p98/mpot
           was declared but never referenced
     double lon_r,lat_r;
                  ^
+
+"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
+          ture/Mesh/src/ESMCI_MathUtil.C", line 3282: warning: incompatible
+          redefinition of macro "DOT_PRODUCT3D" (declared at line 1061)
+  #define DOT_PRODUCT3D(a,b) (a[0]*b[0]+a[1]*b[1]+a[2]*b[2])
+          ^
+
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/../include -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/build_config/Linux.pgi.default -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Superstructure -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/pthread  -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/include   -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/stubs/mpiuni -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-59-ge6bf2211df"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=4 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C -o /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_Mesh_Regrid_Glue.o
+"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
+          ture/Mesh/src/ESMCI_Mesh_Glue.C", line 77: warning: variable "rc" was
+          declared but never referenced
+   int rc;
+       ^
+
+"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
+          ture/Mesh/src/ESMCI_Mesh_Glue.C", line 258: warning: variable
+          "node_mask" was set but never used
+      IOField<NodalField> *node_mask;
+                           ^
 
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
           ture/Mesh/src/ESMCI_Mesh_Glue.C", line 406: warning: variable "rc"
@@ -7776,14 +7781,6 @@ pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/gpfsm/dnb04/projects/p98/mpot
   ^
 
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
-          ture/IO/include/ESMCI_PIO_Handler.h", line 45: catastrophic error:
-          cannot open source file "pio.h"
-  #include <pio.h>
-                  ^
-
-1 catastrophic error detected in the compilation of "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/ESMCI_FileIO_Util.C".
-Compilation terminated.
-"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
           ture/Mesh/src/ESMCI_Mesh_Glue.C", line 744: warning: variable "rc"
           was declared but never referenced
    int rc;
@@ -7795,15 +7792,6 @@ Compilation terminated.
       int localrc;
           ^
 
-"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
-          ture/Mesh/src/ESMCI_MathUtil.C", line 3282: warning: incompatible
-          redefinition of macro "DOT_PRODUCT3D" (declared at line 1061)
-  #define DOT_PRODUCT3D(a,b) (a[0]*b[0]+a[1]*b[1]+a[2]*b[2])
-          ^
-
-/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/build/common.mk:3837: recipe for target '/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_FileIO_Util.o' failed
-make[8]: *** [/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_FileIO_Util.o] Error 2
-make[8]: *** Waiting for unfinished jobs....
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
           ture/Mesh/src/ESMCI_Mesh_Glue.C", line 1615: warning: variable "rc"
           was declared but never referenced
@@ -7835,21 +7823,11 @@ make[8]: *** Waiting for unfinished jobs....
   ^
 
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
-          ture/IO/include/ESMCI_PIO_Handler.h", line 45: catastrophic error:
-          cannot open source file "pio.h"
-  #include <pio.h>
-                  ^
-
-1 catastrophic error detected in the compilation of "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C".
-Compilation terminated.
-"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
           ture/Mesh/src/ESMCI_Mesh_Glue.C", line 2457: warning: variable
           "orig_sdim" was declared but never referenced
       int orig_sdim=mesh->orig_spatial_dim;
           ^
 
-/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/build/common.mk:3837: recipe for target '/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_ESMFMesh_Util.o' failed
-make[8]: *** [/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_ESMFMesh_Util.o] Error 2
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
           ture/Mesh/src/ESMCI_Mesh_Glue.C", line 2933: warning: variable "rc"
           was declared but never referenced
@@ -7874,64 +7852,21 @@ make[8]: *** [/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/ob
   #include <pio.h>
                   ^
 
-1 catastrophic error detected in the compilation of "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/ESMCI_UGRID_Util.C".
+1 catastrophic error detected in the compilation of "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/ESMCI_FileIO_Util.C".
 Compilation terminated.
-/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/build/common.mk:3837: recipe for target '/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_UGRID_Util.o' failed
-make[8]: *** [/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_UGRID_Util.o] Error 2
+/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/build/common.mk:3837: recipe for target '/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_FileIO_Util.o' failed
+make[8]: *** [/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_FileIO_Util.o] Error 2
+make[8]: *** Waiting for unfinished jobs....
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
           ture/IO/include/ESMCI_PIO_Handler.h", line 45: catastrophic error:
           cannot open source file "pio.h"
   #include <pio.h>
                   ^
 
-1 catastrophic error detected in the compilation of "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh_FileIO.C".
+1 catastrophic error detected in the compilation of "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C".
 Compilation terminated.
-/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/build/common.mk:3837: recipe for target '/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_Mesh_FileIO.o' failed
-make[8]: *** [/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_Mesh_FileIO.o] Error 2
-"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/include/js
-          on.hpp", line 14370: warning: pointless comparison of unsigned
-          integer with zero
-          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
-                                                                                               ^
-          detected during:
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
-                      (NumberType) [with
-                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
-                      std::string, bool, int64_t, uint64_t, double,
-                      std::allocator, nlohmann::adl_serializer>,
-                      NumberType=uint64_t, <unnamed>=0]" at line 14005
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump(const
-                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
-                      [with BasicJsonType=nlohmann::basic_json<std::map,
-                      std::vector, std::string, bool, int64_t, uint64_t,
-                      double, std::allocator, nlohmann::adl_serializer>]" at
-                      line 16570
-            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
-                      StringType, BooleanType, NumberIntegerType,
-                      NumberUnsignedType, NumberFloatType, AllocatorType,
-                      JSONSerializer>::string_t
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::dump(int, char, bool,
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::error_handler_t) const [with
-                      ObjectType=std::map, ArrayType=std::vector,
-                      StringType=std::string, BooleanType=bool,
-                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
-                      NumberFloatType=double, AllocatorType=std::allocator,
-                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
-
-"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
-          ture/Mesh/src/ESMCI_GToM_Util.C", line 61: warning: integer
-          conversion resulted in a change of sign
-      int gid=GTOM_BAD_ID;
-              ^
-
+/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/build/common.mk:3837: recipe for target '/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_ESMFMesh_Util.o' failed
+make[8]: *** [/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_ESMFMesh_Util.o] Error 2
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
           ture/Mesh/src/ESMCI_MathUtil.C", line 33: warning: variable "version"
           was declared but never referenced
@@ -7977,10 +7912,30 @@ make[8]: *** [/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/ob
                       JSONSerializer=nlohmann::adl_serializer]" at line 22647
 
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
-          ture/Mesh/src/ESMCI_Mesh_GToM_Glue.C", line 590: warning: variable
-          "buf" was declared but never referenced
-     char buf[512];
-          ^
+          ture/IO/include/ESMCI_PIO_Handler.h", line 45: catastrophic error:
+          cannot open source file "pio.h"
+  #include <pio.h>
+                  ^
+
+1 catastrophic error detected in the compilation of "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/ESMCI_UGRID_Util.C".
+Compilation terminated.
+/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/build/common.mk:3837: recipe for target '/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_UGRID_Util.o' failed
+make[8]: *** [/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_UGRID_Util.o] Error 2
+"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
+          ture/IO/include/ESMCI_PIO_Handler.h", line 45: catastrophic error:
+          cannot open source file "pio.h"
+  #include <pio.h>
+                  ^
+
+1 catastrophic error detected in the compilation of "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh_FileIO.C".
+Compilation terminated.
+/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/build/common.mk:3837: recipe for target '/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_Mesh_FileIO.o' failed
+make[8]: *** [/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_Mesh_FileIO.o] Error 2
+"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
+          ture/Mesh/src/ESMCI_GToM_Util.C", line 61: warning: integer
+          conversion resulted in a change of sign
+      int gid=GTOM_BAD_ID;
+              ^
 
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
           ture/Mesh/src/ESMCI_Mesh_Glue.C", line 52: warning: variable
@@ -7993,6 +7948,50 @@ make[8]: *** [/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/ob
           "triangulate" was declared but never referenced
   static void triangulate(int sdim, int num_p, double *p, double *td, int *ti, int *tri_ind,
               ^
+
+"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
+          ture/Mesh/src/ESMCI_Mesh_GToM_Glue.C", line 590: warning: variable
+          "buf" was declared but never referenced
+     char buf[512];
+          ^
+
+"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/include/js
+          on.hpp", line 14370: warning: pointless comparison of unsigned
+          integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
+          detected during:
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
 
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
           ture/Mesh/src/ESMCI_Mesh_GToM_Glue.C", line 1424: warning: variable
@@ -8060,44 +8059,6 @@ make[8]: *** [/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/ob
     ESMCI::Array &dstarray = **arraydstpp;
                   ^
 
-"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/include/js
-          on.hpp", line 14370: warning: pointless comparison of unsigned
-          integer with zero
-          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
-                                                                                               ^
-          detected during:
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
-                      (NumberType) [with
-                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
-                      std::string, bool, int64_t, uint64_t, double,
-                      std::allocator, nlohmann::adl_serializer>,
-                      NumberType=uint64_t, <unnamed>=0]" at line 14005
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump(const
-                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
-                      [with BasicJsonType=nlohmann::basic_json<std::map,
-                      std::vector, std::string, bool, int64_t, uint64_t,
-                      double, std::allocator, nlohmann::adl_serializer>]" at
-                      line 16570
-            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
-                      StringType, BooleanType, NumberIntegerType,
-                      NumberUnsignedType, NumberFloatType, AllocatorType,
-                      JSONSerializer>::string_t
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::dump(int, char, bool,
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::error_handler_t) const [with
-                      ObjectType=std::map, ArrayType=std::vector,
-                      StringType=std::string, BooleanType=bool,
-                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
-                      NumberFloatType=double, AllocatorType=std::allocator,
-                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
-
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
           ture/Mesh/src/ESMCI_Mesh_Regrid_Glue.C", line 1807: warning: variable
           "rc" was declared but never referenced
@@ -8115,12 +8076,6 @@ make[8]: *** [/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/ob
           "rc" was declared but never referenced
       int rc;
           ^
-
-"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
-          ture/Mesh/src/ESMCI_Mesh_XGrid_Glue.C", line 117: warning: variable
-          "iiptr" was declared but never referenced
-      ESMCI::InterArray<int> *iiptr = &ii;
-                              ^
 
 "/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/include/js
           on.hpp", line 14370: warning: pointless comparison of unsigned
@@ -8203,12 +8158,6 @@ make[8]: *** [/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/ob
           "cnsrv_check_for_mesh_errors" was declared but never referenced
   static void cnsrv_check_for_mesh_errors(Mesh &mesh, bool ignore_degenerate, bool *concave, bool *clockwise, bool *degenerate) {
               ^
-
-"/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/src/Infrastruc
-          ture/Mesh/src/ESMCI_Mesh_XGrid_Glue.C", line 42: warning: variable
-          "version" was declared but never referenced
-   static const char *const version =
-                            ^
 
 make[8]: *** wait: No child processes.  Stop.
 /gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_O_develop/build/common.mk:2277: recipe for target 'esmflib' failed
