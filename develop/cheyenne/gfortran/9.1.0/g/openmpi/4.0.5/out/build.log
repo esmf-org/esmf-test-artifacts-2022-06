@@ -1,4 +1,4 @@
-Wed Apr 13 05:59:34 MDT 2022
+Wed Apr 13 15:10:12 MDT 2022
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.3.0 beta snapshot
@@ -217,8 +217,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Wed Apr 13 05:50:44 MDT 2022 on r1i6n26
-Machine characteristics: Linux r1i6n26 4.12.14-95.51-default #1 SMP Fri Apr 17 08:14:12 UTC 2020 (c6bab98) x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Wed Apr 13 15:04:23 MDT 2022 on r9i4n11
+Machine characteristics: Linux r9i4n11 4.12.14-95.51-default #1 SMP Fri Apr 17 08:14:12 UTC 2020 (c6bab98) x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 make[1]: Entering directory '/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop'
@@ -1273,26 +1273,26 @@ Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
   378 |  if (var==var) continue ! dummy check to quiet down compiler warnings
       |     1
 Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/Util/src/ESMF_FortranWordsize.F90:111:4:
-
-  111 |     udt_ptr1 => udt
-      |    1
-Warning: Pointer at (1) in pointer assignment might outlive the pointer target [-Wtarget-lifetime]
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/Util/src/ESMF_FortranWordsize.F90:112:4:
-
-  112 |     udt_ptr2 => udt
-      |    1
-Warning: Pointer at (1) in pointer assignment might outlive the pointer target [-Wtarget-lifetime]
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/Util/src/ESMF_TypeKindGet.F90:252:5:
 
   252 |  if (var==var) continue ! dummy check to quiet down compiler warnings
       |     1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/Util/src/ESMF_FortranWordsize.F90:111:4:
+
+  111 |     udt_ptr1 => udt
+      |    1
+Warning: Pointer at (1) in pointer assignment might outlive the pointer target [-Wtarget-lifetime]
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/Util/src/ESMF_TypeKindGet.F90:226:5:
 
   226 |  if (var==var) continue ! dummy check to quiet down compiler warnings
       |     1
 Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/Util/src/ESMF_FortranWordsize.F90:112:4:
+
+  112 |     udt_ptr2 => udt
+      |    1
+Warning: Pointer at (1) in pointer assignment might outlive the pointer target [-Wtarget-lifetime]
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=all,no-pointer -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/Util/src -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/build_config/Linux.gfortran.default -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Superstructure -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/mod/modg/Linux.gfortran.64.openmpi.default -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/include -I/glade/u/apps/ch/opt/netcdf/4.7.3/gnu/9.1.0/include -I/glade/u/apps/ch/opt/netcdf/4.7.3/gnu/9.1.0/include  -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-61-g0687c4c862"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90 -o /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/obj/objg/Linux.gfortran.64.openmpi.default/ESMF_UtilCubedSphere.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=all,no-pointer -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/Util/src -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/build_config/Linux.gfortran.default -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Superstructure -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/mod/modg/Linux.gfortran.64.openmpi.default -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/include -I/glade/u/apps/ch/opt/netcdf/4.7.3/gnu/9.1.0/include -I/glade/u/apps/ch/opt/netcdf/4.7.3/gnu/9.1.0/include  -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-61-g0687c4c862"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/Util/src/ESMF_AttPackType.F90 -o /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/obj/objg/Linux.gfortran.64.openmpi.default/ESMF_AttPackType.o
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90:1158:11:
@@ -1495,14 +1495,14 @@ mpicxx -c -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLE
 mpicxx -c -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLEUNDERSCORE -m64 -mcmodel=small -pthread  -fopenmp -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/VM/src -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/VM/src/../include -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/build_config/Linux.gfortran.default -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Superstructure -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.7.3/gnu/9.1.0/include -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-61-g0687c4c862"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop -D__SDIR__='"src/Infrastructure/VM/src"' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/VM/src/ESMCI_VMKernel.C -o /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/obj/objg/Linux.gfortran.64.openmpi.default/ESMCI_VMKernel.o
 In file included from /glade/u/apps/ch/opt/gnu/9.1.0/include/c++/9.1.0/backward/strstream:50,
                  from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/VM/src/../include/ESMCI_VMKernel.h:28,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/VM/src/ESMCI_VMKernel.C:13:
+                 from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/VM/src/../include/ESMCI_VM.h:41,
+                 from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/VM/src/ESMCI_VM.C:40:
 /glade/u/apps/ch/opt/gnu/9.1.0/include/c++/9.1.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
 In file included from /glade/u/apps/ch/opt/gnu/9.1.0/include/c++/9.1.0/backward/strstream:50,
                  from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/VM/src/../include/ESMCI_VMKernel.h:28,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/VM/src/../include/ESMCI_VM.h:41,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/VM/src/ESMCI_VM.C:40:
+                 from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/VM/src/ESMCI_VMKernel.C:13:
 /glade/u/apps/ch/opt/gnu/9.1.0/include/c++/9.1.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
@@ -3937,7 +3937,8 @@ In file included from /glade/u/apps/ch/opt/gnu/9.1.0/include/c++/9.1.0/backward/
                  from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/include/ESMCI_VMKernel.h:28,
                  from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/include/ESMCI_VM.h:41,
                  from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/Base/src/../include/ESMCI_Base.h:27,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/Base/src/ESMC_InfoCDefGeneric.C:36:
+                 from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/Base/src/../include/ESMCI_Info.h:24,
+                 from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/Base/src/ESMCI_Info.C:27:
 /glade/u/apps/ch/opt/gnu/9.1.0/include/c++/9.1.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
@@ -3945,8 +3946,7 @@ In file included from /glade/u/apps/ch/opt/gnu/9.1.0/include/c++/9.1.0/backward/
                  from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/include/ESMCI_VMKernel.h:28,
                  from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/include/ESMCI_VM.h:41,
                  from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/Base/src/../include/ESMCI_Base.h:27,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/Base/src/../include/ESMCI_Info.h:24,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/Base/src/ESMCI_Info.C:27:
+                 from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/Base/src/ESMC_InfoCDefGeneric.C:36:
 /glade/u/apps/ch/opt/gnu/9.1.0/include/c++/9.1.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
@@ -4146,10 +4146,6 @@ mpicxx -c -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLE
 mpicxx -c -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLEUNDERSCORE -m64 -mcmodel=small -pthread  -fopenmp -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/../include -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/build_config/Linux.gfortran.default -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Superstructure -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.7.3/gnu/9.1.0/include -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-61-g0687c4c862"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop -D__SDIR__='"src/Infrastructure/TimeMgr/src"' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C -o /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/obj/objg/Linux.gfortran.64.openmpi.default/ESMCI_Calendar.o
 mpicxx -c -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLEUNDERSCORE -m64 -mcmodel=small -pthread  -fopenmp -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/../include -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/build_config/Linux.gfortran.default -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Superstructure -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.7.3/gnu/9.1.0/include -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-61-g0687c4c862"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop -D__SDIR__='"src/Infrastructure/TimeMgr/src"' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C -o /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/obj/objg/Linux.gfortran.64.openmpi.default/ESMCI_Alarm.o
 mpicxx -c -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLEUNDERSCORE -m64 -mcmodel=small -pthread  -fopenmp -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/../include -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/build_config/Linux.gfortran.default -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Superstructure -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.7.3/gnu/9.1.0/include -I/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-61-g0687c4c862"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop -D__SDIR__='"src/Infrastructure/TimeMgr/src"' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C -o /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/obj/objg/Linux.gfortran.64.openmpi.default/ESMCI_Clock.o
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)’:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:433:30: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-  433 |       if (strlen(this->name) < nameLen) {
-      |           ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::set(int, const char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, ESMCI::Time*, bool*, bool*, bool*)’:
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:433:15: warning: implicitly-declared ‘ESMCI::Alarm& ESMCI::Alarm::operator=(const ESMCI::Alarm&)’ is deprecated [-Wdeprecated-copy]
   433 |       *this = saveAlarm;
@@ -4158,14 +4154,18 @@ In file included from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/../include/ESMCI_Alarm.h:242:5: note: because ‘ESMCI::Alarm’ has user-provided ‘ESMCI::Alarm::Alarm(const ESMCI::Alarm&)’
   242 |     Alarm(const Alarm &alarm);
       |     ^~~~~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::print(const char*) const’:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1759:17: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
- 1759 |       for(i=0; i<strlen(options) && i<ESMF_MAXSTR-1; i++) {
-      |                ~^~~~~~~~~~~~~~~~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)’:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:433:30: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  433 |       if (strlen(this->name) < nameLen) {
+      |           ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::get(int, int*, char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, int*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, bool*, bool*, bool*, bool*)’:
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:491:30: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
   491 |       if (strlen(this->name) < nameLen) {
       |           ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::print(const char*) const’:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1759:17: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+ 1759 |       for(i=0; i<strlen(options) && i<ESMF_MAXSTR-1; i++) {
+      |                ~^~~~~~~~~~~~~~~~
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::print(const char*) const’:
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1675:17: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
  1675 |       for(i=0; i<strlen(options) && i<ESMF_MAXSTR-1; i++) {
@@ -4177,19 +4177,15 @@ In file included from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1871:7: note: because ‘ESMCI::Alarm’ has user-provided ‘ESMCI::Alarm::Alarm(const ESMCI::Alarm&)’
  1871 |       Alarm::Alarm(
       |       ^~~~~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Time.C: In member function ‘int ESMCI::Time::getString(char*, const char*) const’:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Time.C:1435:77: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
- 1435 |         sprintf(timeString, "%s%012.9f", timeString, (s + fractionalSeconds));
-      |                                                                             ^
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Time.C:1437:52: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
- 1437 |         sprintf(timeString, "%s%02d", timeString, s);
-      |                                                    ^
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Time.C:1444:70: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
- 1444 |         sprintf(timeString, "%s%02d:%lld/%lld", timeString, s, sN, sD);
-      |                                                                      ^
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Time.C:1446:52: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
- 1446 |         sprintf(timeString, "%s%02d", timeString, s);
-      |                                                    ^
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::get(int, int*, char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, int*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, bool*, bool*, bool*, bool*)’:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:500:41: warning: ‘%s’ directive writing up to 255 bytes into a region of size 241 [-Wformat-overflow=]
+  500 |         sprintf(logMsg, "For alarm name %s, "
+      |                                         ^~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:500:16: note: ‘sprintf’ output between 61 and 316 bytes into a destination of size 256
+  500 |         sprintf(logMsg, "For alarm name %s, "
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  501 |                 "length >= given character array; truncated.", this->name);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)’:
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:442:37: warning: ‘%s’ directive writing up to 255 bytes into a region of size 245 [-Wformat-overflow=]
   442 |         sprintf(logMsg, "clock name %s, "
@@ -4199,6 +4195,15 @@ In file included from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g
       |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
   443 |                 "length >= given character array; truncated.", this->name);
       |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::ringerOn()’:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:707:70: warning: ‘%s’ directive writing up to 255 bytes into a region of size 210 [-Wformat-overflow=]
+  707 |       sprintf(logMsg, "Attempted to turn on ringer of disabled alarm %s.",
+      |                                                                      ^~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:707:14: note: ‘sprintf’ output between 48 and 303 bytes into a destination of size 256
+  707 |       sprintf(logMsg, "Attempted to turn on ringer of disabled alarm %s.",
+      |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  708 |               this->name);
+      |               ~~~~~~~~~~~
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::advance(ESMCI::TimeInterval*, char*, char*, int, int*)’:
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:668:40: warning: ‘%s’ directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
   668 |             sprintf(logMsg, "For clock %s, "
@@ -4212,6 +4217,24 @@ In file included from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g
       |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   671 |                     this->name, j+1, sizeofRingingAlarmList);
       |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::willRingNext(ESMCI::TimeInterval*, int*) const’:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:873:30: warning: ‘%s’ directive writing up to 255 bytes into a region of size 250 [-Wformat-overflow=]
+  873 |       sprintf(logMsg, "alarm %s is not associated with any clock.", name);
+      |                              ^~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:873:14: note: ‘sprintf’ output between 41 and 296 bytes into a destination of size 256
+  873 |       sprintf(logMsg, "alarm %s is not associated with any clock.", name);
+      |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::notSticky(ESMCI::TimeInterval*, int*)’:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1025:22: warning: ‘%s’ directive writing up to 255 bytes into a region of size 250 [-Wformat-overflow=]
+ 1025 |               "Alarm %s: can only specify one type of ring duration, not both.",
+      |                      ^~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1024:14: note: ‘sprintf’ output between 62 and 317 bytes into a destination of size 256
+ 1024 |       sprintf(logMsg,
+      |       ~~~~~~~^~~~~~~~
+ 1025 |               "Alarm %s: can only specify one type of ring duration, not both.",
+      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1026 |               name);
+      |               ~~~~~
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::getAlarmList(ESMC_AlarmList_Flag, char*, char*, int, int*, ESMCI::TimeInterval*)’:
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1164:40: warning: ‘%s’ directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
  1164 |             sprintf(logMsg, "For clock %s, "
@@ -4236,21 +4259,40 @@ In file included from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g
       |           ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  1140 |                   this->name, alarmlistflag);
       |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function ‘int ESMCI::Calendar::set(int, const char*, ESMC_CalKind_Flag)’:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:679:21: warning: implicitly-declared ‘ESMCI::Calendar& ESMCI::Calendar::operator=(const ESMCI::Calendar&)’ is deprecated [-Wdeprecated-copy]
-  679 |             *this = saveCalendar;
-      |                     ^~~~~~~~~~~~
-In file included from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:24:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/../include/ESMCI_Calendar.h:203:5: note: because ‘ESMCI::Calendar’ has user-provided ‘ESMCI::Calendar::Calendar(const ESMCI::Calendar&)’
-  203 |     Calendar(const Calendar &calendar);  // copy constructor
-      |     ^~~~~~~~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:687:21: warning: implicitly-declared ‘ESMCI::Calendar& ESMCI::Calendar::operator=(const ESMCI::Calendar&)’ is deprecated [-Wdeprecated-copy]
-  687 |             *this = saveCalendar;
-      |                     ^~~~~~~~~~~~
-In file included from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:24:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/../include/ESMCI_Calendar.h:203:5: note: because ‘ESMCI::Calendar’ has user-provided ‘ESMCI::Calendar::Calendar(const ESMCI::Calendar&)’
-  203 |     Calendar(const Calendar &calendar);  // copy constructor
-      |     ^~~~~~~~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::checkRingTime(int*)’:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1296:39: warning: ‘%s’ directive writing up to 255 bytes into a region of size 243 [-Wformat-overflow=]
+ 1296 |         sprintf(logMsg, "Sticky alarm %s cannot be reversed since it has "
+      |                                       ^~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1296:16: note: ‘sprintf’ output between 208 and 463 bytes into a destination of size 256
+ 1296 |         sprintf(logMsg, "Sticky alarm %s cannot be reversed since it has "
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1297 |                         "not been traversed forward and turned off via "
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1298 |                         "a user call to ESMF_AlarmRingerOff(), thereby "
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1299 |                         "enabling Time Manager to know the time to turn it "
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1300 |                         "back on in reverse.", name);
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1116:30: warning: ‘%s’ directive writing up to 255 bytes into a region of size 250 [-Wformat-overflow=]
+ 1116 |       sprintf(logMsg, "alarm %s is not associated with any clock.", name);
+      |                              ^~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1116:14: note: ‘sprintf’ output between 41 and 296 bytes into a destination of size 256
+ 1116 |       sprintf(logMsg, "alarm %s is not associated with any clock.", name);
+      |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::validate(const char*) const’:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1621:30: warning: ‘%s’ directive writing up to 255 bytes into a region of size 250 [-Wformat-overflow=]
+ 1621 |       sprintf(logMsg, "Alarm %s: invalid state: disabled and ringing.", name);
+      |                              ^~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1621:14: note: ‘sprintf’ output between 45 and 300 bytes into a destination of size 256
+ 1621 |       sprintf(logMsg, "Alarm %s: invalid state: disabled and ringing.", name);
+      |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1613:30: warning: ‘%s’ directive writing up to 255 bytes into a region of size 250 [-Wformat-overflow=]
+ 1613 |       sprintf(logMsg, "Alarm %s: invalid ringTime.", name);
+      |                              ^~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1613:14: note: ‘sprintf’ output between 26 and 281 bytes into a destination of size 256
+ 1613 |       sprintf(logMsg, "Alarm %s: invalid ringTime.", name);
+      |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::addAlarm(ESMCI::Alarm*)’:
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2032:34: warning: ‘%s’ directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
  2032 |       sprintf(logMsg, "For clock %s, alarm list is full (%d alarms), "
@@ -4285,6 +4327,34 @@ In file included from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2104:14: note: ‘sprintf’ output between 33 and 288 bytes into a destination of size 256
  2104 |       sprintf(logMsg, "For clock %s, given alarm is NULL.", this->name);
       |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function ‘int ESMCI::Calendar::set(int, const char*, ESMC_CalKind_Flag)’:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:679:21: warning: implicitly-declared ‘ESMCI::Calendar& ESMCI::Calendar::operator=(const ESMCI::Calendar&)’ is deprecated [-Wdeprecated-copy]
+  679 |             *this = saveCalendar;
+      |                     ^~~~~~~~~~~~
+In file included from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:24:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/../include/ESMCI_Calendar.h:203:5: note: because ‘ESMCI::Calendar’ has user-provided ‘ESMCI::Calendar::Calendar(const ESMCI::Calendar&)’
+  203 |     Calendar(const Calendar &calendar);  // copy constructor
+      |     ^~~~~~~~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:687:21: warning: implicitly-declared ‘ESMCI::Calendar& ESMCI::Calendar::operator=(const ESMCI::Calendar&)’ is deprecated [-Wdeprecated-copy]
+  687 |             *this = saveCalendar;
+      |                     ^~~~~~~~~~~~
+In file included from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:24:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/../include/ESMCI_Calendar.h:203:5: note: because ‘ESMCI::Calendar’ has user-provided ‘ESMCI::Calendar::Calendar(const ESMCI::Calendar&)’
+  203 |     Calendar(const Calendar &calendar);  // copy constructor
+      |     ^~~~~~~~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Time.C: In member function ‘int ESMCI::Time::getString(char*, const char*) const’:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Time.C:1435:77: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
+ 1435 |         sprintf(timeString, "%s%012.9f", timeString, (s + fractionalSeconds));
+      |                                                                             ^
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Time.C:1437:52: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
+ 1437 |         sprintf(timeString, "%s%02d", timeString, s);
+      |                                                    ^
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Time.C:1444:70: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
+ 1444 |         sprintf(timeString, "%s%02d:%lld/%lld", timeString, s, sN, sD);
+      |                                                                      ^
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Time.C:1446:52: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
+ 1446 |         sprintf(timeString, "%s%02d", timeString, s);
+      |                                                    ^
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function ‘int ESMCI::Calendar::set(int, const char*, int*, int, ESMC_I4*, ESMC_I4*, ESMC_I4*, ESMC_I4*)’:
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:746:19: warning: implicitly-declared ‘ESMCI::Calendar& ESMCI::Calendar::operator=(const ESMCI::Calendar&)’ is deprecated [-Wdeprecated-copy]
   746 |           *this = saveCalendar;
@@ -4314,42 +4384,6 @@ In file included from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/../include/ESMCI_Calendar.h:203:5: note: because ‘ESMCI::Calendar’ has user-provided ‘ESMCI::Calendar::Calendar(const ESMCI::Calendar&)’
   203 |     Calendar(const Calendar &calendar);  // copy constructor
       |     ^~~~~~~~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::get(int, int*, char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, int*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, bool*, bool*, bool*, bool*)’:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:500:41: warning: ‘%s’ directive writing up to 255 bytes into a region of size 241 [-Wformat-overflow=]
-  500 |         sprintf(logMsg, "For alarm name %s, "
-      |                                         ^~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:500:16: note: ‘sprintf’ output between 61 and 316 bytes into a destination of size 256
-  500 |         sprintf(logMsg, "For alarm name %s, "
-      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  501 |                 "length >= given character array; truncated.", this->name);
-      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::ringerOn()’:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:707:70: warning: ‘%s’ directive writing up to 255 bytes into a region of size 210 [-Wformat-overflow=]
-  707 |       sprintf(logMsg, "Attempted to turn on ringer of disabled alarm %s.",
-      |                                                                      ^~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:707:14: note: ‘sprintf’ output between 48 and 303 bytes into a destination of size 256
-  707 |       sprintf(logMsg, "Attempted to turn on ringer of disabled alarm %s.",
-      |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  708 |               this->name);
-      |               ~~~~~~~~~~~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::willRingNext(ESMCI::TimeInterval*, int*) const’:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:873:30: warning: ‘%s’ directive writing up to 255 bytes into a region of size 250 [-Wformat-overflow=]
-  873 |       sprintf(logMsg, "alarm %s is not associated with any clock.", name);
-      |                              ^~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:873:14: note: ‘sprintf’ output between 41 and 296 bytes into a destination of size 256
-  873 |       sprintf(logMsg, "alarm %s is not associated with any clock.", name);
-      |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::notSticky(ESMCI::TimeInterval*, int*)’:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1025:22: warning: ‘%s’ directive writing up to 255 bytes into a region of size 250 [-Wformat-overflow=]
- 1025 |               "Alarm %s: can only specify one type of ring duration, not both.",
-      |                      ^~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1024:14: note: ‘sprintf’ output between 62 and 317 bytes into a destination of size 256
- 1024 |       sprintf(logMsg,
-      |       ~~~~~~~^~~~~~~~
- 1025 |               "Alarm %s: can only specify one type of ring duration, not both.",
-      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 1026 |               name);
-      |               ~~~~~
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘bool ESMCI::Clock::isStopTime(int*) const’:
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:707:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
   707 |     if (this == ESMC_NULL_POINTER) {
@@ -4394,89 +4428,6 @@ In file included from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1742:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
  1742 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)’:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:425:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-  425 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::advance(ESMCI::TimeInterval*, char*, char*, int, int*)’:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:570:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-  570 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::getAlarm(int, char*, ESMCI::Alarm**)’:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1012:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
- 1012 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::getAlarmList(ESMC_AlarmList_Flag, char*, char*, int, int*, ESMCI::TimeInterval*)’:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1083:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
- 1083 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::checkRingTime(int*)’:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1296:39: warning: ‘%s’ directive writing up to 255 bytes into a region of size 243 [-Wformat-overflow=]
- 1296 |         sprintf(logMsg, "Sticky alarm %s cannot be reversed since it has "
-      |                                       ^~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::validate(const char*) const’:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1570:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
- 1570 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1296:16: note: ‘sprintf’ output between 208 and 463 bytes into a destination of size 256
- 1296 |         sprintf(logMsg, "Sticky alarm %s cannot be reversed since it has "
-      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 1297 |                         "not been traversed forward and turned off via "
-      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 1298 |                         "a user call to ESMF_AlarmRingerOff(), thereby "
-      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 1299 |                         "enabling Time Manager to know the time to turn it "
-      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 1300 |                         "back on in reverse.", name);
-      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1116:30: warning: ‘%s’ directive writing up to 255 bytes into a region of size 250 [-Wformat-overflow=]
- 1116 |       sprintf(logMsg, "alarm %s is not associated with any clock.", name);
-      |                              ^~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1116:14: note: ‘sprintf’ output between 41 and 296 bytes into a destination of size 256
- 1116 |       sprintf(logMsg, "alarm %s is not associated with any clock.", name);
-      |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::syncToRealTime()’:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1318:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
- 1318 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C: In member function ‘int ESMCI::TimeInterval::getString(char*, const char*) const’:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:3142:75: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
- 3142 |         sprintf(timeString, "%s%.9fS", timeString, (s + fractionalSeconds));
-      |                                                                           ^
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:3144:51: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
- 3144 |         sprintf(timeString, "%s%dS", timeString, s);
-      |                                                   ^
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:3151:69: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
- 3151 |         sprintf(timeString, "%s%d:%lld/%lldS", timeString, s, sN, sD);
-      |                                                                     ^
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:3153:51: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
- 3153 |         sprintf(timeString, "%s%dS", timeString, s);
-      |                                                   ^
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::validate(const char*) const’:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1621:30: warning: ‘%s’ directive writing up to 255 bytes into a region of size 250 [-Wformat-overflow=]
- 1621 |       sprintf(logMsg, "Alarm %s: invalid state: disabled and ringing.", name);
-      |                              ^~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1621:14: note: ‘sprintf’ output between 45 and 300 bytes into a destination of size 256
- 1621 |       sprintf(logMsg, "Alarm %s: invalid state: disabled and ringing.", name);
-      |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::set(int, const char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, int*, ESMCI::Time*, ESMCI::Time*, ESMC_I8*, ESMC_Direction*)’:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:298:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-  298 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1613:30: warning: ‘%s’ directive writing up to 255 bytes into a region of size 250 [-Wformat-overflow=]
- 1613 |       sprintf(logMsg, "Alarm %s: invalid ringTime.", name);
-      |                              ^~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1613:14: note: ‘sprintf’ output between 26 and 281 bytes into a destination of size 256
- 1613 |       sprintf(logMsg, "Alarm %s: invalid ringTime.", name);
-      |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::addAlarm(ESMCI::Alarm*)’:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2016:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
- 2016 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::removeAlarm(ESMCI::Alarm*)’:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2096:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
- 2096 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::enable()’:
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:586:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
   586 |     if (this == ESMC_NULL_POINTER) {
@@ -4509,6 +4460,10 @@ In file included from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1068:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
  1068 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)’:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:425:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+  425 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::operator==(const ESMCI::Alarm&) const’:
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1458:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
  1458 |     if (this == ESMC_NULL_POINTER) {
@@ -4521,9 +4476,25 @@ In file included from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1564:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
  1564 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::advance(ESMCI::TimeInterval*, char*, char*, int, int*)’:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:570:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+  570 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::print(const char*) const’:
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1658:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
  1658 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::getAlarm(int, char*, ESMCI::Alarm**)’:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1012:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+ 1012 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::getAlarmList(ESMC_AlarmList_Flag, char*, char*, int, int*, ESMCI::TimeInterval*)’:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1083:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+ 1083 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::validate(const char*) const’:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1570:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+ 1570 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::get(int, int*, char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, int*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, bool*, bool*, bool*, bool*)’:
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:483:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
@@ -4533,6 +4504,10 @@ In file included from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:699:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
   699 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::syncToRealTime()’:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1318:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+ 1318 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::willRingNext(ESMCI::TimeInterval*, int*) const’:
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:861:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
   861 |     if (this == ESMC_NULL_POINTER) {
@@ -4541,13 +4516,29 @@ In file included from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1012:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
  1012 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::set(int, const char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, int*, ESMCI::Time*, ESMCI::Time*, ESMC_I8*, ESMC_Direction*)’:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:298:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+  298 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::addAlarm(ESMCI::Alarm*)’:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2016:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+ 2016 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::checkRingTime(int*)’:
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1104:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
  1104 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::removeAlarm(ESMCI::Alarm*)’:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2096:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+ 2096 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::validate(const char*) const’:
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1604:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
  1604 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::set(int, const char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, ESMCI::Time*, bool*, bool*, bool*)’:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:344:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+  344 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In copy constructor ‘ESMCI::Calendar::Calendar(const ESMCI::Calendar&)’:
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:3108:13: warning: implicitly-declared ‘ESMCI::Calendar& ESMCI::Calendar::operator=(const ESMCI::Calendar&)’ is deprecated [-Wdeprecated-copy]
@@ -4556,10 +4547,19 @@ In file included from /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:3094:7: note: because ‘ESMCI::Calendar’ has user-provided ‘ESMCI::Calendar::Calendar(const ESMCI::Calendar&)’
  3094 |       Calendar::Calendar(
       |       ^~~~~~~~
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::set(int, const char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, ESMCI::Time*, bool*, bool*, bool*)’:
-/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:344:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-  344 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C: In member function ‘int ESMCI::TimeInterval::getString(char*, const char*) const’:
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:3142:75: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
+ 3142 |         sprintf(timeString, "%s%.9fS", timeString, (s + fractionalSeconds));
+      |                                                                           ^
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:3144:51: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
+ 3144 |         sprintf(timeString, "%s%dS", timeString, s);
+      |                                                   ^
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:3151:69: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
+ 3151 |         sprintf(timeString, "%s%d:%lld/%lldS", timeString, s, sN, sD);
+      |                                                                     ^
+/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:3153:51: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
+ 3153 |         sprintf(timeString, "%s%dS", timeString, s);
+      |                                                   ^
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function ‘int ESMCI::Calendar::get(int, int*, char*, ESMC_CalKind_Flag*, int*, int, int*, ESMC_I4*, ESMC_I4*, ESMC_I4*, ESMC_I4*, ESMC_I4*)’:
 /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:904:44: warning: ‘%s’ directive writing up to 255 bytes into a region of size 238 [-Wformat-overflow=]
   904 |         sprintf(logMsg, "For calendar name %s, "
