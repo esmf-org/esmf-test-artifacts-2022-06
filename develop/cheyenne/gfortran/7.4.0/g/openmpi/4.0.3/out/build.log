@@ -1,4 +1,4 @@
-Wed Apr 13 05:55:28 MDT 2022
+Wed Apr 13 15:09:56 MDT 2022
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.3.0 beta snapshot
@@ -217,8 +217,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Wed Apr 13 05:49:35 MDT 2022 on r11i5n2
-Machine characteristics: Linux r11i5n2 4.12.14-95.51-default #1 SMP Fri Apr 17 08:14:12 UTC 2020 (c6bab98) x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Wed Apr 13 15:04:04 MDT 2022 on r7i6n0
+Machine characteristics: Linux r7i6n0 4.12.14-95.51-default #1 SMP Fri Apr 17 08:14:12 UTC 2020 (c6bab98) x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 make[1]: Entering directory '/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop'
@@ -1244,16 +1244,6 @@ mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=all,no-pointer -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Util/src -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/build_config/Linux.gfortran.default -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Superstructure -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/mod/modg/Linux.gfortran.64.openmpi.default -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/include -I/glade/u/apps/ch/opt/netcdf/4.7.3/gnu/7.4.0/include -I/glade/u/apps/ch/opt/netcdf/4.7.3/gnu/7.4.0/include  -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-61-g0687c4c862"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Util/src/ESMF_TypeKindGet.F90 -o /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/obj/objg/Linux.gfortran.64.openmpi.default/ESMF_TypeKindGet.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=all,no-pointer -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Util/src -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/build_config/Linux.gfortran.default -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Superstructure -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/mod/modg/Linux.gfortran.64.openmpi.default -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/include -I/glade/u/apps/ch/opt/netcdf/4.7.3/gnu/7.4.0/include -I/glade/u/apps/ch/opt/netcdf/4.7.3/gnu/7.4.0/include  -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-61-g0687c4c862"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Util/src/ESMF_InitMacros.F90 -o /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/obj/objg/Linux.gfortran.64.openmpi.default/ESMF_InitMacros.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=all,no-pointer -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Util/src -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/build_config/Linux.gfortran.default -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Superstructure -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/mod/modg/Linux.gfortran.64.openmpi.default -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/include -I/glade/u/apps/ch/opt/netcdf/4.7.3/gnu/7.4.0/include -I/glade/u/apps/ch/opt/netcdf/4.7.3/gnu/7.4.0/include  -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-61-g0687c4c862"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Util/src/ESMF_StaggerLocType.F90 -o /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/obj/objg/Linux.gfortran.64.openmpi.default/ESMF_StaggerLocType.o
-/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Util/src/ESMF_TypeKindGet.F90:252:5:
-
-  if (var==var) continue ! dummy check to quiet down compiler warnings
-     1
-Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Util/src/ESMF_TypeKindGet.F90:226:5:
-
-  if (var==var) continue ! dummy check to quiet down compiler warnings
-     1
-Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
 /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Util/src/ESMF_FortranWordsize.F90:423:5:
 
   if (var==var) continue ! dummy check to quiet down compiler warnings
@@ -1274,6 +1264,16 @@ Warning: Pointer at (1) in pointer assignment might outlive the pointer target [
      udt_ptr2 => udt
     1
 Warning: Pointer at (1) in pointer assignment might outlive the pointer target [-Wtarget-lifetime]
+/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Util/src/ESMF_TypeKindGet.F90:252:5:
+
+  if (var==var) continue ! dummy check to quiet down compiler warnings
+     1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Util/src/ESMF_TypeKindGet.F90:226:5:
+
+  if (var==var) continue ! dummy check to quiet down compiler warnings
+     1
+Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=all,no-pointer -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Util/src -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/build_config/Linux.gfortran.default -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Superstructure -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/mod/modg/Linux.gfortran.64.openmpi.default -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/include -I/glade/u/apps/ch/opt/netcdf/4.7.3/gnu/7.4.0/include -I/glade/u/apps/ch/opt/netcdf/4.7.3/gnu/7.4.0/include  -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-61-g0687c4c862"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90 -o /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/obj/objg/Linux.gfortran.64.openmpi.default/ESMF_UtilCubedSphere.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=all,no-pointer -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Util/src -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/build_config/Linux.gfortran.default -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Superstructure -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/mod/modg/Linux.gfortran.64.openmpi.default -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/include -I/glade/u/apps/ch/opt/netcdf/4.7.3/gnu/7.4.0/include -I/glade/u/apps/ch/opt/netcdf/4.7.3/gnu/7.4.0/include  -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-61-g0687c4c862"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Util/src/ESMF_AttPackType.F90 -o /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/obj/objg/Linux.gfortran.64.openmpi.default/ESMF_AttPackType.o
 /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90:1158:11:
@@ -1468,14 +1468,14 @@ mpicxx -c -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLE
 mpicxx -c -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLEUNDERSCORE -m64 -mcmodel=small -pthread  -fopenmp -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/VM/src -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/VM/src/../include -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/build_config/Linux.gfortran.default -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Superstructure -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.7.3/gnu/7.4.0/include -I/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b12-61-g0687c4c862"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop -D__SDIR__='"src/Infrastructure/VM/src"' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2 /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/VM/src/ESMCI_VMKernel.C -o /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/obj/objg/Linux.gfortran.64.openmpi.default/ESMCI_VMKernel.o
 In file included from /glade/u/apps/ch/opt/gnu/7.4.0/include/c++/7.4.0/backward/strstream:50:0,
                  from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/VM/src/../include/ESMCI_VMKernel.h:28,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/VM/src/ESMCI_VMKernel.C:13:
+                 from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/VM/src/../include/ESMCI_VM.h:41,
+                 from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/VM/src/ESMCI_VM.C:40:
 /glade/u/apps/ch/opt/gnu/7.4.0/include/c++/7.4.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
 In file included from /glade/u/apps/ch/opt/gnu/7.4.0/include/c++/7.4.0/backward/strstream:50:0,
                  from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/VM/src/../include/ESMCI_VMKernel.h:28,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/VM/src/../include/ESMCI_VM.h:41,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/VM/src/ESMCI_VM.C:40:
+                 from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/VM/src/ESMCI_VMKernel.C:13:
 /glade/u/apps/ch/opt/gnu/7.4.0/include/c++/7.4.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -1502,14 +1502,14 @@ mpicxx -c -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLE
 In file included from /glade/u/apps/ch/opt/gnu/7.4.0/include/c++/7.4.0/backward/strstream:50:0,
                  from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/VM/interface/../include/ESMCI_VMKernel.h:28,
                  from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/VM/interface/../include/ESMCI_VM.h:41,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/VM/interface/ESMC_VM.C:32:
+                 from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/VM/interface/ESMCI_VM_F.C:20:
 /glade/u/apps/ch/opt/gnu/7.4.0/include/c++/7.4.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
 In file included from /glade/u/apps/ch/opt/gnu/7.4.0/include/c++/7.4.0/backward/strstream:50:0,
                  from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/VM/interface/../include/ESMCI_VMKernel.h:28,
                  from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/VM/interface/../include/ESMCI_VM.h:41,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/VM/interface/ESMCI_VM_F.C:20:
+                 from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/VM/interface/ESMC_VM.C:32:
 /glade/u/apps/ch/opt/gnu/7.4.0/include/c++/7.4.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -3902,14 +3902,6 @@ In file included from /glade/u/apps/ch/opt/gnu/7.4.0/include/c++/7.4.0/backward/
                  from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/include/ESMCI_VMKernel.h:28,
                  from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/include/ESMCI_VM.h:41,
                  from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Base/src/../include/ESMCI_Base.h:27,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Base/src/ESMC_InfoCDef.C:26:
-/glade/u/apps/ch/opt/gnu/7.4.0/include/c++/7.4.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /glade/u/apps/ch/opt/gnu/7.4.0/include/c++/7.4.0/backward/strstream:50:0,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/include/ESMCI_VMKernel.h:28,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/include/ESMCI_VM.h:41,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Base/src/../include/ESMCI_Base.h:27,
                  from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Base/src/../include/ESMCI_Info.h:24,
                  from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Base/src/ESMCI_Info.C:27:
 /glade/u/apps/ch/opt/gnu/7.4.0/include/c++/7.4.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
@@ -3920,6 +3912,14 @@ In file included from /glade/u/apps/ch/opt/gnu/7.4.0/include/c++/7.4.0/backward/
                  from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/include/ESMCI_VM.h:41,
                  from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Base/src/../include/ESMCI_Base.h:27,
                  from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Base/src/ESMC_InfoCDefGeneric.C:36:
+/glade/u/apps/ch/opt/gnu/7.4.0/include/c++/7.4.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /glade/u/apps/ch/opt/gnu/7.4.0/include/c++/7.4.0/backward/strstream:50:0,
+                 from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/include/ESMCI_VMKernel.h:28,
+                 from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/include/ESMCI_VM.h:41,
+                 from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Base/src/../include/ESMCI_Base.h:27,
+                 from /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/Base/src/ESMC_InfoCDef.C:26:
 /glade/u/apps/ch/opt/gnu/7.4.0/include/c++/7.4.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -4119,14 +4119,6 @@ mpicxx -c -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLE
 /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1675:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        for(i=0; i<strlen(options) && i<ESMF_MAXSTR-1; i++) {
                 ~^~~~~~~~~~~~~~~~
-/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)’:
-/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:433:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       if (strlen(this->name) < nameLen) {
-           ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
-/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::print(const char*) const’:
-/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1759:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for(i=0; i<strlen(options) && i<ESMF_MAXSTR-1; i++) {
-                ~^~~~~~~~~~~~~~~~
 /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::get(int, int*, char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, int*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, bool*, bool*, bool*, bool*)’:
 /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:557:14: warning: ‘%s’ directive writing up to 255 bytes into a region of size 241 [-Wformat-overflow=]
      return(rc);
@@ -4197,6 +4189,10 @@ mpicxx -c -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLE
 /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1621:14: note: ‘sprintf’ output between 45 and 300 bytes into a destination of size 256
        sprintf(logMsg, "Alarm %s: invalid state: disabled and ringing.", name);
        ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)’:
+/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:433:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (strlen(this->name) < nameLen) {
+           ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
 /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::enable()’:
 /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:586:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) {
@@ -4269,6 +4265,10 @@ mpicxx -c -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLE
 /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1604:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) {
      ^~
+/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::print(const char*) const’:
+/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1759:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for(i=0; i<strlen(options) && i<ESMF_MAXSTR-1; i++) {
+                ~^~~~~~~~~~~~~~~~
 /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::set(int, const char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, ESMCI::Time*, bool*, bool*, bool*)’:
 /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:344:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) {
@@ -4350,6 +4350,15 @@ mpicxx -c -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLE
      ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
              this->name);
              ~~~~~~~~~~~
+/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function ‘int ESMCI::Calendar::get(int, int*, char*, ESMC_CalKind_Flag*, int*, int, int*, ESMC_I4*, ESMC_I4*, ESMC_I4*, ESMC_I4*, ESMC_I4*)’:
+/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:942:24: warning: ‘%s’ directive writing up to 255 bytes into a region of size 238 [-Wformat-overflow=]
+     return(ESMF_SUCCESS);
+                        ^
+/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:904:16: note: ‘sprintf’ output between 64 and 319 bytes into a destination of size 256
+         sprintf(logMsg, "For calendar name %s, "
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                 "length >= given character array; truncated.", this->name);
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘bool ESMCI::Clock::isStopTime(int*) const’:
 /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:707:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) {
@@ -4430,15 +4439,6 @@ mpicxx -c -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLE
 /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2096:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) {
      ^~
-/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function ‘int ESMCI::Calendar::get(int, int*, char*, ESMC_CalKind_Flag*, int*, int, int*, ESMC_I4*, ESMC_I4*, ESMC_I4*, ESMC_I4*, ESMC_I4*)’:
-/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:942:24: warning: ‘%s’ directive writing up to 255 bytes into a region of size 238 [-Wformat-overflow=]
-     return(ESMF_SUCCESS);
-                        ^
-/glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:904:16: note: ‘sprintf’ output between 64 and 319 bytes into a destination of size 256
-         sprintf(logMsg, "For calendar name %s, "
-         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                 "length >= given character array; truncated.", this->name);
-                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function ‘int ESMCI::Calendar::convertToDate(ESMCI::BaseTime*, ESMC_I4*, ESMC_I8*, int*, int*, ESMC_I4*, ESMC_I8*, ESMC_R8*) const’:
 /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_g_develop/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:1382:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) {
