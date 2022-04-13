@@ -1,4 +1,4 @@
-Wed Apr 13 05:56:25 MDT 2022
+Wed Apr 13 15:03:43 MDT 2022
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.3.0 beta snapshot
@@ -218,8 +218,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Wed Apr 13 05:47:32 MDT 2022 on r1i4n4
-Machine characteristics: Linux r1i4n4 4.12.14-95.51-default #1 SMP Fri Apr 17 08:14:12 UTC 2020 (c6bab98) x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Wed Apr 13 14:44:42 MDT 2022 on r1i5n10
+Machine characteristics: Linux r1i5n10 4.12.14-95.51-default #1 SMP Fri Apr 17 08:14:12 UTC 2020 (c6bab98) x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 make[1]: Entering directory '/glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop'
@@ -1434,17 +1434,17 @@ In file included from /glade/u/apps/ch/opt/gnu/10.1.0/include/c++/10.1.0/backwar
 In file included from /glade/u/apps/ch/opt/gnu/10.1.0/include/c++/10.1.0/backward/strstream:50,
                  from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/include/ESMCI_VMKernel.h:28,
                  from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/include/ESMCI_VM.h:41,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Trace/src/ESMCI_TraceClock.C:31:
+                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/include/ESMCI_Base.h:27,
+                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/include/ESMCI_Comp.h:32,
+                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Trace/src/../include/ESMCI_Trace.h:17,
+                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Trace/src/ESMCI_TraceMetadata.C:17:
 /glade/u/apps/ch/opt/gnu/10.1.0/include/c++/10.1.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
 In file included from /glade/u/apps/ch/opt/gnu/10.1.0/include/c++/10.1.0/backward/strstream:50,
                  from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/include/ESMCI_VMKernel.h:28,
                  from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/include/ESMCI_VM.h:41,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/include/ESMCI_Base.h:27,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/include/ESMCI_Comp.h:32,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Trace/src/../include/ESMCI_Trace.h:17,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Trace/src/ESMCI_TraceMetadata.C:17:
+                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Trace/src/ESMCI_TraceClock.C:31:
 /glade/u/apps/ch/opt/gnu/10.1.0/include/c++/10.1.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
@@ -1517,8 +1517,24 @@ In file included from /glade/u/apps/ch/opt/gnu/10.1.0/include/c++/10.1.0/backwar
                  from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/include/ESMCI_VMKernel.h:28,
                  from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/include/ESMCI_VM.h:41,
                  from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Base/src/../include/ESMCI_Base.h:27,
+                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Base/src/ESMCI_Base.C:33:
+/glade/u/apps/ch/opt/gnu/10.1.0/include/c++/10.1.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from /glade/u/apps/ch/opt/gnu/10.1.0/include/c++/10.1.0/backward/strstream:50,
+                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/include/ESMCI_VMKernel.h:28,
+                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/include/ESMCI_VM.h:41,
+                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Base/src/../include/ESMCI_Base.h:27,
                  from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Base/src/../include/ESMCI_Info.h:24,
                  from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Base/src/ESMCI_Info.C:27:
+/glade/u/apps/ch/opt/gnu/10.1.0/include/c++/10.1.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from /glade/u/apps/ch/opt/gnu/10.1.0/include/c++/10.1.0/backward/strstream:50,
+                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/include/ESMCI_VMKernel.h:28,
+                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/include/ESMCI_VM.h:41,
+                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Base/src/../include/ESMCI_Base.h:27,
+                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Base/src/ESMC_InfoCDef.C:26:
 /glade/u/apps/ch/opt/gnu/10.1.0/include/c++/10.1.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
@@ -1545,22 +1561,6 @@ In file included from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_
 /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Base/src/../include/ESMCI_Base.h:140:53: note: neither the destructor nor the class-specific ‘operator delete’ will be called, even if they are declared when the class is defined
   140 |     void ESMC_BaseDeleteInfo(void) {if (!infoalias) delete info;}
       |                                                     ^~~~~~~~~~~
-In file included from /glade/u/apps/ch/opt/gnu/10.1.0/include/c++/10.1.0/backward/strstream:50,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/include/ESMCI_VMKernel.h:28,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/include/ESMCI_VM.h:41,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Base/src/../include/ESMCI_Base.h:27,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Base/src/ESMCI_Base.C:33:
-/glade/u/apps/ch/opt/gnu/10.1.0/include/c++/10.1.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-   32 | #warning \
-      |  ^~~~~~~
-In file included from /glade/u/apps/ch/opt/gnu/10.1.0/include/c++/10.1.0/backward/strstream:50,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/include/ESMCI_VMKernel.h:28,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/include/ESMCI_VM.h:41,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Base/src/../include/ESMCI_Base.h:27,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Base/src/ESMC_InfoCDef.C:26:
-/glade/u/apps/ch/opt/gnu/10.1.0/include/c++/10.1.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-   32 | #warning \
-      |  ^~~~~~~
 make[8]: Leaving directory '/glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/mod/modO/Linux.gfortran.64.openmpi.default'
 make[7]: Leaving directory '/glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/mod/modO/Linux.gfortran.64.openmpi.default'
 make[6]: Leaving directory '/glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Base/src'
@@ -1905,7 +1905,7 @@ In file included from /glade/u/apps/ch/opt/gnu/10.1.0/include/c++/10.1.0/backwar
                  from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/include/ESMCI_VM.h:41,
                  from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/include/ESMCI_Base.h:27,
                  from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Route/interface/../include/ESMCI_RHandle.h:39,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Route/interface/ESMCI_RHandle_F.C:23:
+                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Route/interface/ESMC_RHandle.C:31:
 /glade/u/apps/ch/opt/gnu/10.1.0/include/c++/10.1.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
@@ -1914,7 +1914,7 @@ In file included from /glade/u/apps/ch/opt/gnu/10.1.0/include/c++/10.1.0/backwar
                  from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/include/ESMCI_VM.h:41,
                  from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/include/ESMCI_Base.h:27,
                  from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Route/interface/../include/ESMCI_RHandle.h:39,
-                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Route/interface/ESMC_RHandle.C:31:
+                 from /glade/scratch/rlong/esmf-testing/gfortran_10.1.0_openmpi_O_develop/src/Infrastructure/Route/interface/ESMCI_RHandle_F.C:23:
 /glade/u/apps/ch/opt/gnu/10.1.0/include/c++/10.1.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
