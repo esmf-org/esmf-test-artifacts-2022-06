@@ -1,4 +1,4 @@
-Thu Apr 14 05:57:35 MDT 2022
+Thu Apr 14 06:03:38 MDT 2022
 #!/bin/sh -l
 #PBS -N test-gfortran_10.1.0_mpt_g.bat
 #PBS -l walltime=2:00:00
