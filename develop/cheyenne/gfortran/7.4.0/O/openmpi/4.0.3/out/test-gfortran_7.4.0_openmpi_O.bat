@@ -1,4 +1,4 @@
-Thu Apr 14 06:00:40 MDT 2022
+Thu Apr 14 11:49:52 MDT 2022
 #!/bin/sh -l
 #PBS -N test-gfortran_7.4.0_openmpi_O.bat
 #PBS -l walltime=2:00:00
@@ -8,6 +8,8 @@ Thu Apr 14 06:00:40 MDT 2022
 JOBID="`echo $PBS_JOBID | cut -d. -f1`"
 
 cd /glade/scratch/rlong/esmf-testing/gfortran_7.4.0_openmpi_O_develop
+
+module load cmake
 module load gnu/7.4.0 openmpi/4.0.3 netcdf/4.7.3
 module list >& module-test.log
 
