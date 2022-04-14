@@ -1,4 +1,4 @@
-Thu Apr 14 05:58:45 MDT 2022
+Thu Apr 14 11:50:57 MDT 2022
 #!/bin/sh -l
 #PBS -N test-gfortran_9.1.0_mpt_O.bat
 #PBS -l walltime=2:00:00
@@ -8,6 +8,8 @@ Thu Apr 14 05:58:45 MDT 2022
 JOBID="`echo $PBS_JOBID | cut -d. -f1`"
 
 cd /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_mpt_O_develop
+
+module load cmake
 module load gnu/9.1.0 mpt/2.22 netcdf/4.7.3
 module list >& module-test.log
 
