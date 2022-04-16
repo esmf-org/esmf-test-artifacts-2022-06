@@ -1,14 +1,15 @@
-Fri Apr 15 05:51:14 MDT 2022
+Sat Apr 16 07:07:25 MDT 2022
 #!/bin/bash -l
 export JOBID=12346
 
-module use /project/esmf/stack/modulefiles
+module use /project/esmf/stack/modulefiles/compilers
 module load gcc/11.2.0 openmpi/4.1.0 netcdf/4.7.4
 module list >& module-test.log
 
 set -x
 export ESMF_NETCDF=nc-config
 
+export ESMF_NETCDF=nc-config
 export ESMF_DIR=/Volumes/esmf/esmf-testing/gfortran_11.2.0_openmpi_g_develop
 export ESMF_COMPILER=gfortran
 export ESMF_COMM=openmpi
