@@ -1,4 +1,4 @@
-Fri Apr 15 03:57:57 GMT 2022
+Sat Apr 16 03:46:39 GMT 2022
 #!/bin/sh -l
 #SBATCH --account=hfv3gfs
 #SBATCH -o build-intel_2020.2_mvapich2_O.bat_%j.o
@@ -10,6 +10,8 @@ Fri Apr 15 03:57:57 GMT 2022
 #SBATCH --ntasks-per-node=24
 #SBATCH --exclusive
 export JOBID=$SLURM_JOBID
+
+module load cmake
 export ESMF_MPIRUN=mpirun.srun
 export LIBRARY_PATH=$LIBRARY_PATH:/apps/mvapich2/2.3-intel/lib
 export ESMF_CXXCOMPILEOPTS="-I/apps/mvapich2/2.3-intel/include"

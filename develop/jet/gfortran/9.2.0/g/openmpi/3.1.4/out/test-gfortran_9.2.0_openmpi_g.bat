@@ -1,4 +1,4 @@
-Fri Apr 15 03:58:11 GMT 2022
+Sat Apr 16 03:50:49 GMT 2022
 #!/bin/sh -l
 #SBATCH --account=hfv3gfs
 #SBATCH -o test-gfortran_9.2.0_openmpi_g.bat_%j.o
@@ -10,6 +10,8 @@ Fri Apr 15 03:58:11 GMT 2022
 #SBATCH --ntasks-per-node=24
 #SBATCH --exclusive
 export JOBID=$SLURM_JOBID
+
+module load cmake
 export ESMF_NETCDF_LIBS="-lnetcdff -lnetcdf -lhdf5_hl -lhdf5"
 module load gnu/9.2.0 openmpi/3.1.4 netcdf/4.7.2
 module load hdf5/1.10.5 

@@ -1,4 +1,4 @@
-Fri Apr 15 03:53:19 GMT 2022
+Sat Apr 16 03:48:16 GMT 2022
 #!/bin/sh -l
 #SBATCH --account=hfv3gfs
 #SBATCH -o build-intel_2020.2_intelmpi_g.bat_%j.o
@@ -10,6 +10,8 @@ Fri Apr 15 03:53:19 GMT 2022
 #SBATCH --ntasks-per-node=24
 #SBATCH --exclusive
 export JOBID=$SLURM_JOBID
+
+module load cmake
 module load intel/2020.2 impi/2020.2 netcdf/4.7.0
 module load hdf5/1.10.6 
 module list >& module-build.log
