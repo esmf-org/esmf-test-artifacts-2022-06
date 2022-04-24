@@ -1,4 +1,4 @@
-Sat Apr 23 02:27:41 EDT 2022
+Sun Apr 24 02:06:09 EDT 2022
 #!/bin/bash -l
 export JOBID=12345
 module load intel-oneapi-compilers/2021.2.0-gcc-9.3.0 intel-oneapi-mpi/2021.2.0-gcc-9.3.0 netcdf-c/4.8.0-intel-2021.2.0
