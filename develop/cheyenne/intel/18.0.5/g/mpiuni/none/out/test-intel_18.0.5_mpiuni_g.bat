@@ -1,4 +1,4 @@
-Mon May 2 07:28:11 MDT 2022
+Tue May 3 06:19:20 MDT 2022
 #!/bin/sh -l
 #PBS -N test-intel_18.0.5_mpiuni_g.bat
 #PBS -l walltime=3:00:00
