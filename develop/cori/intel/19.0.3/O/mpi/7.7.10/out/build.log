@@ -1,4 +1,4 @@
-Fri May 6 09:32:29 PDT 2022
+Fri May 6 09:32:41 PDT 2022
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.3.0 beta snapshot
@@ -68,7 +68,15 @@ NetCDF Fortran version: netCDF-Fortran 4.4.5
  
 --------------------------------------------------------------
  * User set ESMF environment variables *
-cat: envecho.out: No such file or directory
+ESMF_BOPT=O
+ESMF_COMM=mpi
+ESMF_COMPILER=intel
+ESMF_DIR=/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop
+ESMF_NETCDF=nc-config
+ESMF_NETCDFF_LIBS=-lnetcdff
+ESMF_NETCDF_LIBS=-lnetcdf
+ESMF_TESTEXHAUSTIVE=ON
+ESMF_TESTWITHTHREADS=ON
  
 --------------------------------------------------------------
  * ESMF environment variables *
@@ -207,15 +215,11 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Fri May 6 09:30:30 PDT 2022 on nid02243
-Machine characteristics: Linux nid02243 5.3.18-24.46_6.0.27-cray_ari_c #1 SMP Mon Sep 13 06:25:03 UTC 2021 (afa39b6) x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Fri May 6 09:30:30 PDT 2022 on nid01513
+Machine characteristics: Linux nid01513 5.3.18-24.46_6.0.27-cray_ari_c #1 SMP Mon Sep 13 06:25:03 UTC 2021 (afa39b6) x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 make[1]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop'
-Making directory /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/lib/libO/Unicos.intel.64.mpi.default for library
-Making directory /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/include for include files
-Making directory /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/mod/modO/Unicos.intel.64.mpi.default for *.mod files
-Making directory /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/obj/objO/Unicos.intel.64.mpi.default for build-intel_19.0.3_mpi_O.bat_58689675.o build-intel_19.0.3_mpi_O.bat_58728721.o files
 cd /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop ;\
 make ACTION=tree_include tree
 make[2]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop'
@@ -230,6 +234,7 @@ tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_d
 make[5]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/prologue/yaml-cpp'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/prologue/yaml-cpp/src
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/prologue/yaml-cpp/src'
+cat: available.tmp: No such file or directory
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/prologue/yaml-cpp/src'
 make[5]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/prologue/yaml-cpp'
 make[4]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/prologue'
@@ -254,6 +259,7 @@ make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Util/src'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Util/interface
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Util/interface'
+/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/scripts/available: line 7: [: /usr/bin/git: unary operator expected
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Util/interface'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Util/tests
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Util/tests'
@@ -293,6 +299,7 @@ make[7]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/VM/src'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/VM/interface
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/VM/interface'
+cp: cannot create regular file '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/include/ESMC_VM.h': File exists
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/VM/interface'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/VM/doc
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/VM/doc'
@@ -306,12 +313,13 @@ make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.
 make[5]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/VM'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Trace
 make[5]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Trace'
+/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/scripts/available: line 7: [: /usr/bin/git: unary operator expected
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Trace/src
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Trace/src'
-cp: cannot create regular file '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/include/ESMCI_TraceRegion.h': File exists
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Trace/src'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Trace/interface
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Trace/interface'
+cat: available.tmp: No such file or directory
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Trace/interface'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Trace/tests
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Trace/tests'
@@ -327,13 +335,13 @@ tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_d
 make[5]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Base'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Base/src
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Base/src'
-cat: available.tmp: No such file or directory
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Base/src'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Base/interface
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Base/interface'
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Base/interface'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Base/tests
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Base/tests'
+/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/scripts/available: line 7: [: /usr/bin/git: unary operator expected
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Base/tests'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Base/examples
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Base/examples'
@@ -346,10 +354,10 @@ tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_d
 make[5]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/TimeMgr'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/TimeMgr/src
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/TimeMgr/src'
+cp: cannot create regular file '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/include/ESMCI_TimeInterval.h': File exists
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/TimeMgr/src'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/TimeMgr/interface
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/TimeMgr/interface'
-cp: cannot create regular file '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/include/ESMC_Time.h': File exists
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/TimeMgr/interface'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/TimeMgr/examples
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/TimeMgr/examples'
@@ -501,6 +509,7 @@ make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/ArrayBundle/examples'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/ArrayBundle/doc
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/ArrayBundle/doc'
+cat: available.tmp: No such file or directory
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/ArrayBundle/doc'
 make[5]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/ArrayBundle'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/IO
@@ -559,24 +568,27 @@ make[7]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19
 make[7]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/Lapack'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/BLAS
 make[7]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/BLAS'
+cat: available.tmp: No such file or directory
 make[7]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/BLAS'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/Moab
 make[7]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/Moab'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/Moab/DiscreteGeometry
 make[8]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/Moab/DiscreteGeometry'
+cat: available.tmp: No such file or directory
 make[8]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/Moab/DiscreteGeometry'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/Moab/IntxMesh
 make[8]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/Moab/IntxMesh'
-cat: available.tmp: No such file or directory
 make[8]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/Moab/IntxMesh'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/Moab/io
 make[8]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/Moab/io'
+cat: available.tmp: No such file or directory
 make[8]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/Moab/io'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization
 make[8]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization'
 make[8]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/Moab/parallel
 make[8]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/Moab/parallel'
+cat: available.tmp: No such file or directory
 make[8]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/Moab/parallel'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/Moab/verdict
 make[8]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src/Moab/verdict'
@@ -585,12 +597,9 @@ make[7]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/src'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/examples
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/examples'
-cat: available.tmp: No such file or directory
-cat: available.tmp: No such file or directory
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/examples'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/interface
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/interface'
-cp: cannot create regular file '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/include/ESMC_Mesh.h': File exists
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/interface'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/doc
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh/doc'
@@ -601,6 +610,7 @@ make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.
 make[5]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/Mesh'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/XGridGeomBase
 make[5]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/XGridGeomBase'
+cat: available.tmp: No such file or directory
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/XGridGeomBase/src
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/XGridGeomBase/src'
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/XGridGeomBase/src'
@@ -618,6 +628,7 @@ make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/GridUtil/interface'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/GridUtil/tests
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/GridUtil/tests'
+cat: available.tmp: No such file or directory
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/GridUtil/tests'
 make[5]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/GridUtil'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/LocStream
@@ -633,9 +644,11 @@ make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/LocStream/interface'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/LocStream/tests
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/LocStream/tests'
+cat: available.tmp: No such file or directory
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/LocStream/tests'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/LocStream/examples
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/LocStream/examples'
+/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/scripts/available: line 7: [: /usr/bin/git: unary operator expected
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/LocStream/examples'
 make[5]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/LocStream'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Infrastructure/XGrid
@@ -760,17 +773,15 @@ make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.
 make[5]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Superstructure/State'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Superstructure/Component
 make[5]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Superstructure/Component'
-cat: available.tmp: No such file or directory
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Superstructure/Component/src
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Superstructure/Component/src'
-cp: cannot create regular file '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/include/ESMCI_FTable.h': File exists
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Superstructure/Component/src'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Superstructure/Component/interface
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Superstructure/Component/interface'
+/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/scripts/available: line 7: [: /usr/bin/git: unary operator expected
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Superstructure/Component/interface'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Superstructure/Component/examples
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Superstructure/Component/examples'
-cat: available.tmp: No such file or directory
 make[6]: Leaving directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Superstructure/Component/examples'
 tree_include in: /global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Superstructure/Component/tests
 make[6]: Entering directory '/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_O_develop/src/Superstructure/Component/tests'
