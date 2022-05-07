@@ -1,4 +1,4 @@
-Fri May 6 01:56:59 EDT 2022
+Sat May 7 01:34:31 EDT 2022
 #!/bin/sh -l
 #SBATCH --account=s2326
 #SBATCH -o build-intel_19.1.3_intelmpi_g.bat_%j.o
