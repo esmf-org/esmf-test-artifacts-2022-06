@@ -1,4 +1,4 @@
-Fri Mar 18 12:37:03 MDT 2022
+Sat May 7 17:12:37 MDT 2022
 #!/bin/sh -l
 #PBS -N test-intel_18.0.5_intelmpi_g.bat
 #PBS -l walltime=3:00:00
@@ -8,6 +8,8 @@ Fri Mar 18 12:37:03 MDT 2022
 JOBID="`echo $PBS_JOBID | cut -d. -f1`"
 
 cd /glade/scratch/rlong/esmf-testing/intel_18.0.5_intelmpi_g_develop
+
+module load python cmake
 module load intel/18.0.5 impi/2018.4.274 netcdf/4.6.3
 module list >& module-test.log
 
@@ -33,7 +35,7 @@ cd ../src/addon/ESMPy
 
 export PATH=$PATH:$HOME/.local/bin
 python3 setup.py build 2>&1 | tee python_build.log
-ssh cheyenne6 /glade/scratch/rlong/esmf-testing/intel_18.0.5_intelmpi_g_develop/runpython.sh 2>&1 | tee python_build.log
+ssh cheyenne5 /glade/scratch/rlong/esmf-testing/intel_18.0.5_intelmpi_g_develop/runpython.sh 2>&1 | tee python_build.log
 python3 setup.py test 2>&1 | tee python_test.log
 python3 setup.py test_examples 2>&1 | tee python_examples.log
 python3 setup.py test_regrid_from_file 2>&1 | tee python_regrid.log
