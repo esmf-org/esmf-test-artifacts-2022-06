@@ -1,4 +1,4 @@
-Fri Mar 18 12:39:35 MDT 2022
+Sat May 7 17:10:48 MDT 2022
 #!/bin/sh -l
 #PBS -N build-intel_18.0.5_openmpi_g.bat
 #PBS -l walltime=1:00:00
@@ -9,6 +9,8 @@ Fri Mar 18 12:39:35 MDT 2022
 JOBID="`echo $PBS_JOBID | cut -d. -f1`"
 
 cd /glade/scratch/rlong/esmf-testing/intel_18.0.5_openmpi_g_develop
+
+module load python cmake
 module load intel/18.0.5 openmpi/3.1.4 netcdf/4.6.3
 module list >& module-build.log
 
