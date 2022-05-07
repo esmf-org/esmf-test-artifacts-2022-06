@@ -1,8 +1,8 @@
 
 ===================================================================
 Build for = intel_2020.2_intelmpi_O_develop, mpi version 2020.2 on jet esmf_os: Linux
-Build time = 2022-05-03 04:07:18
-git hash = v8.3.0b13-7-g0b3ec3b
+Build time = 2022-05-07 04:07:27
+git hash = v8.3.0b14-2-gde129fc
 
 unit test results   	-1 -1
 system test results 	-1 -1
@@ -22,7 +22,7 @@ Currently Loaded Modules:
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.3.0 beta snapshot
-v8.3.0b13-7-g0b3ec3b299
+v8.3.0b14-2-gde129fc120
 --------------------------------------------------------------
 On branch develop
 Your branch is up to date with 'origin/develop'.
@@ -31,16 +31,14 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
 	build-intel_2020.2_intelmpi_O.bat
-	build-intel_2020.2_intelmpi_O.bat_2979665.e
-	build-intel_2020.2_intelmpi_O.bat_2979665.o
+	build-intel_2020.2_intelmpi_O.bat_3176201.e
+	build-intel_2020.2_intelmpi_O.bat_3176201.o
 	getres-build.sh
 	getres-test.sh
 	nuopc-app-prototypes/
-	src/Infrastructure/IO/PIO/Build/
-	src/Infrastructure/IO/PIO/Install/
 	test-intel_2020.2_intelmpi_O.bat
-	test-intel_2020.2_intelmpi_O.bat_2979666.e
-	test-intel_2020.2_intelmpi_O.bat_2979666.o
+	test-intel_2020.2_intelmpi_O.bat_3176202.e
+	test-intel_2020.2_intelmpi_O.bat_3176202.o
 
 nothing added to commit but untracked files present (use "git add" to track)
 --------------------------------------------------------------
@@ -190,7 +188,7 @@ Fortran compiler flags:
 ESMF_F90COMPILER: mpiifort
 ESMF_F90COMPILEOPTS: -O -fPIC -debug minimal -assume realloc_lhs -m64 -mcmodel=small -pthread -threads  -qopenmp
 ESMF_F90COMPILEPATHS: -I/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_intelmpi_O_develop/mod/modO/Linux.intel.64.intelmpi.default -I/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_intelmpi_O_develop/src/include -I/apps/netcdf/4.7.0/intel/18.0.5.274/include -I/apps/netcdf/4.7.0/intel/18.0.5.274/include
-ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b13-7-g0b3ec3b299' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_intelmpi_O_develop
+ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b14-2-gde129fc120' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_intelmpi_O_develop
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: 
 ESMF_F90COMPILEFIXCPP: 
@@ -207,7 +205,7 @@ C++ compiler flags:
 ESMF_CXXCOMPILER: mpiicpc
 ESMF_CXXCOMPILEOPTS: -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp
 ESMF_CXXCOMPILEPATHS:  -I/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_intelmpi_O_develop/src/include  -I/apps/netcdf/4.7.0/intel/18.0.5.274/include -I/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_intelmpi_O_develop/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b13-7-g0b3ec3b299' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_intelmpi_O_develop -D__SDIR__='' -DESMF_CXXSTD=11
+ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b14-2-gde129fc120' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_intelmpi_O_develop -D__SDIR__='' -DESMF_CXXSTD=11
 
 C++ linker flags:
 ESMF_CXXLINKOPTS:   -m64 -mcmodel=small -pthread -Wl,--no-as-needed  -qopenmp
@@ -220,7 +218,7 @@ C compiler flags:
 ESMF_CCOMPILER: mpiicc
 ESMF_CCOMPILEOPTS:  -O -DNDEBUG -fPIC -debug minimal
 ESMF_CCOMPILEPATHS:  -I/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_intelmpi_O_develop/src/include  
-ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b13-7-g0b3ec3b299' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_intelmpi_O_develop -D__SDIR__=''
+ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b14-2-gde129fc120' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_intelmpi_O_develop -D__SDIR__=''
 
 C linker flags:
 ESMF_CLINKOPTS:  
@@ -243,8 +241,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Tue May 3 04:07:23 GMT 2022 on x720
-Machine characteristics: Linux x720 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Sat May 7 04:07:32 GMT 2022 on x57
+Machine characteristics: Linux x57 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
 
 
