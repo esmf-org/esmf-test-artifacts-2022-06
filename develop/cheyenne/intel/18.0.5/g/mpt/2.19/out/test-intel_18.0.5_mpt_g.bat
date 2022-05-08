@@ -1,4 +1,4 @@
-Sat May 7 18:43:16 MDT 2022
+Sun May 8 06:35:38 MDT 2022
 #!/bin/sh -l
 #PBS -N test-intel_18.0.5_mpt_g.bat
 #PBS -l walltime=3:00:00
@@ -35,7 +35,7 @@ cd ../src/addon/ESMPy
 
 export PATH=$PATH:$HOME/.local/bin
 python3 setup.py build 2>&1 | tee python_build.log
-ssh cheyenne5 /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_develop/runpython.sh 2>&1 | tee python_build.log
+ssh chadmin3 /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_develop/runpython.sh 2>&1 | tee python_build.log
 python3 setup.py test 2>&1 | tee python_test.log
 python3 setup.py test_examples 2>&1 | tee python_examples.log
 python3 setup.py test_regrid_from_file 2>&1 | tee python_regrid.log
