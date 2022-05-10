@@ -1,0 +1,66 @@
+build time -- 2022-05-10 01:10:09.167259
+srun: cluster configuration lacks support for cpu binding
+  Beginning Test, file ESMF_DELayoutWorkQueueUTest.F90, line 170
+  Beginning Test, file ESMF_DELayoutWorkQueueUTest.F90, line 170
+  NUMBER_OF_PROCESSORS           4
+  Beginning Test, file ESMF_DELayoutWorkQueueUTest.F90, line 170
+  Beginning Test, file ESMF_DELayoutWorkQueueUTest.F90, line 170
+  NUMBER_OF_PROCESSORS           4
+  NUMBER_OF_PROCESSORS           4
+  NUMBER_OF_PROCESSORS           4
+  PASS  GridCompCreate() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 187
+  PASS  GridCompCreate() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 187
+  PASS  GridCompCreate() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 187
+  PASS  GridCompCreate() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 187
+  PASS  GridCompSetServices() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 193
+  PASS  GridCompSetServices() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 193
+  PASS  GridCompSetServices() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 193
+  PASS  GridCompSetServices() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 193
+  PASS  Run work queue - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 201
+  PASS  Run work queue - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 201
+ <round 1> PET            0  time:    6.7399814724922180E-005
+ <round 1> PET            3  time:    9.1604888439178467E-005
+  PASS  GridCompDestroy() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 209
+  PASS  GridCompDestroy() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 209
+  PASS  Run work queue - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 201
+ <round 1> PET            1  time:    4.0133251119405031     
+  PASS  GridCompDestroy() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 209
+  PASS  Run work queue - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 201
+ <round 1> PET            2  time:    6.0133425872772932     
+  PASS  GridCompDestroy() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 209
+  PASS  GridCompCreate() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 217
+  PASS  GridCompCreate() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 217
+ *** hi from mygcomp_setvm_withthreads ***
+  PASS  GridCompSetVM() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 227
+  PASS  GridCompCreate() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 217
+ *** hi from mygcomp_setvm_withthreads ***
+  PASS  GridCompSetVM() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 227
+  PASS  GridCompCreate() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 217
+ *** hi from mygcomp_setvm_withthreads ***
+  PASS  GridCompSetVM() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 227
+ *** hi from mygcomp_setvm_withthreads ***
+  PASS  GridCompSetVM() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 227
+  PASS  GridCompSetServices() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 233
+  PASS  GridCompSetServices() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 233
+  PASS  GridCompSetServices() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 233
+  PASS  GridCompSetServices() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 233
+  PASS  Run work queue - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 241
+ <round 2> PET            1  time:    2.4956836402416229     
+  PASS  GridCompDestroy() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 249
+  Ending Test, file ESMF_DELayoutWorkQueueUTest.F90, line 257
+  PASS  Run work queue - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 241
+ <round 2> PET            3  time:    2.5265183430165052     
+  PASS  GridCompDestroy() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 249
+  Ending Test, file ESMF_DELayoutWorkQueueUTest.F90, line 257
+  PASS  Run work queue - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 241
+ <round 2> PET            0  time:    2.5620200615376234     
+  PASS  Run work queue - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 241
+ <round 2> PET            2  time:    2.5618400257080793     
+  PASS  GridCompDestroy() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 249
+  Ending Test, file ESMF_DELayoutWorkQueueUTest.F90, line 257
+  PASS  GridCompDestroy() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 249
+  Ending Test, file ESMF_DELayoutWorkQueueUTest.F90, line 257
+  PET           0  Test Elapsed Time    16122.865999999998       msec.
+  PET           1  Test Elapsed Time    6088.7500000000000       msec.
+  PET           2  Test Elapsed Time    6023.6939999999995       msec.
+  PET           3  Test Elapsed Time    6056.7860000000001       msec.
