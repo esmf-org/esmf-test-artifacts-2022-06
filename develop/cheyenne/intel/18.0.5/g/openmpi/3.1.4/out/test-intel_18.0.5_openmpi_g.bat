@@ -1,4 +1,4 @@
-Sun May 15 06:39:48 MDT 2022
+Sun May 15 08:09:59 MDT 2022
 #!/bin/sh -l
 #PBS -N test-intel_18.0.5_openmpi_g.bat
 #PBS -l walltime=3:00:00
