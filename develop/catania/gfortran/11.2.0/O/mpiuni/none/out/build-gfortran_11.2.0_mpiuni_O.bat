@@ -1,4 +1,4 @@
-Wed May 18 13:08:44 MDT 2022
+Thu May 19 12:49:30 MDT 2022
 #!/bin/bash -l
 export JOBID=12345
 
@@ -11,6 +11,7 @@ set -x
 export ESMF_NETCDF=nc-config
 
 export ESMF_NETCDF=nc-config
+export ESMF_MPILAUNCHOPTIONS=--oversubscribe
 export ESMF_DIR=/Volumes/esmf/esmf-testing/gfortran_11.2.0_mpiuni_O_develop
 export ESMF_COMPILER=gfortran
 export ESMF_COMM=mpiuni
