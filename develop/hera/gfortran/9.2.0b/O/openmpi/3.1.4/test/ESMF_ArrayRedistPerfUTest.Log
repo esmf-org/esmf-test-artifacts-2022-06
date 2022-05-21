@@ -1,0 +1,241 @@
+build time -- 2022-05-21 05:55:19
+20220521 060354.077 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220521 060354.077 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220521 060354.077 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220521 060354.077 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220521 060354.077 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220521 060354.077 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220521 060354.077 INFO             PET0 Running with ESMF Version   : v8.3.0b16
+20220521 060354.077 INFO             PET0 ESMF library build date/time: "May 21 2022" "05:54:18"
+20220521 060354.077 INFO             PET0 ESMF library build location : /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_openmpi_O_develop
+20220521 060354.077 INFO             PET0 ESMF_COMM                   : openmpi
+20220521 060354.078 INFO             PET0 ESMF_MOAB                   : enabled
+20220521 060354.078 INFO             PET0 ESMF_LAPACK                 : enabled
+20220521 060354.078 INFO             PET0 ESMF_NETCDF                 : disabled
+20220521 060354.078 INFO             PET0 ESMF_PNETCDF                : disabled
+20220521 060354.078 INFO             PET0 ESMF_PIO                    : disabled
+20220521 060354.078 INFO             PET0 ESMF_YAMLCPP                : enabled
+20220521 060354.078 INFO             PET0  Beginning Test, file ESMF_ArrayRedistPerfUTest.F90, line 75
+20220521 060354.078 INFO             PET0  NUMBER_OF_PROCESSORS           6
+20220521 060354.083 INFO             PET0  PASS  GridCreate on src side - Test, ESMF_ArrayRedistPerfUTest.F90, line 104
+20220521 060354.083 INFO             PET0  PASS  FieldCreate on src side - Test, ESMF_ArrayRedistPerfUTest.F90, line 111
+20220521 060354.088 INFO             PET0  PASS  FieldFill on src side - Test, ESMF_ArrayRedistPerfUTest.F90, line 118
+20220521 060354.088 INFO             PET0  PASS  Get srcArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 125
+20220521 060354.089 INFO             PET0  PASS  GridCreate on dst side - Test, ESMF_ArrayRedistPerfUTest.F90, line 136
+20220521 060354.090 INFO             PET0  PASS  FieldCreate on dst side - Test, ESMF_ArrayRedistPerfUTest.F90, line 143
+20220521 060354.090 INFO             PET0  PASS  FieldFill on dst side - Test, ESMF_ArrayRedistPerfUTest.F90, line 150
+20220521 060354.090 INFO             PET0  PASS  Get dstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 157
+20220521 060354.090 INFO             PET0  PASS  FieldCreate on dst side for tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 164
+20220521 060354.094 INFO             PET0  PASS  FieldFill on dst side for tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 171
+20220521 060354.094 INFO             PET0  PASS  Get tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 178
+20220521 060354.399 INFO             PET0  PASS  ArrayRedistStore() - Test, ESMF_ArrayRedistPerfUTest.F90, line 188
+20220521 060354.399 INFO             PET0  PASS  ArrayRedist() - Test, ESMF_ArrayRedistPerfUTest.F90, line 198
+20220521 060354.399 INFO             PET0  PASS  Get data pointer into dstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 205
+20220521 060354.399 INFO             PET0  PASS  Get data pointer into tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 212
+20220521 060354.399 INFO             PET0  PASS  Check dst data - Test, ESMF_ArrayRedistPerfUTest.F90, line 229
+20220521 060354.399 INFO             PET0  ArrayRedistStore() performance:   0.30257770046591759       seconds.
+20220521 060354.399 INFO             PET0  PASS  Check ArrayRedistStore() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 243
+20220521 060354.399 INFO             PET0  ArrayRedist() performance:    7.3692202568054199E-004  seconds.
+20220521 060354.399 INFO             PET0  PASS  Check ArrayRedist() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 257
+20220521 060354.400 INFO             PET0  Ending Test, file ESMF_ArrayRedistPerfUTest.F90, line 266
+20220521 060354.400 INFO             PET0 Finalizing ESMF
+20220521 060354.077 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220521 060354.078 INFO             PET1 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220521 060354.078 INFO             PET1 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220521 060354.078 INFO             PET1 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220521 060354.078 INFO             PET1 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220521 060354.078 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220521 060354.078 INFO             PET1 Running with ESMF Version   : v8.3.0b16
+20220521 060354.078 INFO             PET1 ESMF library build date/time: "May 21 2022" "05:54:18"
+20220521 060354.078 INFO             PET1 ESMF library build location : /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_openmpi_O_develop
+20220521 060354.078 INFO             PET1 ESMF_COMM                   : openmpi
+20220521 060354.078 INFO             PET1 ESMF_MOAB                   : enabled
+20220521 060354.078 INFO             PET1 ESMF_LAPACK                 : enabled
+20220521 060354.078 INFO             PET1 ESMF_NETCDF                 : disabled
+20220521 060354.078 INFO             PET1 ESMF_PNETCDF                : disabled
+20220521 060354.078 INFO             PET1 ESMF_PIO                    : disabled
+20220521 060354.078 INFO             PET1 ESMF_YAMLCPP                : enabled
+20220521 060354.078 INFO             PET1  Beginning Test, file ESMF_ArrayRedistPerfUTest.F90, line 75
+20220521 060354.078 INFO             PET1  NUMBER_OF_PROCESSORS           6
+20220521 060354.079 INFO             PET1  PASS  GridCreate on src side - Test, ESMF_ArrayRedistPerfUTest.F90, line 104
+20220521 060354.079 INFO             PET1  PASS  FieldCreate on src side - Test, ESMF_ArrayRedistPerfUTest.F90, line 111
+20220521 060354.085 INFO             PET1  PASS  FieldFill on src side - Test, ESMF_ArrayRedistPerfUTest.F90, line 118
+20220521 060354.085 INFO             PET1  PASS  Get srcArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 125
+20220521 060354.087 INFO             PET1  PASS  GridCreate on dst side - Test, ESMF_ArrayRedistPerfUTest.F90, line 136
+20220521 060354.087 INFO             PET1  PASS  FieldCreate on dst side - Test, ESMF_ArrayRedistPerfUTest.F90, line 143
+20220521 060354.087 INFO             PET1  PASS  FieldFill on dst side - Test, ESMF_ArrayRedistPerfUTest.F90, line 150
+20220521 060354.087 INFO             PET1  PASS  Get dstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 157
+20220521 060354.087 INFO             PET1  PASS  FieldCreate on dst side for tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 164
+20220521 060354.091 INFO             PET1  PASS  FieldFill on dst side for tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 171
+20220521 060354.091 INFO             PET1  PASS  Get tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 178
+20220521 060354.399 INFO             PET1  PASS  ArrayRedistStore() - Test, ESMF_ArrayRedistPerfUTest.F90, line 188
+20220521 060354.399 INFO             PET1  PASS  ArrayRedist() - Test, ESMF_ArrayRedistPerfUTest.F90, line 198
+20220521 060354.399 INFO             PET1  PASS  Get data pointer into dstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 205
+20220521 060354.399 INFO             PET1  PASS  Get data pointer into tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 212
+20220521 060354.399 INFO             PET1  PASS  Check dst data - Test, ESMF_ArrayRedistPerfUTest.F90, line 229
+20220521 060354.399 INFO             PET1  ArrayRedistStore() performance:   0.30256829038262367       seconds.
+20220521 060354.399 INFO             PET1  PASS  Check ArrayRedistStore() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 243
+20220521 060354.400 INFO             PET1  ArrayRedist() performance:    7.3422770947217941E-004  seconds.
+20220521 060354.400 INFO             PET1  PASS  Check ArrayRedist() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 257
+20220521 060354.400 INFO             PET1  Ending Test, file ESMF_ArrayRedistPerfUTest.F90, line 266
+20220521 060354.400 INFO             PET1 Finalizing ESMF
+20220521 060354.078 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220521 060354.078 INFO             PET2 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220521 060354.078 INFO             PET2 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220521 060354.078 INFO             PET2 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220521 060354.078 INFO             PET2 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220521 060354.078 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220521 060354.078 INFO             PET2 Running with ESMF Version   : v8.3.0b16
+20220521 060354.078 INFO             PET2 ESMF library build date/time: "May 21 2022" "05:54:18"
+20220521 060354.078 INFO             PET2 ESMF library build location : /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_openmpi_O_develop
+20220521 060354.078 INFO             PET2 ESMF_COMM                   : openmpi
+20220521 060354.078 INFO             PET2 ESMF_MOAB                   : enabled
+20220521 060354.078 INFO             PET2 ESMF_LAPACK                 : enabled
+20220521 060354.078 INFO             PET2 ESMF_NETCDF                 : disabled
+20220521 060354.078 INFO             PET2 ESMF_PNETCDF                : disabled
+20220521 060354.078 INFO             PET2 ESMF_PIO                    : disabled
+20220521 060354.078 INFO             PET2 ESMF_YAMLCPP                : enabled
+20220521 060354.078 INFO             PET2  Beginning Test, file ESMF_ArrayRedistPerfUTest.F90, line 75
+20220521 060354.078 INFO             PET2  NUMBER_OF_PROCESSORS           6
+20220521 060354.079 INFO             PET2  PASS  GridCreate on src side - Test, ESMF_ArrayRedistPerfUTest.F90, line 104
+20220521 060354.079 INFO             PET2  PASS  FieldCreate on src side - Test, ESMF_ArrayRedistPerfUTest.F90, line 111
+20220521 060354.084 INFO             PET2  PASS  FieldFill on src side - Test, ESMF_ArrayRedistPerfUTest.F90, line 118
+20220521 060354.084 INFO             PET2  PASS  Get srcArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 125
+20220521 060354.086 INFO             PET2  PASS  GridCreate on dst side - Test, ESMF_ArrayRedistPerfUTest.F90, line 136
+20220521 060354.086 INFO             PET2  PASS  FieldCreate on dst side - Test, ESMF_ArrayRedistPerfUTest.F90, line 143
+20220521 060354.086 INFO             PET2  PASS  FieldFill on dst side - Test, ESMF_ArrayRedistPerfUTest.F90, line 150
+20220521 060354.086 INFO             PET2  PASS  Get dstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 157
+20220521 060354.086 INFO             PET2  PASS  FieldCreate on dst side for tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 164
+20220521 060354.091 INFO             PET2  PASS  FieldFill on dst side for tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 171
+20220521 060354.091 INFO             PET2  PASS  Get tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 178
+20220521 060354.399 INFO             PET2  PASS  ArrayRedistStore() - Test, ESMF_ArrayRedistPerfUTest.F90, line 188
+20220521 060354.399 INFO             PET2  PASS  ArrayRedist() - Test, ESMF_ArrayRedistPerfUTest.F90, line 198
+20220521 060354.399 INFO             PET2  PASS  Get data pointer into dstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 205
+20220521 060354.399 INFO             PET2  PASS  Get data pointer into tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 212
+20220521 060354.399 INFO             PET2  PASS  Check dst data - Test, ESMF_ArrayRedistPerfUTest.F90, line 229
+20220521 060354.399 INFO             PET2  ArrayRedistStore() performance:   0.30257568042725325       seconds.
+20220521 060354.399 INFO             PET2  PASS  Check ArrayRedistStore() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 243
+20220521 060354.399 INFO             PET2  ArrayRedist() performance:    7.2589423507452011E-004  seconds.
+20220521 060354.399 INFO             PET2  PASS  Check ArrayRedist() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 257
+20220521 060354.400 INFO             PET2  Ending Test, file ESMF_ArrayRedistPerfUTest.F90, line 266
+20220521 060354.400 INFO             PET2 Finalizing ESMF
+20220521 060354.077 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220521 060354.077 INFO             PET3 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220521 060354.077 INFO             PET3 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220521 060354.077 INFO             PET3 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220521 060354.077 INFO             PET3 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220521 060354.077 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220521 060354.077 INFO             PET3 Running with ESMF Version   : v8.3.0b16
+20220521 060354.077 INFO             PET3 ESMF library build date/time: "May 21 2022" "05:54:18"
+20220521 060354.077 INFO             PET3 ESMF library build location : /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_openmpi_O_develop
+20220521 060354.077 INFO             PET3 ESMF_COMM                   : openmpi
+20220521 060354.078 INFO             PET3 ESMF_MOAB                   : enabled
+20220521 060354.078 INFO             PET3 ESMF_LAPACK                 : enabled
+20220521 060354.078 INFO             PET3 ESMF_NETCDF                 : disabled
+20220521 060354.078 INFO             PET3 ESMF_PNETCDF                : disabled
+20220521 060354.078 INFO             PET3 ESMF_PIO                    : disabled
+20220521 060354.078 INFO             PET3 ESMF_YAMLCPP                : enabled
+20220521 060354.078 INFO             PET3  Beginning Test, file ESMF_ArrayRedistPerfUTest.F90, line 75
+20220521 060354.078 INFO             PET3  NUMBER_OF_PROCESSORS           6
+20220521 060354.079 INFO             PET3  PASS  GridCreate on src side - Test, ESMF_ArrayRedistPerfUTest.F90, line 104
+20220521 060354.079 INFO             PET3  PASS  FieldCreate on src side - Test, ESMF_ArrayRedistPerfUTest.F90, line 111
+20220521 060354.085 INFO             PET3  PASS  FieldFill on src side - Test, ESMF_ArrayRedistPerfUTest.F90, line 118
+20220521 060354.085 INFO             PET3  PASS  Get srcArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 125
+20220521 060354.086 INFO             PET3  PASS  GridCreate on dst side - Test, ESMF_ArrayRedistPerfUTest.F90, line 136
+20220521 060354.086 INFO             PET3  PASS  FieldCreate on dst side - Test, ESMF_ArrayRedistPerfUTest.F90, line 143
+20220521 060354.087 INFO             PET3  PASS  FieldFill on dst side - Test, ESMF_ArrayRedistPerfUTest.F90, line 150
+20220521 060354.087 INFO             PET3  PASS  Get dstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 157
+20220521 060354.087 INFO             PET3  PASS  FieldCreate on dst side for tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 164
+20220521 060354.092 INFO             PET3  PASS  FieldFill on dst side for tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 171
+20220521 060354.092 INFO             PET3  PASS  Get tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 178
+20220521 060354.398 INFO             PET3  PASS  ArrayRedistStore() - Test, ESMF_ArrayRedistPerfUTest.F90, line 188
+20220521 060354.399 INFO             PET3  PASS  ArrayRedist() - Test, ESMF_ArrayRedistPerfUTest.F90, line 198
+20220521 060354.399 INFO             PET3  PASS  Get data pointer into dstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 205
+20220521 060354.399 INFO             PET3  PASS  Get data pointer into tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 212
+20220521 060354.399 INFO             PET3  PASS  Check dst data - Test, ESMF_ArrayRedistPerfUTest.F90, line 229
+20220521 060354.399 INFO             PET3  ArrayRedistStore() performance:   0.30255038291215897       seconds.
+20220521 060354.399 INFO             PET3  PASS  Check ArrayRedistStore() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 243
+20220521 060354.400 INFO             PET3  ArrayRedist() performance:    7.3992181569337845E-004  seconds.
+20220521 060354.400 INFO             PET3  PASS  Check ArrayRedist() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 257
+20220521 060354.400 INFO             PET3  Ending Test, file ESMF_ArrayRedistPerfUTest.F90, line 266
+20220521 060354.400 INFO             PET3 Finalizing ESMF
+20220521 060354.077 INFO             PET4 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220521 060354.077 INFO             PET4 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220521 060354.077 INFO             PET4 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220521 060354.077 INFO             PET4 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220521 060354.077 INFO             PET4 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220521 060354.077 INFO             PET4 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220521 060354.077 INFO             PET4 Running with ESMF Version   : v8.3.0b16
+20220521 060354.077 INFO             PET4 ESMF library build date/time: "May 21 2022" "05:54:18"
+20220521 060354.077 INFO             PET4 ESMF library build location : /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_openmpi_O_develop
+20220521 060354.077 INFO             PET4 ESMF_COMM                   : openmpi
+20220521 060354.077 INFO             PET4 ESMF_MOAB                   : enabled
+20220521 060354.077 INFO             PET4 ESMF_LAPACK                 : enabled
+20220521 060354.077 INFO             PET4 ESMF_NETCDF                 : disabled
+20220521 060354.077 INFO             PET4 ESMF_PNETCDF                : disabled
+20220521 060354.077 INFO             PET4 ESMF_PIO                    : disabled
+20220521 060354.077 INFO             PET4 ESMF_YAMLCPP                : enabled
+20220521 060354.078 INFO             PET4  Beginning Test, file ESMF_ArrayRedistPerfUTest.F90, line 75
+20220521 060354.078 INFO             PET4  NUMBER_OF_PROCESSORS           6
+20220521 060354.079 INFO             PET4  PASS  GridCreate on src side - Test, ESMF_ArrayRedistPerfUTest.F90, line 104
+20220521 060354.079 INFO             PET4  PASS  FieldCreate on src side - Test, ESMF_ArrayRedistPerfUTest.F90, line 111
+20220521 060354.084 INFO             PET4  PASS  FieldFill on src side - Test, ESMF_ArrayRedistPerfUTest.F90, line 118
+20220521 060354.084 INFO             PET4  PASS  Get srcArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 125
+20220521 060354.086 INFO             PET4  PASS  GridCreate on dst side - Test, ESMF_ArrayRedistPerfUTest.F90, line 136
+20220521 060354.086 INFO             PET4  PASS  FieldCreate on dst side - Test, ESMF_ArrayRedistPerfUTest.F90, line 143
+20220521 060354.086 INFO             PET4  PASS  FieldFill on dst side - Test, ESMF_ArrayRedistPerfUTest.F90, line 150
+20220521 060354.086 INFO             PET4  PASS  Get dstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 157
+20220521 060354.086 INFO             PET4  PASS  FieldCreate on dst side for tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 164
+20220521 060354.092 INFO             PET4  PASS  FieldFill on dst side for tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 171
+20220521 060354.092 INFO             PET4  PASS  Get tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 178
+20220521 060354.398 INFO             PET4  PASS  ArrayRedistStore() - Test, ESMF_ArrayRedistPerfUTest.F90, line 188
+20220521 060354.399 INFO             PET4  PASS  ArrayRedist() - Test, ESMF_ArrayRedistPerfUTest.F90, line 198
+20220521 060354.399 INFO             PET4  PASS  Get data pointer into dstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 205
+20220521 060354.399 INFO             PET4  PASS  Get data pointer into tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 212
+20220521 060354.399 INFO             PET4  PASS  Check dst data - Test, ESMF_ArrayRedistPerfUTest.F90, line 229
+20220521 060354.399 INFO             PET4  ArrayRedistStore() performance:   0.30256072152405977       seconds.
+20220521 060354.399 INFO             PET4  PASS  Check ArrayRedistStore() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 243
+20220521 060354.399 INFO             PET4  ArrayRedist() performance:    7.0492178201675415E-004  seconds.
+20220521 060354.399 INFO             PET4  PASS  Check ArrayRedist() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 257
+20220521 060354.399 INFO             PET4  Ending Test, file ESMF_ArrayRedistPerfUTest.F90, line 266
+20220521 060354.400 INFO             PET4 Finalizing ESMF
+20220521 060354.078 INFO             PET5 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220521 060354.078 INFO             PET5 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220521 060354.078 INFO             PET5 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220521 060354.078 INFO             PET5 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220521 060354.078 INFO             PET5 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220521 060354.078 INFO             PET5 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220521 060354.078 INFO             PET5 Running with ESMF Version   : v8.3.0b16
+20220521 060354.078 INFO             PET5 ESMF library build date/time: "May 21 2022" "05:54:18"
+20220521 060354.078 INFO             PET5 ESMF library build location : /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_openmpi_O_develop
+20220521 060354.078 INFO             PET5 ESMF_COMM                   : openmpi
+20220521 060354.078 INFO             PET5 ESMF_MOAB                   : enabled
+20220521 060354.078 INFO             PET5 ESMF_LAPACK                 : enabled
+20220521 060354.078 INFO             PET5 ESMF_NETCDF                 : disabled
+20220521 060354.078 INFO             PET5 ESMF_PNETCDF                : disabled
+20220521 060354.078 INFO             PET5 ESMF_PIO                    : disabled
+20220521 060354.078 INFO             PET5 ESMF_YAMLCPP                : enabled
+20220521 060354.078 INFO             PET5  Beginning Test, file ESMF_ArrayRedistPerfUTest.F90, line 75
+20220521 060354.078 INFO             PET5  NUMBER_OF_PROCESSORS           6
+20220521 060354.083 INFO             PET5  PASS  GridCreate on src side - Test, ESMF_ArrayRedistPerfUTest.F90, line 104
+20220521 060354.083 INFO             PET5  PASS  FieldCreate on src side - Test, ESMF_ArrayRedistPerfUTest.F90, line 111
+20220521 060354.088 INFO             PET5  PASS  FieldFill on src side - Test, ESMF_ArrayRedistPerfUTest.F90, line 118
+20220521 060354.088 INFO             PET5  PASS  Get srcArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 125
+20220521 060354.089 INFO             PET5  PASS  GridCreate on dst side - Test, ESMF_ArrayRedistPerfUTest.F90, line 136
+20220521 060354.090 INFO             PET5  PASS  FieldCreate on dst side - Test, ESMF_ArrayRedistPerfUTest.F90, line 143
+20220521 060354.090 INFO             PET5  PASS  FieldFill on dst side - Test, ESMF_ArrayRedistPerfUTest.F90, line 150
+20220521 060354.090 INFO             PET5  PASS  Get dstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 157
+20220521 060354.090 INFO             PET5  PASS  FieldCreate on dst side for tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 164
+20220521 060354.096 INFO             PET5  PASS  FieldFill on dst side for tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 171
+20220521 060354.096 INFO             PET5  PASS  Get tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 178
+20220521 060354.398 INFO             PET5  PASS  ArrayRedistStore() - Test, ESMF_ArrayRedistPerfUTest.F90, line 188
+20220521 060354.399 INFO             PET5  PASS  ArrayRedist() - Test, ESMF_ArrayRedistPerfUTest.F90, line 198
+20220521 060354.399 INFO             PET5  PASS  Get data pointer into dstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 205
+20220521 060354.399 INFO             PET5  PASS  Get data pointer into tstArray - Test, ESMF_ArrayRedistPerfUTest.F90, line 212
+20220521 060354.399 INFO             PET5  PASS  Check dst data - Test, ESMF_ArrayRedistPerfUTest.F90, line 229
+20220521 060354.399 INFO             PET5  ArrayRedistStore() performance:   0.30254727508872747       seconds.
+20220521 060354.399 INFO             PET5  PASS  Check ArrayRedistStore() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 243
+20220521 060354.400 INFO             PET5  ArrayRedist() performance:    7.3489174246788025E-004  seconds.
+20220521 060354.400 INFO             PET5  PASS  Check ArrayRedist() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 257
+20220521 060354.400 INFO             PET5  Ending Test, file ESMF_ArrayRedistPerfUTest.F90, line 266
+20220521 060354.400 INFO             PET5 Finalizing ESMF
