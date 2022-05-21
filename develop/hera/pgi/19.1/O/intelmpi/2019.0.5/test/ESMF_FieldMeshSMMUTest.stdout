@@ -1,0 +1,61 @@
+build time -- 2022-05-21 06:33:18
+  Beginning Test, file ESMF_FieldMeshSMMUTest.F90, line 54
+  NUMBER_OF_PROCESSORS            4
+  Beginning Test, file ESMF_FieldMeshSMMUTest.F90, line 54
+  NUMBER_OF_PROCESSORS            4
+  Beginning Test, file ESMF_FieldMeshSMMUTest.F90, line 54
+  NUMBER_OF_PROCESSORS            4
+  Beginning Test, file ESMF_FieldMeshSMMUTest.F90, line 54
+  NUMBER_OF_PROCESSORS            4
+[h6c16:254745:0:254745] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+[h6c16:254746:0:254746] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+[h6c16:254747:0:254747] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+[h6c16:254748:0:254748] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+==== backtrace (tid: 254748) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x000000000067d6f3 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x000000000083aae1 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:248
+ 3 0x0000000000e0d7e0 esmf_meshmod_esmf_meshcreate1part_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:1407
+ 4 0x0000000000404226 esmf_fieldmeshsmmutest_test_smm_1db()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Field/tests/ESMF_FieldMeshSMMUTest.F90:254
+ 5 0x0000000000401bfb MAIN_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Field/tests/ESMF_FieldMeshSMMUTest.F90:65
+ 6 0x0000000000401b43 main()  ???:0
+ 7 0x0000000000022555 __libc_start_main()  ???:0
+ 8 0x0000000000401a49 _start()  ???:0
+=================================
+==== backtrace (tid: 254746) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x000000000067d6f3 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x000000000083aae1 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:248
+ 3 0x0000000000e0d7e0 esmf_meshmod_esmf_meshcreate1part_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:1407
+ 4 0x0000000000404226 esmf_fieldmeshsmmutest_test_smm_1db()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Field/tests/ESMF_FieldMeshSMMUTest.F90:254
+ 5 0x0000000000401bfb MAIN_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Field/tests/ESMF_FieldMeshSMMUTest.F90:65
+ 6 0x0000000000401b43 main()  ???:0
+ 7 0x0000000000022555 __libc_start_main()  ???:0
+ 8 0x0000000000401a49 _start()  ???:0
+=================================
+==== backtrace (tid: 254747) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x000000000067d6f3 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x000000000083aae1 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:248
+ 3 0x0000000000e0d7e0 esmf_meshmod_esmf_meshcreate1part_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:1407
+ 4 0x0000000000404226 esmf_fieldmeshsmmutest_test_smm_1db()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Field/tests/ESMF_FieldMeshSMMUTest.F90:254
+ 5 0x0000000000401bfb MAIN_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Field/tests/ESMF_FieldMeshSMMUTest.F90:65
+ 6 0x0000000000401b43 main()  ???:0
+ 7 0x0000000000022555 __libc_start_main()  ???:0
+ 8 0x0000000000401a49 _start()  ???:0
+=================================
+==== backtrace (tid: 254745) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x000000000067d6f3 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x000000000083aae1 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:248
+ 3 0x0000000000e0d7e0 esmf_meshmod_esmf_meshcreate1part_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:1407
+ 4 0x0000000000404226 esmf_fieldmeshsmmutest_test_smm_1db()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Field/tests/ESMF_FieldMeshSMMUTest.F90:254
+ 5 0x0000000000401bfb MAIN_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/Infrastructure/Field/tests/ESMF_FieldMeshSMMUTest.F90:65
+ 6 0x0000000000401b43 main()  ???:0
+ 7 0x0000000000022555 __libc_start_main()  ???:0
+ 8 0x0000000000401a49 _start()  ???:0
+=================================
+srun: error: h6c16: tasks 0-2: Segmentation fault (core dumped)
+srun: launch/slurm: _step_signal: Terminating StepId=31809139.141
+slurmstepd: error: *** STEP 31809139.141 ON h6c16 CANCELLED AT 2022-05-21T07:12:00 ***
+srun: error: h6c16: task 3: Segmentation fault (core dumped)
