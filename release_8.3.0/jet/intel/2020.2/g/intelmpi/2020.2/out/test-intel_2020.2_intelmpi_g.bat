@@ -1,8 +1,8 @@
-Sun May 22 03:46:10 GMT 2022
+Sun May 22 03:52:13 GMT 2022
 #!/bin/sh -l
 #SBATCH --account=hfv3gfs
-#SBATCH -o test-intel_2020.2_intelmpi_O.bat_%j.o
-#SBATCH -e test-intel_2020.2_intelmpi_O.bat_%j.e
+#SBATCH -o test-intel_2020.2_intelmpi_g.bat_%j.o
+#SBATCH -e test-intel_2020.2_intelmpi_g.bat_%j.e
 #SBATCH --time=2:00:00
 #SBATCH --partition=xjet
 #SBATCH --qos=batch
@@ -19,10 +19,10 @@ module list >& module-test.log
 set -x
 export ESMF_NETCDF=nc-config
 
-export ESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_intelmpi_O_develop
+export ESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_intelmpi_g_release_8.3.0
 export ESMF_COMPILER=intel
 export ESMF_COMM=intelmpi
-export ESMF_BOPT='O'
+export ESMF_BOPT='g'
 export ESMF_TESTEXHAUSTIVE='ON'
 export ESMF_TESTWITHTHREADS='ON'
 make info 2>&1| tee info.log 
@@ -35,8 +35,8 @@ cd nuopc-app-prototypes
 
 #!/bin/sh -l
 #SBATCH --account=hfv3gfs
-#SBATCH -o test-intel_2020.2_intelmpi_O.bat_%j.o
-#SBATCH -e test-intel_2020.2_intelmpi_O.bat_%j.e
+#SBATCH -o test-intel_2020.2_intelmpi_g.bat_%j.o
+#SBATCH -e test-intel_2020.2_intelmpi_g.bat_%j.e
 #SBATCH --time=2:00:00
 #SBATCH --partition=xjet
 #SBATCH --qos=batch
@@ -53,10 +53,10 @@ module list >& module-test.log
 set -x
 export ESMF_NETCDF=nc-config
 
-export ESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_intelmpi_O_develop
+export ESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_intelmpi_g_release_8.3.0
 export ESMF_COMPILER=intel
 export ESMF_COMM=intelmpi
-export ESMF_BOPT='O'
+export ESMF_BOPT='g'
 export ESMF_TESTEXHAUSTIVE='ON'
 export ESMF_TESTWITHTHREADS='ON'
 make info 2>&1| tee info.log 

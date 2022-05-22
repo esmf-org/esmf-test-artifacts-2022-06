@@ -1,8 +1,8 @@
-Sun May 22 03:51:30 GMT 2022
+Sun May 22 04:08:21 GMT 2022
 #!/bin/sh -l
 #SBATCH --account=hfv3gfs
-#SBATCH -o build-intel_2020.2_intelmpi_g.bat_%j.o
-#SBATCH -e build-intel_2020.2_intelmpi_g.bat_%j.e
+#SBATCH -o build-intel_2020.2_intelmpi_O.bat_%j.o
+#SBATCH -e build-intel_2020.2_intelmpi_O.bat_%j.e
 #SBATCH --time=1:00:00
 #SBATCH --partition=xjet
 #SBATCH --qos=batch
@@ -19,10 +19,10 @@ module list >& module-build.log
 set -x
 export ESMF_NETCDF=nc-config
 
-export ESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_intelmpi_g_develop
+export ESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_intelmpi_O_release_8.3.0
 export ESMF_COMPILER=intel
 export ESMF_COMM=intelmpi
-export ESMF_BOPT='g'
+export ESMF_BOPT='O'
 export ESMF_TESTEXHAUSTIVE='ON'
 export ESMF_TESTWITHTHREADS='ON'
 make -j 24 2>&1| tee build_$JOBID.log

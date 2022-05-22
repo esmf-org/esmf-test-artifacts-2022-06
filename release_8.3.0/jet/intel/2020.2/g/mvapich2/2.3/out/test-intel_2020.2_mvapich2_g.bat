@@ -1,8 +1,8 @@
-Sun May 22 03:48:10 GMT 2022
+Sun May 22 03:53:41 GMT 2022
 #!/bin/sh -l
 #SBATCH --account=hfv3gfs
-#SBATCH -o test-intel_2020.2_mvapich2_O.bat_%j.o
-#SBATCH -e test-intel_2020.2_mvapich2_O.bat_%j.e
+#SBATCH -o test-intel_2020.2_mvapich2_g.bat_%j.o
+#SBATCH -e test-intel_2020.2_mvapich2_g.bat_%j.e
 #SBATCH --time=2:00:00
 #SBATCH --partition=xjet
 #SBATCH --qos=batch
@@ -23,10 +23,10 @@ module list >& module-test.log
 set -x
 export ESMF_NETCDF=nc-config
 
-export ESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop
+export ESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_g_release_8.3.0
 export ESMF_COMPILER=intel
 export ESMF_COMM=mvapich2
-export ESMF_BOPT='O'
+export ESMF_BOPT='g'
 export ESMF_TESTEXHAUSTIVE='ON'
 export ESMF_TESTWITHTHREADS='ON'
 make info 2>&1| tee info.log 
