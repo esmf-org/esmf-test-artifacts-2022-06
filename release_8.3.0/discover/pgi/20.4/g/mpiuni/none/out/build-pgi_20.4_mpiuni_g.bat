@@ -16,7 +16,7 @@ module list >& module-build.log
 
 set -x
 
-export ESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_g_develop
+export ESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_g_release_8.3.0
 export ESMF_COMPILER=pgi
 export ESMF_COMM=mpiuni
 export ESMF_BOPT='g'
