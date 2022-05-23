@@ -1,4 +1,4 @@
-Mon May 23 15:16:28 EDT 2022
+Mon May 23 15:16:34 EDT 2022
 #!/bin/sh -l
 #SBATCH --account=s2326
 #SBATCH -o test-gfortran_8.3.0_mpiuni_g.bat_%j.o
@@ -16,7 +16,7 @@ module list >& module-test.log
 
 set -x
 
-export ESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/gfortran_8.3.0_mpiuni_g_develop
+export ESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/gfortran_8.3.0_mpiuni_g_release_8.3.0
 export ESMF_COMPILER=gfortran
 export ESMF_COMM=mpiuni
 export ESMF_BOPT='g'
