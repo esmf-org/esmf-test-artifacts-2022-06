@@ -1,4 +1,4 @@
-Mon May 23 15:14:56 EDT 2022
+Mon May 23 15:14:54 EDT 2022
 #!/bin/sh -l
 #SBATCH --account=s2326
 #SBATCH -o test-gfortran_8.3.0_intelmpi_g.bat_%j.o
@@ -16,7 +16,7 @@ module list >& module-test.log
 
 set -x
 
-export ESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/gfortran_8.3.0_intelmpi_g_develop
+export ESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/gfortran_8.3.0_intelmpi_g_release_8.3.0
 export ESMF_COMPILER=gfortran
 export ESMF_COMM=intelmpi
 export ESMF_BOPT='g'
