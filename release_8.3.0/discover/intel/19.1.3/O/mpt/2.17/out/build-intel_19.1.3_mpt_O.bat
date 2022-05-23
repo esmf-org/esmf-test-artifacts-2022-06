@@ -1,4 +1,4 @@
-Mon May 23 15:12:59 EDT 2022
+Mon May 23 15:12:57 EDT 2022
 #!/bin/sh -l
 #SBATCH --account=s2326
 #SBATCH -o build-intel_19.1.3_mpt_O.bat_%j.o
@@ -20,7 +20,7 @@ set -x
 export ESMF_NETCDF=nc-config
 
 export ESMF_NETCDF_LIBS="-lhdf5_hl -lhdf5"
-export ESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/intel_19.1.3_mpt_O_develop
+export ESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/intel_19.1.3_mpt_O_release_8.3.0
 export ESMF_COMPILER=intel
 export ESMF_COMM=mpt
 export ESMF_BOPT='O'
