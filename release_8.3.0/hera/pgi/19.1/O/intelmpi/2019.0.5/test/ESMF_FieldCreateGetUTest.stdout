@@ -1,0 +1,74 @@
+build time -- 2022-05-26 07:05:45
+  Beginning Test, file ESMF_FieldCreateGetUTest.F90, line 53
+  NUMBER_OF_PROCESSORS            4
+  Beginning Test, file ESMF_FieldCreateGetUTest.F90, line 53
+  NUMBER_OF_PROCESSORS            4
+  Beginning Test, file ESMF_FieldCreateGetUTest.F90, line 53
+  NUMBER_OF_PROCESSORS            4
+  Beginning Test, file ESMF_FieldCreateGetUTest.F90, line 53
+  NUMBER_OF_PROCESSORS            4
+  PASS  Creating an empty Field, ESMF_FieldCreateGetUTest.F90, line 62
+  PASS  Creating an empty Field, ESMF_FieldCreateGetUTest.F90, line 62
+  PASS  Creating an empty Field, ESMF_FieldCreateGetUTest.F90, line 62
+  PASS  Creating an empty Field, ESMF_FieldCreateGetUTest.F90, line 62
+  PASS  Get info associated with the empty field, ESMF_FieldCreateGetUTest.F90, line 70
+  PASS  Get info associated with the empty field, ESMF_FieldCreateGetUTest.F90, line 70
+  PASS  Get info associated with the empty field, ESMF_FieldCreateGetUTest.F90, line 70
+  PASS  Get info associated with the empty field, ESMF_FieldCreateGetUTest.F90, line 70
+  PASS  Query field for global and local bounds, ESMF_FieldCreateGetUTest.F90, line 78
+  PASS  Query field for global and local bounds, ESMF_FieldCreateGetUTest.F90, line 78
+  PASS  Query field for global and local bounds, ESMF_FieldCreateGetUTest.F90, line 78
+  PASS  Query field for global and local bounds, ESMF_FieldCreateGetUTest.F90, line 78
+[h4c54:51002:0:51002] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+[h4c54:50998:0:50998] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+[h4c54:50999:0:50999] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+[h4c54:51000:0:51000] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+==== backtrace (tid:  51002) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x000000000067f053 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_release_8.3.0/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x000000000083c441 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_release_8.3.0/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:248
+ 3 0x0000000000e0f140 esmf_meshmod_esmf_meshcreate1part_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_release_8.3.0/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:1407
+ 4 0x000000000046614f esmf_fieldcreategetutest_test_localglobalboundsmesh()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_release_8.3.0/src/Infrastructure/Field/tests/ESMF_FieldCreateGetUTest.F90:8196
+ 5 0x000000000041b919 MAIN_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_release_8.3.0/src/Infrastructure/Field/tests/ESMF_FieldCreateGetUTest.F90:83
+ 6 0x0000000000403463 main()  ???:0
+ 7 0x0000000000022555 __libc_start_main()  ???:0
+ 8 0x0000000000403369 _start()  ???:0
+=================================
+==== backtrace (tid:  50999) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x000000000067f053 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_release_8.3.0/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x000000000083c441 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_release_8.3.0/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:248
+ 3 0x0000000000e0f140 esmf_meshmod_esmf_meshcreate1part_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_release_8.3.0/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:1407
+ 4 0x000000000046614f esmf_fieldcreategetutest_test_localglobalboundsmesh()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_release_8.3.0/src/Infrastructure/Field/tests/ESMF_FieldCreateGetUTest.F90:8196
+ 5 0x000000000041b919 MAIN_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_release_8.3.0/src/Infrastructure/Field/tests/ESMF_FieldCreateGetUTest.F90:83
+ 6 0x0000000000403463 main()  ???:0
+ 7 0x0000000000022555 __libc_start_main()  ???:0
+ 8 0x0000000000403369 _start()  ???:0
+=================================
+==== backtrace (tid:  51000) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x000000000067f053 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_release_8.3.0/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x000000000083c441 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_release_8.3.0/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:248
+ 3 0x0000000000e0f140 esmf_meshmod_esmf_meshcreate1part_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_release_8.3.0/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:1407
+ 4 0x000000000046614f esmf_fieldcreategetutest_test_localglobalboundsmesh()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_release_8.3.0/src/Infrastructure/Field/tests/ESMF_FieldCreateGetUTest.F90:8196
+ 5 0x000000000041b919 MAIN_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_release_8.3.0/src/Infrastructure/Field/tests/ESMF_FieldCreateGetUTest.F90:83
+ 6 0x0000000000403463 main()  ???:0
+ 7 0x0000000000022555 __libc_start_main()  ???:0
+ 8 0x0000000000403369 _start()  ???:0
+=================================
+==== backtrace (tid:  50998) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x000000000067f053 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_release_8.3.0/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x000000000083c441 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_release_8.3.0/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:248
+ 3 0x0000000000e0f140 esmf_meshmod_esmf_meshcreate1part_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_release_8.3.0/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:1407
+ 4 0x000000000046614f esmf_fieldcreategetutest_test_localglobalboundsmesh()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_release_8.3.0/src/Infrastructure/Field/tests/ESMF_FieldCreateGetUTest.F90:8196
+ 5 0x000000000041b919 MAIN_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_release_8.3.0/src/Infrastructure/Field/tests/ESMF_FieldCreateGetUTest.F90:83
+ 6 0x0000000000403463 main()  ???:0
+ 7 0x0000000000022555 __libc_start_main()  ???:0
+ 8 0x0000000000403369 _start()  ???:0
+=================================
+srun: error: h4c54: task 1: Segmentation fault (core dumped)
+srun: launch/slurm: _step_signal: Terminating StepId=32000421.126
+slurmstepd: error: *** STEP 32000421.126 ON h4c54 CANCELLED AT 2022-05-26T07:54:04 ***
+srun: error: h4c54: tasks 0,3: Segmentation fault (core dumped)
+srun: error: h4c54: task 2: Segmentation fault (core dumped)
