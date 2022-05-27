@@ -1,4 +1,4 @@
-Thu May 26 18:19:10 MDT 2022
+Thu May 26 18:54:32 MDT 2022
 #!/bin/sh -l
 #PBS -N test-nvhpc_22.2_mpt_O.bat
 #PBS -l walltime=3:00:00
@@ -9,10 +9,8 @@ JOBID="`echo $PBS_JOBID | cut -d. -f1`"
 
 cd /glade/scratch/sacks/esmf-testing/nvhpc_22.2_mpt_O_develop
 
-module unload intel
-
 module load python cmake
-module load nvhpc/22.2 mpt/2.25 netcdf-mpi/4.8.1
+module load nvhpc/22.2 mpt/2.25 netcdf/4.8.1
 module list >& module-test.log
 
 set -x
