@@ -1,0 +1,86 @@
+build time -- 2022-05-27 05:43:21.236469
+  Beginning Te  Beginning Test, file ESMF_TestH  Beginning Test, file ESMF_TestHarnessUTesst, file ESMF_TestHarnessUTest.F90, line 74
+arnessUTest.F90, line 74
+t.F90, line 74
+  NU  Beginning Test, file ESMF_TestHarnessUTest.F90, line 74
+  NUMBER_OF_PROCESSORS 4
+  NUMBER_OF_PROCESSORSMBER_OF_PROCESSORS 4
+ 4
+  NUMBER_OF_PROCESSOcommanRS 4
+d line arg count =    4
+command line arg [ 1] =    5:-case
+command line arg [ 2] =   21:array_default_test.rc
+command line arg [ 3] =    4:-xml
+command line arg [ 4] =   17:array_default.xml
+argindex (-path) =   -1
+argindex (-case) =    1
+argindex (-xml) =    3
+Path Length =     1
+Path = .
+Config File = array_default_test.rc
+Run Flag =  1
+XML Flag =  1
+XML File = array_default.xml
+   0Path = .
+   0Config    1Path = .
+   1Config   2Path = .
+   2Config File = a   3Path = .
+   3Config File = array_dFile = array_default_test.rc
+   0Run Flag =  1
+   File = array_default_test.rc
+   1Run Flrray_default_test.rc
+   2Run Flag =  1
+   2XML Flag efault_test.rc
+   3Run Flag =  1
+   3XML Flag  0XML Flag =  1
+   0XML File = array_default.xml
+ag =  1
+   1XML Flag =  1
+   1XML File = array=  1
+   2XML File = array_default.xml=  1
+   3XML File = array_default._default.xml
+
+xml
+ running nonexhaustive tests
+ --------------------------------------- 
+ Start of test harness test for class ARRAY
+ --------------------------------------- 
+ Opening Dist specifier file  ./array_default_dist_2D.rc
+ Opening Opening Dist specifi Dist specifier file  ./array_defer file  ./array_default_dist_2D.rcault_dist_2D.rc
+
+ Opening Dist specifier file  ./array_default_dist_2D.rc
+ Opening Grid specifier file  ./array_default_grid_2D.rc
+ Opening Grid specifier file  ./array_de Opening Grifault_grid_2D.rc
+d specifier file  ./array_default_grid_2D.rc
+ Opening Grid specifier file  ./array_defaul  read grt_grid_2D.rc
+id specification for redistribution test
+  read grid specification for redistribution test
+  read grid specification for redistribution test
+  read grid specification for redistribution test
+ Problem Descriptor String [B1G1;B2G2] --> [B1G1;B2G2]
+ ( grid config, distribution config, Grid file, Distribution file)
+ (1,1,1,1) string=[B1{1}G1{400};B2{1}G2{200}]-->[B1{1}G1{400};B2{1}G2{200}]
+                
+                
+                
+                
+ -----------------======array redist test==========-----------------------
+array redist test -  with string [B1G1;B2G2] --> [B1G1;B2G2] with entry 1 of file ./array_default_dist_2D.rc and entry 1 of file ./array_default_grid_2D.rc
+ Array Redist Completed
+  PASS: ESMF_TestHarnessUTest.F90 287
+PASS: 
+ ------------------------------  Ending Test, file ESMF_TestHarnessUTest.F9  Ending Test, file ESMF_TestHarnessUTest.F90, line 299
+  Ending Test, file ESMF_TestHarnessUTest.F90, line 299
+--------- 
+ End of harness test for class ARRAY
+ --------------------------------------- 
+  End0, line 299
+ing Test, file ESMF_TestHarnessUTest.F90, line 299
+  PET 0  Test Elapsed Time    4.2351700000000000E+02  msec.
+  PET 2  Test Elapsed Time    3.9140899999999999E+02  msec.
+  PET 3  Test Elapsed Time    3.9123199999999997E+02  msec.
+  PET 1  Test Elapsed Time    3.9126499999999999E+02  msec.
+[mpiexec@i032.cgd.ucar.edu] HYDT_bscd_pbs_wait_for_completion (tools/bootstrap/external/pbs_wait.c:67): tm_poll(obit_event) failed with TM error 17002
+[mpiexec@i032.cgd.ucar.edu] HYDT_bsci_wait_for_completion (tools/bootstrap/src/bsci_wait.c:23): launcher returned error waiting for completion
+[mpiexec@i032.cgd.ucar.edu] HYD_pmci_wait_for_completion (pm/pmiserv/pmiserv_pmci.c:218): launcher returned error waiting for completion
+[mpiexec@i032.cgd.ucar.edu] main (ui/mpich/mpiexec.c:340): process manager error waiting for completion
