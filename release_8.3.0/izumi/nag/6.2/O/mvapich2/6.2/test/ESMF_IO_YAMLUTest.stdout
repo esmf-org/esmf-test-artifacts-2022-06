@@ -1,0 +1,329 @@
+build time -- 2022-05-27 05:30:19.693917
+  Beginning Test, file ESMF_IO_YAMLUTest.F90, line 54
+  NUMBER_OF_PROCESSORS 4
+  Beginning Test, file ESMF_IO_YAMLUTest.F90, line 54
+  Beginning Test, file ESMF_IO_YAMLUTest.F90, line 54
+  NUMBER_OF_PROCE  Beginning Test, file ESMF_IO_YAMLUTest.F90, line 54
+  NUMBER_OF_PROCESSORS 4
+  INFO  ESMF was built with YAML support via the external yaml-cpp library
+  PASS  ESM  NUMBER_OF_PROCESSORS 4
+  ISSORS 4
+  INFO  ESMF was buiF_IO_YAMLCreate(): create YAML_IO object, ESMF_IO_YAMLNFO  ESMF was buillt with YAML suppo  INFO  ESMF was built with YAML supporUTest.F90, line 74
+t with YAML support rt via the external yat via the external yamvia the external yaml-cpp library
+ml-cpp library
+l-cpp library
+  PASS  ES  PASS  ESMF_IO_YAM  PASS  ESMMF_IO_YAMLCreate(): create YAML_LCreate(): create YAML_IO objecF_IO_YAMLCreate(): create YAML_IO object, ESMF_IO_YAMLUTest.F90t, ESMF_IO_YAMLUTest.F90, linIO object, ESMF_IO_YAMLUTest.F90, , line 74
+e 74
+line 74
+  PASS  ESMF_IO_YAMLRead(): read in YAML file, ESMF_IO_YAMLUTest.F90, line 84
+field_dictionary:
+  version_number: 0.0.1
+  last_modified: 2018-03-14T11:01:19Z
+  institution: ESPC CSC/MCL Committee
+  contact: xfd@noaa.gov
+  source: https://github.com/NCAR/xfd
+  description: Community-based dictionary for shared coupling fields
+  entries:
+    - standard_name: air_pressure
+      canonical_units: Pa
+      description: Air pressure
+    - standard_name: air_temperature
+      canonical_units: K
+      description: Bulk temperature of the air, not the surface (skin) temperature
+    - alias: p
+      standard_name: air_pressure
+    - alias: [t, temp]
+      standard_name: air_temperature
+  PASS  ESMF_IO_YAMLWrite(): write native YAML content to standard output, ESMF_IO_YAMLUTest.F90, line 98
+  PASS  ESMF_IO_YAMLContentInit(): generate native content from YAML, ESMF_IO_YAMLUTest.F90, line 112
+  PASS  ESMF_IO_YAMLContentGet(): get content line count, ESMF_IO_YAMLUTest.F90, line 126
+  PASS  ESMF_IO_YAMLContentGet(): get content, ESMF_IO_YAMLUTest.F90, line 137
+ 1 field_dictionary:
+ 2   version_number: 0.0.1
+ 3   last_modified: 2018-03-14T11:01:19Z
+ 4   institution: ESPC CSC/MCL Committee
+ 5   contact: xfd@noaa.gov
+ 6   source: https://github.com/NCAR/xfd
+ 7   description: Community-based dictionary for shared coupling fields
+ 8   entries:
+ 9     - standard_name: air_pressure
+ 10       canonical_units: Pa
+ 11       description: Air pressure
+ 12     - standard_name: air_temperature
+ 13       canonical_units: K
+ 14       description: Bulk temperature of the air, not the surface (skin) temperature
+ 15     - alias: p
+ 16       standard_name: air_pressure
+ 17     - alias: [t, temp]
+ 18       standard_name: air_temperature
+  PASS  ESMF_IO_YAMLParse(): parse YAML as NUOPC Field dictionary, ESMF_IO_YAMLUTest.F90, line 151
+  PASS  ESMF_IO_YAMLParse(): generate FreeFormat content from YAML, ESMF_IO_YAMLUTest.F90, line 165
+  PASS  ESMF_IO_YAMLContentGet(): get FreeFormat content line count, ESMF_IO_YAMLUTest.F90, line 179
+  PASS  ESMF_IO_YAMLContentGet(): get Free  PASS  ESMF_IO_YAMLRFormat content, ESMF_IO_YAMLUTest.F90, line 1ead(): read in YAML fil90
+ 1 standardName:           e, ESMF_IO_YAMLUTest.F                            air_pressure
+ 90, line 84
+2 canonicalUnits:                                               Pa
+ 3 synonym:                                                       p
+ 4 ---------------------------  PASS  ESMF_IO_YAML-------------------------------------
+ 5 standa  PASS  ESMF_IO_YAMLRead(): read in YRead(): read in YAML file, ESMF_IO_YrdName:                                    air_temperature
+ 6 canonicAML file, ESMF_IO_YAMLUTest.F90, liAMLUTest.F90, line 84
+alUnits:                                                K
+ 7 syne 84
+nonym:                                                       t
+ 8 synonym:                                                    temp
+ 9 ----------------------------------------------------------------
+  PASS  ESMF_IO_YAMLIngest(): ingest YAML content, ESMF_IO_YAMLUTest.F90, line 204
+  PASS  ESMF_IO_YAMLContentInit(): generate native content from YAML, ESMF_IO_YAMLUTest.F90, line 218
+  PASS  ESMF_IO_YAMLContentGet(): get native content size (length), ESMF_IO_YAMLUTest.F90, line 232
+  PASS  ESMF_IO_YAMLContentGet(): get native content line count, ESMF_IO_YAMLUTest.F90, line 242
+  PASS  ESMF_IO_YAMLContentGet(): get native content, ESMF_IO_YAMLfield_dictionary:UTest.F90, line 253
+
+  PASS  ESMF_IO_YAMLContentGet(): verify content size (1), ESMF_IO_YAMLUTe  version_number: st.F90, line 269
+  PASS  ESMF_I0.0.1O_YAMLContentGet(): verify content size (2), 
+  last_modifiedESMF_IO_YAMLUTest.F90, line 281
+   Ingested content:
+   -----: 2018-03-14T11:01:19Z------------
+ unit_test_content:
+  - key1: field_dictionaryfield_dictionary:
+
+  institution:value1
+  - key2: value2
+
+   Generated content:
+   -----------------
+ 1 unit_test_c:
+  ESPC CSC/MCL Committee
+  contactontent:
+ 2   - key1: value1
+ 3   - key2: value2
+ 
+ version_number: 0.0.1  version_number: 0.0.1
+: xfd@noaa.gov
+  source  PASS  ESMF_IO_YAMLContentGet(): verify retrieved YAML content, ESMF_IO_YAMLUTes
+  last_modified  last_modified: 2018-03-14T11:01:19Zt.F90, line 322
+: 2018-03-14T11:01:19Z
+  : https://github.com/NCAR/xfd
+  descriptioninstitution
+  institution  PASS  ESMF_IO_YAMLContentInit(: ESPC CSC/MCL Committee
+ : ESPC CSC/MCL Committee
+  contact): generate incompatible FreeFormat content from YAML, ESMF_IO_YA contact: xfd@noaa.gov: xfd@noaa.gov
+  source: Community-based dictionary for shared coupling fields
+  entries:
+MLUTest.F90, line 331
+
+  source    -: https://github.com/NCAR/xfd: https://github.com/NCAR/xfd
+ standard_name:  PASS  ESMF_IO_YAMLDestroy(): destroy ESMF IO_YAML object, E
+  description  description air_pressure
+      canonical_unitsSMF_IO_YAMLUTest.F90, line 340
+  Ending Test, file ESMF_IO_YAMLUTest.: PaF90, line 343
+: Community-based dictionary for shared coupling fields: Community-based dictionary for shared coupling fields
+  entries
+      description: Air pressure
+  entries:
+   :
+    - -
+    - standard_name standard_name: air_pressure standard_name: air_pressure
+      canonical_units: air_temperature
+   
+      canonical_units: Pa: Pa
+        canonical_units: K
+      description description: Air pressure
+      description: Air pressure
+    -
+    - standard_name standard_name: air_temperature: Bulk temperature of the air, not the surface (skin) temperature
+    -: air_temperature
+      canonical_units
+      canonical_units: K alias: p: K
+  
+      description
+      standard_name:    description air_pressure
+    - alias: [t, temp]: Bulk temperature of the air, not the surface (skin) temperature
+: Bulk temperature of the air, not the surface (skin) temperature
+    -    - alias alias: p
+      standard_name: p
+
+      standard_name: air_temperature      standard_name: air_pressure: air_pressure
+  
+    -  - alias alias: : [t
+  PASS  ESMF_IO_YAM[t, temp], temp]LWrite(): write native YAML cont
+      standard_name
+      standard_nameent to standard output, ESMF_IO_: air_temperature: air_temperatureYAMLUTest.F90, line 98
+
+
+  PA  PASS  ESMF_IO_YSS  ESMF_IO_YAMLWrite():AMLWrite(): write nati write native YAML contve YAML content to staent to standard output,ndard output, ESMF_IO_ ESMF_IO_YAMLUTest.F90,YAMLUTest.F90, line 98
+ line 98
+  PASS  ESMF_IO_YAMLContentInit(): generate native content from YAML, ESMF_IO_YAMLUTest.F90, line 112
+  PASS  ESMF_IO_YAMLCont  PASSentGet(): get content lin  PASS  ESMF_IO_Y  ESMF_IO_YAMLContentInit(): generate ne count, ESMF_IO_YAMLUTest.F90, line AMLContentInit(): generate native cative content from YAML, ESMF_IO_Y126
+ontent from YAML, ESMF_IO_YAMLUTeAMLUTest.F90, line 112
+st.F90, line 112
+  PASS  ESMF  PASS _IO_YAMLContentGet(): ge ESMF_IO_YAMLContentGett content line count, ESM(): get content line couF_IO_YAMLUTest.F90, linnt, ESMF_IO_YAMLUTest.F90,e 126
+ line 126
+  PASS  ESMF_IO_YAMLContentGet(): get content, ESMF_IO_YAMLUTest.F90, line 137
+ 1 field_dictionary:
+ 2   version_number:   PA0.0.1
+ 3   last_modi  PASS  ESS  ESMF_IO_YAMLContentGet(): getfied: 2018-03-14T11:01:19Z
+ 4SMF_IO_YAMLContentGet(): get con content, ESMF_IO_YAMLUTest.F90, li   institution: ESPC CSC/MCL Committent, ESMF_IO_YAMLUTest.F90, line 1ne 137
+ 1 fieltee
+ 5   contact: xfd@noaa.go37
+ 1 field_did_dictionary:
+ 2   version_numbv
+ 6   source: https://github.cctionary:
+ 2   version_numberer: 0.0.1
+ 3   last_modified:om/NCAR/xfd
+ 7   description:: 0.0.1
+ 3   last_modified: 2 2018-03-14T11:01:19Z
+ 4   ins Community-based dictionary for s018-03-14T11:01:19Z
+ 4   insttitution: ESPC CSC/MCL Committeehared coupling fields
+ 8   enitution: ESPC CSC/MCL Committee
+
+ 5   contact: xfd@noaa.gov
+tries:
+ 9     - standard_name: 5   contact: xfd@noaa.gov
+  6   source: https://github.com/ air_pressure
+ 10       canon6   source: https://github.com/NNCAR/xfd
+ 7   description: Coical_units: Pa
+ 11       descCAR/xfd
+ 7   description: Commmunity-based dictionary for sharription: Air pressure
+ 12    munity-based dictionary for shareed coupling fields
+ 8   entrie - standard_name: air_temperatured coupling fields
+ 8   entries:
+ 9     - standard_name: ai
+ 13       canonical_units: Ks:
+ 9     - standard_name: air_pressure
+ 10       canonical
+ 14       description: Bulk r_pressure
+ 10       canonica_units: Pa
+ 11       descriptitemperature of the air, not the sl_units: Pa
+ 11       descrion: Air pressure
+ 12     - sturface (skin) temperature
+ 15ption: Air pressure
+ 12     -andard_name: air_temperature
+      - alias: p
+ 16       sta standard_name: air_temperature
+13       canonical_units: K
+ ndard_name: air_pressure
+ 17  13       canonical_units: K
+14       description: Bulk tempe    - alias: [t, temp]
+ 18    14       description: Bulk terature of the air, not the surfa    standard_name: air_temperatumperature of the air, not the suce (skin) temperature
+ 15    re
+rface (skin) temperature
+ 15  - alias: p
+ 16       standard    - alias: p
+ 16 _name: air_pressure
+ 17      standard_name: air_     - alias: [t, temppressure
+ 17     - ]
+ 18       standard_alias: [t, temp]
+ 18name: air_temperature
+       standard_name: air_temperature
+  PASS  ESMF_IO_YAMLParse(): parse YAML as NUOPC Field dictionary, ESMF_IO_YAMLUTest.F90, line 151
+  PAS  S  ESMF_IO_YAMLParse(): PASS  ESMF_IO_YAMLParseparse YAML as NUOPC Fie(): parse YAML as NUOPld dictionary, ESMF_IOC Field dictionary, ES_YAMLUTest.F90, line 151
+  PASS  ESMF_IO_YAMLParse(): generate FreeFormMF_IO_YAMLUTest.F90, line 151
+at content from YAML, ESMF_IO_YAMLUTest.F90, line 165
+  PASS  ESMF_IO_YAMLCont  PAentGet(): get FreeFormat   PASS  ESSS  ESMF_IO_YAMLParse(): generatcontent line count, ESMF_IO_YAMLUTeMF_IO_YAMLParse(): generate Freee FreeFormat content from YAML, Est.F90, line 179
+Format content from YAML, ESMF_ISMF_IO_YAMLUTest.F90, line 165
+O_YAMLUTest.F90, line 165
+  PASS  ESMF_IO_YAMLCo  PASS  ESMF_IOntentGet(): get FreeForma  PASS  ESMF_IO_YAMLContentG_YAMLContentGet(): get FreeFormat t content line count, ESMF_IO_YAMet(): get FreeFormat content, ESMF_content line count, ESMF_IO_YAMLULUTest.F90, line 179
+IO_YAMLUTest.F90, line 190
+Test.F90, line 179
+ 1 standardName:                                       air_p  PASS  ESMF_IO_Yressure
+ 2 canonicalUnits:          PASS  ESMF_IO_YAMLCAMLContentGet(): get FreeFormat conte                                      ontentGet(): get FreeFormat contentnt, ESMF_IO_YAMLUTest.F90, line 19 Pa
+ 3 synonym:                 , ESMF_IO_YAMLUTest.F90, line 190
+ 1 standardName:                                   0
+ 1 standardName                                   p
+ 4 ------------------------:                                       air_pressure
+ 2 canonica------------------------------------       air_pressure
+ 2 canoniclUnits:                          ----
+ 5 standardName:           alUnits:                                             Pa
+ 3 sy                         air_temper                       Pa
+ 3 nonym:                           ature
+ 6 canonicalUnits:        synonym:                                                    p
+                                                                  p 4 -----------------------------     K
+ 7 synonym:              
+ 4 -----------------------------------------------------------                                    -----------------------------------
+ 5 standardName:                   t
+ 8 synonym:                -----
+ 5 standardName:                               air_temperatu                                                               air_tre
+ 6 canonicalUnits:         temp
+ 9 ------------------------emperature
+ 6 canonicalUnits:                                   -----------------------------------                                       K
+ 7 synonym:          -----
+             K
+ 7 synonym:                                                                       t
+ 8 syn                      onym:                        t
+ 8 synonym                       :                                 temp
+ 9                        -----------------------        temp
+ 9 ------------------------------------------------------------------
+---------------------------------------
+  PASS  ESMF_IO_YAMLIngest(): ingest YAML content, ESMF_IO_YAMLUTest.F90, line 204
+  PASS  ESMF_IO_YAMLIngest(): in  PASgest YAML content, ESMFS  ESMF_IO_YAMLIngest(_IO_YAMLUTest.F90, line   PASS  ESMF_IO_YAMLContentInit(): genera): ingest YAML content, ESMF_IO_Y204
+te native content from YAML, ESMF_IOAMLUTest.F90, line 204
+_YAMLUTest.F90, line 218
+  PASS  ESMF_IO_YAMLContentGet(): get native content size (length), ESMF_IO_YAMLUTest.F90, line 232
+  PAS  PASS  S  ESMF_IO_YAMLContentESMF_IO_YAMLContentInGet(): get native conte  PASS  Eit(): generate native content fnt line count, ESMF_IO_YAMLUTest.SMF_IO_YAMLContentInit(): generom YAML, ESMF_IO_YAMLUTest.F90F90, line 242
+rate native content from YAML, , line 218
+ESMF_IO_YAMLUTest.F90  PASS  ESMF_IO_YA  PASS  ESMF_IO_YAMLContentGet, line 218
+MLContentGet(): get native con(): get native content, ESMF_IO_Y  PASS  ESMF_IO_YAMLContentGtent size (length), ESMF_IO_YAMLAMLUTest.F90, line 253
+et(): get native content size (UTest.F90, line 232
+length), ESMF_IO_YAML  PASS  ESMF_IO_  PASS  ESMF_IO_YAMLContentGet(): verify content sUTest.F90, line 232
+YAMLContentGet(): get native conteize (1), ESMF_IO_YAMLUTest.F90, l  PASS  ESMF_IO_YAMLContentGnt line count, ESMF_IO_YAMLUTestine 269
+  PASS  Eet(): get native content line co.F90, line 242
+SMF_IO_YAMLContentGet(): verify cunt, ESMF_IO_YAMLUTest.F90, line ontent size (2), ESMF_242
+  PASS  ESMF_IO_YAMLContentGeIO_YAMLUTest.F90, line 281
+  PASSt(): get native content, ESMF_IO_   Ingested content:
+   ---  ESMF_IO_YAMLContentGet(): get YAMLUTest.F90, line 253
+--------------
+ unit_test_contennative content, ESMF_IO_YAMLUTe  PASS  ESMF_IO_YAMt:
+  - key1: value1
+  - key2: valst.F90, line 253
+LContentGet(): verify content sizue2
+
+   Generated content:
+   --  PASS  ESMF_IO_YAMLContee (1), ESMF_IO_YAMLUTest.F90, lin---------------
+ 1 unit_test_ntGet(): verify content size (1),e 269
+  PASS  ESMF_Icontent:
+ 2   - key1: value1
+ ESMF_IO_YAMLUTest.F90, line 269
+O_YAMLContentGet(): verify conten 3   - key2: value2
+ 
+  PASS  ESMF_IO_YAMt size (2), ESMF_IO_YAMLUTest.F90,  PASS  ESMF_IO_YAMLContentGet()LContentGet(): verify content siz line 281
+   Ingested c: verify retrieved YAML content, e (2), ESMF_IO_YAMLUTest.F90, linontent:
+   -----------------
+ unESMF_IO_YAMLUTest.F90, line 322
+e 281
+   Ingested contit_test_content:
+  - key1: value1
+ent:
+   --------------  - key2: value2
+
+   G---
+ unit_test_contentenerated content:
+   -:
+  - key1: value1
+  -----------------
+ 1 key2: value2
+
+   Gene unit_test_content:
+rated content:
+   ---- 2   - key1: value1
+  PASS  ESMF_IO_YAMLContent-------------
+ 1 unit_test_co 3   - key2: value2
+ 
+Init(): generate incompatible FreeFntent:
+ 2   - key1: value1
+  PASS  ESMF_IO_YAMLContentGet(): ormat content from YAML, ESMF_IO_Y 3   - key2: value2
+ 
+verify retrieved YAML content, ESAMLUTest.F90, line 331
+  PASS  ESMF_IO_YAMLContentGet()MF_IO_YAMLUTest.F90, line 322
+: verify retrieved YAML content, ESMF_IO_YAMLUTest.F90, line 322
+  PASS  ESMF_IO_YAMLDestroy(): destroy ESMF IO_YAML obje  PASS  ESMF_IO_Yct, ESMF_IO_YAMLUTest.F9AMLContentInit(): gener0, line 340
+ate incompatible FreeFo  Ending Test, fi  PASS  ESMF_IO_YAMLContrmat content from YAML, ESMF_IO_le ESMF_IO_YAMLUTest.F90, line 3entInit(): generate incompatibleYAMLUTest.F90, line 331
+43
+ FreeFormat content from YAML, ESMF_IO_YAMLUTest.F90, line 331
+  PASS  ESMF_IO_YAMLDestroy(): destroy ESMF IO_YAML objec  PASS  ESMt, ESMF_IO_YAMLUTest.F90,F_IO_YAMLDestroy(): des line 340
+troy ESMF IO_YAML obje  Ending Test, filect, ESMF_IO_YAMLUTest. ESMF_IO_YAMLUTest.F90F90, line 340
+, line 343
+  Ending Test, file ESMF_IO_YAMLUTest.F90, line 343
+  PET 0  Test Elapsed Time   24.6849999999999845  msec.
+  PET 3  Test Elapsed Time   26.1320000000000014  msec.
+  PET 1  Test Elapsed Time   PET 2  Test Elapsed   26.1450000000000031 Time   26.163000000000 msec.
+0074  msec.
