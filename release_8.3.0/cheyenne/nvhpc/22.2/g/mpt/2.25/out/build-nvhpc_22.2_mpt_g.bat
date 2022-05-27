@@ -1,4 +1,4 @@
-Thu May 26 18:10:00 MDT 2022
+Thu May 26 18:20:29 MDT 2022
 #!/bin/sh -l
 #PBS -N build-nvhpc_22.2_mpt_g.bat
 #PBS -l walltime=1:00:00
@@ -9,6 +9,8 @@ Thu May 26 18:10:00 MDT 2022
 JOBID="`echo $PBS_JOBID | cut -d. -f1`"
 
 cd /glade/scratch/sacks/esmf-testing/nvhpc_22.2_mpt_g_release_8.3.0
+
+module unload intel
 
 module load python cmake
 module load nvhpc/22.2 mpt/2.25 netcdf-mpi/4.8.1
