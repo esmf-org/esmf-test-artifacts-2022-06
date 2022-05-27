@@ -1,0 +1,175 @@
+build time -- 2022-05-27 05:28:16.654955
+Beginning Test, file ESMC_ArrayUTest.C, line 46
+Beginning Test, file ESMC_ArrayUTest.C, line 46NUMBER_OF_PROCESSORS 4
+PASS ArraySpecSet, ESMC_ArrayUTest.C, line 55
+PASS Set up minIndex, ESMC_ArrayUTest.C, line 65
+PASS Set up maxIndex, ESMC_ArrayUTest.C, line 76
+PASS Create 5 x 10 ESMC_DistGrid object, ESMC_ArrayUTest.C, line 84
+Beginning Test, file ESMC_ArrayUTest.C, line 46
+Beginning Test, file ESMC_ArrayUTest.C, line 46NUMBER_OF_PROCESSORS 4
+PASS ArraySpecSet, ESMC_ArrayUTest.C, line 55
+PASS Set up minIndex, ESMC_ArrayUTest.C, line 65
+PASS Set up maxIndex, ESMC_ArrayUTest.C, line 76
+PASS Create ESMC_Array object, ESMC_ArrayUTest.C, line 96
+--- ESMCI::Array::print start ---
+ Base name    = array1
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}Beginning Test, file ESMC_ArrayUTest.C, line 46
+Beginning Test, file ESMC_ArrayUTest.C, line 46NUMBER_OF_PROCESSORS 4
+Array typekind/rank: Integer*4 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 2 ~
+LocalArrayPrint: Array at address 0x134e380:
+            rank = 2, typekind = 3, base_addr = 0x134dbd0
+PASS Create 5 x 10 ESMC_DistGrid object, ESMC_ArrayUTest.C, line 84
+            dim[0] = 1  dim[1] = 10  
+  Integer, *4, Dim 2, Data values:
+( 1, 1) =  20230048
+( 1, 2) =  0
+( 1, 3) =  1
+( 1, 4) =  2
+( 1, 5) =  0
+( 1, 6) =  0
+( 1, 7) =  0
+( 1, 8) =  0
+PASS ArraySpecSet, ESMC_ArrayUTest.C, line 55
+PASS Set up minIndex, ESMC_ArrayUTest.C, line 65
+( 1, 9) =  0
+( 1,10) =  0
+dim 1: [0]: [1 [1 [1, 1] 1] 1]
+dim 2: [1]: [1 [1 [1, 10] 10] 10]
+--- ESMCI::Array::print end ---
+PASS Print ESMC_Array object, ESMC_ArrayUTest.C, line 104
+PASS Set up maxIndex, ESMC_ArrayUTest.C, line 76
+PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.C, line 112
+PASS Create ESMC_Array object, ESMC_ArrayUTest.C, line 96
+PASS Destroy ESMC_Array object, ESMC_ArrayUTest.C, line 120
+Ending Test, file ESMC_ArrayUTest.C, line 124
+--- ESMCI::Array::print start ---
+ Base name    = array1
+PASS Create 5 x 10 ESMC_DistGrid object, ESMC_ArrayUTest.C, line 84
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+Beginning Test, file ESMC_ArrayUTest.C, line 46
+{}Beginning Test, file ESMC_ArrayUTest.C, line 46NUMBER_OF_PROCESSORS 4
+Array typekind/rank: Integer*4 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 1 ~
+LocalArrayPrint: Array at address 0x1124380:
+            rank = 2, typekind = 3, base_addr = 0x1123bd0
+            dim[0] = 1  dim[1] = 10  
+  Integer, *4, Dim 2, Data values:
+( 1, 1) =  17960864
+PASS ArraySpecSet, ESMC_ArrayUTest.C, line 55
+PASS Set up minIndex, ESMC_ArrayUTest.C, line 65
+( 1, 2) =  0
+( 1, 3) =  1
+( 1, 4) =  2
+( 1, 5) =  0
+( 1, 6) =  0
+( 1, 7) =  0
+( 1, 8) =  0
+( 1, 9) =  0
+( 1,10) =  0
+dim 1: [0]: [1 [1 [1, 1] 1] 1]
+dim 2: [1]: [1 [1 [1, 10] 10] 10]
+--- ESMCI::Array::print end ---
+--- ESMCI::Array::print start ---
+ Base name    = array1
+ Status: Base = ReadyPASS Set up maxIndex, ESMC_ArrayUTest.C, line 76
+PASS Create ESMC_Array object, ESMC_ArrayUTest.C, line 96
+,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+PASS Print ESMC_Array object, ESMC_ArrayUTest.C, line 104
+PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.C, line 112
+{}Array typekind/rank: Integer*4 / 2 
+PASS Destroy ESMC_Array object, ESMC_ArrayUTest.C, line 120
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 3 ~
+LocalArrayPrint: Array at address 0x128b380:
+            rank = 2, typekind = 3, base_addr = 0x128abd0
+            dim[0] = 1  dim[1] = 10  
+PASS Create 5 x 10 ESMC_DistGrid object, ESMC_ArrayUTest.C, line 84
+Ending Test, file ESMC_ArrayUTest.C, line 124
+  Integer, *4, Dim 2, Data values:
+( 1, 1) =  19431328
+( 1, 2) =  0
+( 1, 3) =  1
+( 1, 4) =  2
+( 1, 5) =  0
+( 1, 6) =  0
+( 1, 7) =  0
+( 1, 8) =  0
+( 1, 9) =  0
+( 1,10) =  0
+dim 1: [0]: [1 [1 [1, 1] 1] 1]
+dim 2: [1]: [1 [1 [1, 10] 10] 10]
+--- ESMCI::Array::print end ---
+PASS Print ESMC_Array object, ESMC_ArrayUTest.C, line 104
+PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.C, line 112
+PASS Destroy ESMC_Array object, ESMC_ArrayUTest.C, line 120
+PASS Create ESMC_Array object, ESMC_ArrayUTest.C, line 96
+Ending Test, file ESMC_ArrayUTest.C, line 124
+--- ESMCI::Array::print start ---
+ Base name    = array1
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}Array typekind/rank: Integer*4 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 0 ~
+LocalArrayPrint: Array at address 0x2015390:
+            rank = 2, typekind = 3, base_addr = 0x1f41150
+            dim[0] = 2  dim[1] = 10  
+  Integer, *4, Dim 2, Data values:
+( 1, 1) =  2051086376
+( 2, 1) =  32593
+( 1, 2) =  2051086376
+( 2, 2) =  32593
+( 1, 3) =  32770992
+( 2, 3) =  0
+( 1, 4) =  97
+( 2, 4) =  0
+( 1, 5) =  32764064
+( 2, 5) =  0
+( 1, 6) =  32776576
+( 2, 6) =  0
+( 1, 7) =  32846544
+( 2, 7) =  0
+( 1, 8) =  65
+( 2, 8) =  0
+( 1, 9) =  32803840
+( 2, 9) =  0
+( 1,10) =  32776608
+( 2,10) =  0
+dim 1: [0]: [1 [1 [1, 2] 2] 2]
+dim 2: [1]: [1 [1 [1, 10] 10] 10]
+--- ESMCI::Array::print end ---
+PASS Print ESMC_Array object, ESMC_ArrayUTest.C, line 104
+PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.C, line 112
+PASS Destroy ESMC_Array object, ESMC_ArrayUTest.C, line 120
+Ending Test, file ESMC_ArrayUTest.C, line 124
+Ending Test, file ESMC_ArrayUTest.C, line 124 PET 0 Test Elapsed Time 5.531 msec.
+Ending Test, file ESMC_ArrayUTest.C, line 124 PET 1 Test Elapsed Time 6.456 msec.
+Ending Test, file ESMC_ArrayUTest.C, line 124 PET 3 Test Elapsed Time 6.239 msec.
+Ending Test, file ESMC_ArrayUTest.C, line 124 PET 2 Test Elapsed Time 6.965 msec.
+[mpiexec@i039.cgd.ucar.edu] HYDT_bscd_pbs_wait_for_completion (tools/bootstrap/external/pbs_wait.c:66): tm_poll(obit_event) failed with TM error 17002
+[mpiexec@i039.cgd.ucar.edu] HYDT_bsci_wait_for_completion (tools/bootstrap/src/bsci_wait.c:23): launcher returned error waiting for completion
+[mpiexec@i039.cgd.ucar.edu] HYD_pmci_wait_for_completion (pm/pmiserv/pmiserv_pmci.c:218): launcher returned error waiting for completion
+[mpiexec@i039.cgd.ucar.edu] main (ui/mpich/mpiexec.c:340): process manager error waiting for completion
