@@ -1,4 +1,4 @@
-Fri May 27 05:46:51 MDT 2022
+Fri May 27 07:48:15 MDT 2022
 #!/bin/sh -l
 #PBS -N test-nag_6.2_mvapich2_g.bat
 #PBS -l walltime=2:00:00
