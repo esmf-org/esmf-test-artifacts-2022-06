@@ -1,0 +1,47 @@
+build time -- 2022-05-27 05:27:41.307530
+  Beginning Test, file ESMF_XGridMaskingUTes  Beginning Test, file ESMF_XGridMaskingUTest.F90, line 50
+t.F90, line 50
+  NUMBER_OF_PR  NUMBER_OF_PROCESSORSOCESSORS 2
+ 2
+ Star Starting test2dting test2d__masking_sinmasking_single
+gle
+  xgrid flux and area:   16.0000000000000000   8.0000000000000000   8.0000000000000000
+ dst flux and area:   16.0000000000000000   8.0000000000000000  16.0000000000000000
+  xgrid flux and area:   40.0000000000000000  16.0000000000000000  16.0000000000000000
+ dst flux and area:   40.0000000000000000  16.0000000000000000  64.0000000000000000
+  PASS  Crea  PASS  Creating an XGrid fromting an XGrid from 2 adjacent Grids with masking, ESMF_XGridM 2 adjacent Grids with masking, ESMF_XGridMaskingUTest.F9askingUTest.F90, line 60
+0, line 60
+ Starting t Starting test3d_masking_regional
+est3d_masking_regional
+  xgrid flux and area:    9.7400871794612164E-03   4.8700435897306082E-03   4.8700435897306082E-03
+ dst flux and area:    9.7400871794612164E-03   4.8700435897306082E-03   1.9432714478542050E-02
+  xgrid flux and area:    3.4010554245027312E-04   1.7005277122513656E-04   1.7005277122513656E-04
+ dst flux and area:    3.4010554245027307E-04   1.7005277122513653E-04   1.3587659616633519E-03
+  xgrid flux and area:    3.4010554245027529E-04   1.7005277122513764E-04   1.7005277122513764E-04
+ dst flux and area:    3.4010554245027529E-04   1.7005277122513764E-04   1.3587659616633497E-03
+  xgrid flux and area:    9.7400871794612164E-03   4.8700435897306082E-03   4.8700435897306082E-03
+ dst flux and area:    9.7400871794612164E-03   4.8700435897306082E-03   1.9432714478542050E-02
+  xgrid flux and area:    3.4010554245027529E-04   1.7005277122513764E-04   1.7005277122513764E-04
+ dst flux and area:    3.4010554245027529E-04   1.7005277122513764E-04   1.3587659616633497E-03
+  PASS  Creating an XGrid in 3D with Grid masking, ESMF_XGridMaskingUTest.F90, line 69
+ Starting test3d_masking_global
+  PASS  Creating an XGrid in 3D with Grid masking, ESMF_XGridMaskingUTest.F90, line 69
+ Starting test3d_masking_global
+  xgrid flux and area:   25.1327412287183449  12.5663706143591725  12.5663706143591725
+ dst flux and area:   25.1327412287183591  12.5663706143591796  12.5663706143591796
+  xgrid flux and area:   24.7809518114313931  12.3904759057156966  12.3904759057156966
+ dst flux and area:   24.7809518114314109  12.3904759057157055  12.5663706143591796
+  xgrid flux and area:   25.1327412287181389  12.5663706143590694  12.5663706143590694
+ dst flux and area:   25.1327412287184089  12.5663706143592044  12.5663706143591902
+  PASS  Creating an XGrid in 3D with global Grid masking, ESMF_XGridMaskingUTest.F90, line 78
+  Ending Test, file ESMF_XGridMaskingUTest.F90, line 80
+  PASS  Creating an XGrid in 3D with global Grid masking, ESMF_XGridMaskingUTest.F90, line 78
+  Ending Test, file ESMF_XGridMaskingUTest.F90, line 80
+  PET 0  Test Elapsed Time    1.5408346000000000E+04  msec.
+  PET 1Warning: Floating underflow occu  Test Elapsed Time    1.5347069000000000E+04  mrred
+sec.
+Warning: Floating underflow occurred
+[mpiexec@i038.cgd.ucar.edu] HYDT_bscd_pbs_wait_for_completion (tools/bootstrap/external/pbs_wait.c:67): tm_poll(obit_event) failed with TM error 17002
+[mpiexec@i038.cgd.ucar.edu] HYDT_bsci_wait_for_completion (tools/bootstrap/src/bsci_wait.c:23): launcher returned error waiting for completion
+[mpiexec@i038.cgd.ucar.edu] HYD_pmci_wait_for_completion (pm/pmiserv/pmiserv_pmci.c:218): launcher returned error waiting for completion
+[mpiexec@i038.cgd.ucar.edu] main (ui/mpich/mpiexec.c:340): process manager error waiting for completion
