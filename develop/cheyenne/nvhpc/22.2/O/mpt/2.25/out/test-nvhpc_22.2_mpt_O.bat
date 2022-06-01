@@ -1,4 +1,4 @@
-Fri May 27 05:53:10 MDT 2022
+Wed Jun 1 12:24:21 MDT 2022
 #!/bin/sh -l
 #PBS -N test-nvhpc_22.2_mpt_O.bat
 #PBS -l walltime=3:00:00
@@ -7,7 +7,7 @@ Fri May 27 05:53:10 MDT 2022
 #PBS -l select=1:ncpus=36:mpiprocs=36
 JOBID="`echo $PBS_JOBID | cut -d. -f1`"
 
-cd /glade/scratch/sacks/esmf-testing/nvhpc_22.2_mpt_O_develop
+cd /glade/scratch/dunlap/esmf-testing/nvhpc_22.2_mpt_O_develop
 
 module load python cmake
 module load nvhpc/22.2 mpt/2.25 netcdf/4.8.1
@@ -16,7 +16,7 @@ module list >& module-test.log
 set -x
 export ESMF_NETCDF=nc-config
 
-export ESMF_DIR=/glade/scratch/sacks/esmf-testing/nvhpc_22.2_mpt_O_develop
+export ESMF_DIR=/glade/scratch/dunlap/esmf-testing/nvhpc_22.2_mpt_O_develop
 export ESMF_COMPILER=nvhpc
 export ESMF_COMM=mpt
 export ESMF_BOPT='O'
