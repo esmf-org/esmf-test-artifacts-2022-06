@@ -1,4 +1,4 @@
-Thu May 26 06:52:17 MDT 2022
+Wed Jun 1 12:16:40 MDT 2022
 #!/bin/sh -l
 #PBS -N build-gfortran_9.1.0_mpt_g.bat
 #PBS -l walltime=1:00:00
@@ -8,7 +8,7 @@ Thu May 26 06:52:17 MDT 2022
 #PBS -l select=1:ncpus=36:mpiprocs=36
 JOBID="`echo $PBS_JOBID | cut -d. -f1`"
 
-cd /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_mpt_g_develop
+cd /glade/scratch/dunlap/esmf-testing/gfortran_9.1.0_mpt_g_develop
 
 module load cmake
 module load gnu/9.1.0 mpt/2.22 netcdf/4.7.3
@@ -18,7 +18,7 @@ set -x
 export ESMF_NETCDF=nc-config
 
 export ESMF_F90COMPILER=mpif90
-export ESMF_DIR=/glade/scratch/rlong/esmf-testing/gfortran_9.1.0_mpt_g_develop
+export ESMF_DIR=/glade/scratch/dunlap/esmf-testing/gfortran_9.1.0_mpt_g_develop
 export ESMF_COMPILER=gfortran
 export ESMF_COMM=mpt
 export ESMF_BOPT='g'
