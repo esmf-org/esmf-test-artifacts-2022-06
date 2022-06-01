@@ -1,4 +1,4 @@
-Tue May 31 18:43:53 MDT 2022
+Wed Jun 1 12:34:16 MDT 2022
 #!/bin/sh -l
 #PBS -N build-intel_18.0.5_mpiuni_O.bat
 #PBS -l walltime=1:00:00
@@ -11,7 +11,6 @@ JOBID="`echo $PBS_JOBID | cut -d. -f1`"
 cd /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpiuni_O_release_8.3.0
 
 module load python cmake
-export ESMF_MPIRUN=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpiuni_O_release_8.3.0/src/Infrastructure/stubs/mpiuni/mpirun
 module load intel/18.0.5  netcdf/4.6.3
 module list >& module-build.log
 
