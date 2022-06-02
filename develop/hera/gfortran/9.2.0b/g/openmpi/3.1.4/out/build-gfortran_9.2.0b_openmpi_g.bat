@@ -1,9 +1,9 @@
-Wed Jun 1 06:54:28 UTC 2022
+Thu Jun 2 06:02:54 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o build-gfortran_9.2.0b_openmpi_g.bat_%j.o
 #SBATCH -e build-gfortran_9.2.0b_openmpi_g.bat_%j.e
-#SBATCH --time=1:00:00
+#SBATCH --time=2:00:00
 #SBATCH --partition=hera
 #SBATCH --qos=batch
 #SBATCH --nodes=1
