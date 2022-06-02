@@ -1,0 +1,196 @@
+build time -- 2022-06-02 02:17:17.635740
+ --------------------------------------- 
+ Start of  System Test ESMF_RecursiveComponentSTest
+ --------------------------------------- 
+ --------------------------------------- 
+ Start of  System Test ESMF_RecursiveComponentSTest
+ --------------------------------------- 
+ --------------------------------------- 
+ Start of  System Test ESMF_RecursiveComponentSTest
+ --------------------------------------- 
+ --------------------------------------- 
+ Start of  System Test ESMF_RecursiveComponentSTest
+ --------------------------------------- 
+ --------------------------------------- 
+ Start of  System Test ESMF_RecursiveComponentSTest
+ --------------------------------------- 
+ --------------------------------------- 
+ Start of  System Test ESMF_RecursiveComponentSTest
+ --------------------------------------- 
+ Run() method before recursive call
+ Gridded Component:
+  Component name = component012345
+ Run() method before recursive call
+ Gridded Component:
+  Component name = component012
+ Run() method before recursive call
+ Gridded Component:
+  Component name = component012345
+ Run() method before recursive call
+ Gridded Component:
+ Run() method before recursive call
+ Gridded Component:
+  Component name = component0
+ Run() method after recursive call
+ Gridded Component:
+  Component name = component0
+ Run() method after recursive call
+ Gridded Component:
+  Component name = component012
+ Run() method after recursive call
+ Gridded Component:
+  Component name = component012345
+  Component name = component012
+ Run() method before recursive call
+ Gridded Component:
+  Component name = component12
+ Run() method after recursive call
+ Gridded Component:
+  Component name = component12
+ Run() method after recursive call
+ Gridded Component:
+  Component name = component012
+ Run() method before recursive call
+ Run() method after recursive call
+ Gridded Component:
+  Component name = component012345
+ Gridded Component:
+  Component name = component012345
+ Run() method before recursive call
+ Gridded Component:
+  Component name = component012
+ Run() method before recursive call
+ Gridded Component:
+  Component name = component12
+ Run() method after recursive call
+ Gridded Component:
+  Component name = component12
+ Run() method before recursive call
+ Gridded Component:
+  Component name = component012345
+ Run() method after recursive call
+ Gridded Component:
+  Component name = component012
+ Run() method after recursive call
+ Gridded Component:
+  Component name = component012345
+ Run() method before recursive call
+ Gridded Component:
+  Component name = component345
+ Run() method before recursive call
+ Gridded Component:
+  Component name = component0
+ Run() method after recursive call
+ Gridded Component:
+  Component name = component0
+ Run() method after recursive call
+ Gridded Component:
+  Component name = component345
+ Run() method after recursive call
+  System Test ESMF_RecursiveComponentSTest                                                                                                                                                                                                                        complete.
+ Run() method before recursive call
+ Gridded Component:
+  Component name = component012345
+ Run() method before recursive call
+ Gridded Component:
+  Component name = component345
+ Run() method before recursive call
+ Gridded Component:
+  Component name = component012345
+ Run() method before recursive call
+ Gridded Component:
+  Component name = component345
+  System Test ESMF_RecursiveComponentSTest                                                                                                                                                                                                                        complete.
+  PASS  System Test ESMF_RecursiveComponentSTest, ESMF_RecursiveComponentSTest.F90, line 238
+ 
+  System Test ESMF_RecursiveComponentSTest
+  SUCCESS:  System Test ESMF_RecursiveComponentSTest finished correctly.
+ 
+ Gridded Component:
+  Component name = component012345
+  PASS  System Test ESMF_RecursiveComponentSTest, ESMF_RecursiveComponentSTest.F90, line 238
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+ Test finished, localPet =            0
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+ Run() method before recursive call
+ Gridded Component:
+  Component name = component12
+ Run() method after recursive call
+ Gridded Component:
+  Component name = component12
+ Run() method after recursive call
+ Gridded Component:
+  Component name = component345
+ Run() method after recursive call
+ Gridded Component:
+  Component name = component012345
+ Run() method before recursive call
+ Gridded Component:
+  Component name = component12
+ Run() method after recursive call
+ Gridded Component:
+  Component name = component12
+ Run() method after recursive call
+ Gridded Component:
+  Component name = component345
+ Run() method after recursive call
+ Gridded Component:
+  Component name = component012345
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+ Test finished, localPet =            2
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+  System Test ESMF_RecursiveComponentSTest                                                                                                                                                                                                                        complete.
+  PASS  System Test ESMF_RecursiveComponentSTest, ESMF_RecursiveComponentSTest.F90, line 238
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+ Test finished, localPet =            4
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+  System Test ESMF_RecursiveComponentSTest                                                                                                                                                                                                                        complete.
+  PASS  System Test ESMF_RecursiveComponentSTest, ESMF_RecursiveComponentSTest.F90, line 238
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+ Test finished, localPet =            1
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+  System Test ESMF_RecursiveComponentSTest                                                                                                                                                                                                                        complete.
+  PASS  System Test ESMF_RecursiveComponentSTest, ESMF_RecursiveComponentSTest.F90, line 238
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+ Test finished, localPet =            3
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+  System Test ESMF_RecursiveComponentSTest                                                                                                                                                                                                                        complete.
+  PASS  System Test ESMF_RecursiveComponentSTest, ESMF_RecursiveComponentSTest.F90, line 238
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+ Test finished, localPet =            5
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 0 on
+node r14i5n29 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+--------------------------------------------------------------------------
