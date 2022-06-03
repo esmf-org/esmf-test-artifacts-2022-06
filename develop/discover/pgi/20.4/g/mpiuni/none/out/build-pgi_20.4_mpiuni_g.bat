@@ -1,4 +1,4 @@
-Thu Jun 2 03:30:38 EDT 2022
+Fri Jun 3 02:41:55 EDT 2022
 #!/bin/sh -l
 #SBATCH --account=s2326
 #SBATCH -o build-pgi_20.4_mpiuni_g.bat_%j.o
