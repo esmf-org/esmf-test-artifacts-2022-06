@@ -1,4 +1,4 @@
-Thu Jun 2 03:08:05 PDT 2022
+Thu Jun 2 21:51:37 PDT 2022
 #!/bin/sh -l
 #SBATCH --account=e3sm
 #SBATCH -o test-intel_19.1.2_mpi_g.bat_%j.o
