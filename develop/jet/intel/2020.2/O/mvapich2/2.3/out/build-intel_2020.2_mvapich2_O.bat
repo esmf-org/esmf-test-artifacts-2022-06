@@ -1,4 +1,4 @@
-Thu Jun 2 03:47:46 GMT 2022
+Fri Jun 3 03:47:51 GMT 2022
 #!/bin/sh -l
 #SBATCH --account=hfv3gfs
 #SBATCH -o build-intel_2020.2_mvapich2_O.bat_%j.o
