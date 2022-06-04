@@ -1,0 +1,65 @@
+build time -- 2022-06-04 02:08:05.932119
+0:  Beginning Test, file ESMF_VMBarrierUTest.F90, line 66
+1:  Beginning Test, file ESMF_VMBarrierUTest.F90, line 66
+3:  Beginning Test, file ESMF_VMBarrierUTest.F90, line 66
+3:  NUMBER_OF_PROCESSORS           4
+0:  NUMBER_OF_PROCESSORS           4
+2:  Beginning Test, file ESMF_VMBarrierUTest.F90, line 66
+2:  NUMBER_OF_PROCESSORS           4
+1:  NUMBER_OF_PROCESSORS           4
+0: timing precision is:   5.029141902923584E-007
+2: timing precision is:   4.800967872142792E-007
+3: timing precision is:   5.261972546577454E-007
+1: timing precision is:   3.960449248552322E-007
+0: max timing precision is:   5.261972546577454E-007
+1: max timing precision is:   5.261972546577454E-007
+2: max timing precision is:   5.261972546577454E-007
+3: max timing precision is:   5.261972546577454E-007
+3:  PASS  Timer Precision test, ESMF_VMBarrierUTest.F90, line 87
+0:  PASS  Timer Precision test, ESMF_VMBarrierUTest.F90, line 87
+2:  PASS  Timer Precision test, ESMF_VMBarrierUTest.F90, line 87
+1:  PASS  Timer Precision test, ESMF_VMBarrierUTest.F90, line 87
+0: slow Pet=           0 Pet=           0 time delay =    1.00047092000023      
+1: slow Pet=           0 Pet=           1 time delay =    1.00002004695125      
+1: [  -- should be >=    1.00000000000000      --  ]
+2: slow Pet=           0 Pet=           2 time delay =    1.00049267895520      
+2: [  -- should be >=    1.00000000000000      --  ]
+3: slow Pet=           0 Pet=           3 time delay =    1.00053796800785      
+3: [  -- should be >=    1.00000000000000      --  ]
+0: [  -- should be >=    1.00000000000000      --  ]
+1: slow Pet=           1 Pet=           1 time delay =    1.00007089297287      
+1: [  -- should be >=    1.00000000000000      --  ]
+2: slow Pet=           1 Pet=           2 time delay =    1.00007216818631      
+2: [  -- should be >=    1.00000000000000      --  ]
+3: slow Pet=           1 Pet=           3 time delay =    1.00007133395411      
+0: slow Pet=           1 Pet=           0 time delay =    1.00001634610817      
+0: [  -- should be >=    1.00000000000000      --  ]
+3: [  -- should be >=    1.00000000000000      --  ]
+0: slow Pet=           2 Pet=           0 time delay =    1.00007675797679      
+0: [  -- should be >=    1.00000000000000      --  ]
+1: slow Pet=           2 Pet=           1 time delay =    1.00008078920655      
+1: [  -- should be >=    1.00000000000000      --  ]
+2: slow Pet=           2 Pet=           2 time delay =    1.00007600802928      
+3: slow Pet=           2 Pet=           3 time delay =    1.00001718197018      
+3: [  -- should be >=    1.00000000000000      --  ]
+2: [  -- should be >=    1.00000000000000      --  ]
+1: slow Pet=           3 Pet=           1 time delay =    1.00007411092520      
+1: [  -- should be >=    1.00000000000000      --  ]
+2: slow Pet=           3 Pet=           2 time delay =    1.00001508393325      
+2: [  -- should be >=    1.00000000000000      --  ]
+2:  PASS  Barrier Test, ESMF_VMBarrierUTest.F90, line 122
+3: slow Pet=           3 Pet=           3 time delay =    1.00007250788622      
+0: slow Pet=           3 Pet=           0 time delay =    1.00007457379252      
+0: [  -- should be >=    1.00000000000000      --  ]
+0:  PASS  Barrier Test, ESMF_VMBarrierUTest.F90, line 122
+1:  PASS  Barrier Test, ESMF_VMBarrierUTest.F90, line 122
+3: [  -- should be >=    1.00000000000000      --  ]
+0:  Ending Test, file ESMF_VMBarrierUTest.F90, line 124
+1:  Ending Test, file ESMF_VMBarrierUTest.F90, line 124
+2:  Ending Test, file ESMF_VMBarrierUTest.F90, line 124
+3:  PASS  Barrier Test, ESMF_VMBarrierUTest.F90, line 122
+3:  Ending Test, file ESMF_VMBarrierUTest.F90, line 124
+3:  PET           3  Test Elapsed Time    4001.07100000000       msec.
+1:  PET           1  Test Elapsed Time    4000.64700000000       msec.
+0:  PET           0  Test Elapsed Time    3999.91500000000       msec.
+2:  PET           2  Test Elapsed Time    4000.90200000000       msec.
