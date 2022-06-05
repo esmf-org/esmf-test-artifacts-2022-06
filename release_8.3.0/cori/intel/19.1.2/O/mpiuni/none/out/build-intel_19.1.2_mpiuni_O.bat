@@ -1,4 +1,4 @@
-Sun Jun 5 02:31:40 PDT 2022
+Sun Jun 5 10:17:01 PDT 2022
 #!/bin/sh -l
 #SBATCH --account=e3sm
 #SBATCH -o build-intel_19.1.2_mpiuni_O.bat_%j.o
