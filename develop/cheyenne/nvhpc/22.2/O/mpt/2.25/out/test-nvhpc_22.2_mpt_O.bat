@@ -1,4 +1,4 @@
-Mon Jun 6 11:55:53 MDT 2022
+Mon Jun 6 13:27:23 MDT 2022
 #!/bin/sh -l
 #PBS -N test-nvhpc_22.2_mpt_O.bat
 #PBS -l walltime=3:00:00
