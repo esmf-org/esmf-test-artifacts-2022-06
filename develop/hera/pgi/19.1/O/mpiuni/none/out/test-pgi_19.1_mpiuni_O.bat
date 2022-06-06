@@ -1,4 +1,4 @@
-Mon Jun 6 06:16:26 UTC 2022
+Mon Jun 6 07:22:34 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o test-pgi_19.1_mpiuni_O.bat_%j.o
