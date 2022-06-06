@@ -1,4 +1,4 @@
-Mon Jun 6 10:47:55 MDT 2022
+Mon Jun 6 11:18:22 MDT 2022
 #!/bin/bash -l
 export JOBID=12345
 
