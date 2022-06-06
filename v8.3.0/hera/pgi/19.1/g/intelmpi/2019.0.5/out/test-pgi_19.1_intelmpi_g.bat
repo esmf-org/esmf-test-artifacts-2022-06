@@ -1,9 +1,9 @@
-Mon Jun 6 19:10:26 UTC 2022
+Mon Jun 6 19:11:28 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
-#SBATCH -o test-intel_18.0.5a_mpiuni_g.bat_%j.o
-#SBATCH -e test-intel_18.0.5a_mpiuni_g.bat_%j.e
-#SBATCH --time=1:00:00
+#SBATCH -o test-pgi_19.1_intelmpi_g.bat_%j.o
+#SBATCH -e test-pgi_19.1_intelmpi_g.bat_%j.e
+#SBATCH --time=4:00:00
 #SBATCH --partition=hera
 #SBATCH --qos=batch
 #SBATCH --nodes=1
@@ -12,16 +12,16 @@ Mon Jun 6 19:10:26 UTC 2022
 export JOBID=$SLURM_JOBID
 
 module load cmake
-module load intel/18.0.5.274  netcdf/4.6.1
+export ESMF_MPIRUN=mpirun.srun
+module load pgi/19.10 impi/2019.0.5 
+
 module list >& module-test.log
 
 set -x
-export ESMF_NETCDF=nc-config
 
-tar xvfz ~/pytest-input.tar.gz
-export ESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5a_mpiuni_g_v8.3.0
-export ESMF_COMPILER=intel
-export ESMF_COMM=mpiuni
+export ESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_v8.3.0
+export ESMF_COMPILER=pgi
+export ESMF_COMM=intelmpi
 export ESMF_BOPT='g'
 export ESMF_TESTEXHAUSTIVE='ON'
 export ESMF_TESTWITHTHREADS='ON'
