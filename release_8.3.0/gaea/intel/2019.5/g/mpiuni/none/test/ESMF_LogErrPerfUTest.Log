@@ -1,0 +1,30 @@
+build time -- 2022-06-06 00:48:20
+20220606 010019.816 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220606 010019.816 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220606 010019.816 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220606 010019.816 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220606 010019.816 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220606 010019.816 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220606 010019.816 INFO             PET0 Running with ESMF Version   : v8.3.0b17-1-g6ed324f6a2
+20220606 010019.816 INFO             PET0 ESMF library build date/time: "Jun  6 2022" "00:46:22"
+20220606 010019.816 INFO             PET0 ESMF library build location : /lustre/f2/dev/ncep/Mark.Potts/intel_2019.5_mpiuni_g_release_8.3.0
+20220606 010019.816 INFO             PET0 ESMF_COMM                   : mpiuni
+20220606 010019.817 INFO             PET0 ESMF_MOAB                   : enabled
+20220606 010019.817 INFO             PET0 ESMF_LAPACK                 : enabled
+20220606 010019.817 INFO             PET0 ESMF_NETCDF                 : enabled
+20220606 010019.817 INFO             PET0 ESMF_PNETCDF                : disabled
+20220606 010019.817 INFO             PET0 ESMF_PIO                    : disabled
+20220606 010019.817 INFO             PET0 ESMF_YAMLCPP                : enabled
+20220606 010019.817 INFO             PET0  Beginning Test, file ESMF_LogErrPerfUTest.F90, line 55
+20220606 010019.817 INFO             PET0  NUMBER_OF_PROCESSORS           1
+20220606 010019.817 INFO             PET0  perfLogFoundError:         1000  iterations took  9.393692016601562E-005  seconds. =>   9.393692016601563E-008  per iteration.
+20220606 010019.817 INFO             PET0  PASS  Performance of ESMF_LogFoundError() 1000x Test, ESMF_LogErrPerfUTest.F90, line 64
+20220606 010019.818 INFO             PET0  perfLogFoundError:        10000  iterations took  8.788108825683594E-004  seconds. =>   8.788108825683593E-008  per iteration.
+20220606 010019.818 INFO             PET0  PASS  Performance of ESMF_LogFoundError() 10000x Test, ESMF_LogErrPerfUTest.F90, line 72
+20220606 010019.827 INFO             PET0  perfLogFoundError:       100000  iterations took  9.075880050659180E-003  seconds. =>   9.075880050659180E-008  per iteration.
+20220606 010019.827 INFO             PET0  PASS  Performance of ESMF_LogFoundError() 100000x Test, ESMF_LogErrPerfUTest.F90, line 80
+20220606 010019.926 INFO             PET0  perfLogFoundError:      1000000  iterations took  9.911584854125977E-002  seconds. =>   9.911584854125976E-008  per iteration.
+20220606 010019.926 INFO             PET0  PASS  Performance of ESMF_LogFoundError() 1000000x Test, ESMF_LogErrPerfUTest.F90, line 88
+20220606 010019.926 INFO             PET0  PASS  Threshold check for ESMF_LogFoundError() 1000000x Test, ESMF_LogErrPerfUTest.F90, line 99
+20220606 010019.927 INFO             PET0  Ending Test, file ESMF_LogErrPerfUTest.F90, line 103
+20220606 010019.927 INFO             PET0 Finalizing ESMF
