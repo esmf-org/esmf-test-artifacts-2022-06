@@ -1,4 +1,4 @@
-Sun Jun 5 03:55:51 GMT 2022
+Mon Jun 6 03:56:49 GMT 2022
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.3.0
@@ -11,8 +11,8 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
 	build-gfortran_9.2.0_openmpi_O.bat
-	build-gfortran_9.2.0_openmpi_O.bat_4528958.e
-	build-gfortran_9.2.0_openmpi_O.bat_4528958.o
+	build-gfortran_9.2.0_openmpi_O.bat_4579144.e
+	build-gfortran_9.2.0_openmpi_O.bat_4579144.o
 	getres-build.sh
 	getres-test.sh
 	nuopc-app-prototypes/
@@ -221,15 +221,15 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Sun Jun 5 03:49:57 GMT 2022 on x757
-Machine characteristics: Linux x757 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Mon Jun 6 03:50:59 GMT 2022 on x120
+Machine characteristics: Linux x120 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 make[1]: Entering directory `/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0'
 Making directory /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/lib/libO/Linux.gfortran.64.openmpi.default for library
 Making directory /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/include for include files
 Making directory /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/mod/modO/Linux.gfortran.64.openmpi.default for *.mod files
-Making directory /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/obj/objO/Linux.gfortran.64.openmpi.default for build-gfortran_9.2.0_openmpi_O.bat_4528958.o files
+Making directory /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/obj/objO/Linux.gfortran.64.openmpi.default for build-gfortran_9.2.0_openmpi_O.bat_4579144.o files
 cd /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0 ;\
 make ACTION=tree_include tree
 make[2]: Entering directory `/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0'
@@ -1343,14 +1343,14 @@ mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -DESMF_LOWERCASE_SINGLEUNDERSCORE -m64 -m
 mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -DESMF_LOWERCASE_SINGLEUNDERSCORE -m64 -mcmodel=small -pthread  -fopenmp -I/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/Infrastructure/VM/src -I/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/Infrastructure/VM/src/../include -I/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/build_config/Linux.gfortran.default -I/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/Infrastructure -I/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/Superstructure -I/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/Infrastructure/stubs/pthread  -I/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/include  -I/apps/spack/linux-centos7-x86_64/gcc-9.2.0/netcdf-c-4.7.2-btfhbjvmwttboik5vd7ty6afd6h6w56u/include -I/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b17-1-g6ed324f6a2"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0 -D__SDIR__='"src/Infrastructure/VM/src"' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2 /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/Infrastructure/VM/src/ESMCI_VMKernel.C -o /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/obj/objO/Linux.gfortran.64.openmpi.default/ESMCI_VMKernel.o
 In file included from /misc/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/strstream:50,
                  from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/Infrastructure/VM/src/../include/ESMCI_VMKernel.h:28,
-                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/Infrastructure/VM/src/ESMCI_VMKernel.C:13:
+                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/Infrastructure/VM/src/../include/ESMCI_VM.h:41,
+                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/Infrastructure/VM/src/ESMCI_VM.C:40:
 /misc/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
 In file included from /misc/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/strstream:50,
                  from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/Infrastructure/VM/src/../include/ESMCI_VMKernel.h:28,
-                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/Infrastructure/VM/src/../include/ESMCI_VM.h:41,
-                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/Infrastructure/VM/src/ESMCI_VM.C:40:
+                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/Infrastructure/VM/src/ESMCI_VMKernel.C:13:
 /misc/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
@@ -1427,13 +1427,6 @@ mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -DESMF_LOWERCASE_SINGLEUNDERSCORE -m64 -m
 In file included from /misc/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/strstream:50,
                  from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/include/ESMCI_VMKernel.h:28,
                  from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/include/ESMCI_VM.h:41,
-                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/Infrastructure/Trace/src/ESMCI_TraceClock.C:31:
-/misc/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-   32 | #warning \
-      |  ^~~~~~~
-In file included from /misc/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/strstream:50,
-                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/include/ESMCI_VMKernel.h:28,
-                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/include/ESMCI_VM.h:41,
                  from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/include/ESMCI_Base.h:27,
                  from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/include/ESMCI_Comp.h:32,
                  from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/Infrastructure/Trace/src/../include/ESMCI_Trace.h:17,
@@ -1444,7 +1437,7 @@ In file included from /misc/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-
 In file included from /misc/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/strstream:50,
                  from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/include/ESMCI_VMKernel.h:28,
                  from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/include/ESMCI_VM.h:41,
-                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/Infrastructure/Trace/src/ESMCI_Trace.C:40:
+                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/Infrastructure/Trace/src/ESMCI_TraceClock.C:31:
 /misc/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
@@ -1455,6 +1448,13 @@ In file included from /misc/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-
                  from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/include/ESMCI_Comp.h:32,
                  from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/Infrastructure/Trace/src/../include/ESMCI_Trace.h:17,
                  from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/Infrastructure/Trace/src/ESMCI_TraceMetadata.C:17:
+/misc/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from /misc/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/strstream:50,
+                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/include/ESMCI_VMKernel.h:28,
+                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/include/ESMCI_VM.h:41,
+                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_release_8.3.0/src/Infrastructure/Trace/src/ESMCI_Trace.C:40:
 /misc/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
