@@ -1,4 +1,4 @@
-Tue Jun 7 01:20:54 EDT 2022
+Tue Jun 7 01:20:51 EDT 2022
 #!/bin/sh -l
 #SBATCH --account=s2326
 #SBATCH -o test-intel_19.1.3_intelmpi_g.bat_%j.o
@@ -18,7 +18,7 @@ set -x
 export ESMF_NETCDF=nc-config
 
 export ESMF_NETCDF_LIBS="-lhdf5_hl -lhdf5"
-export ESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/intel_19.1.3_intelmpi_g_develop
+export ESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/intel_19.1.3_intelmpi_g_v8.3.0
 export ESMF_COMPILER=intel
 export ESMF_COMM=intelmpi
 export ESMF_BOPT='g'

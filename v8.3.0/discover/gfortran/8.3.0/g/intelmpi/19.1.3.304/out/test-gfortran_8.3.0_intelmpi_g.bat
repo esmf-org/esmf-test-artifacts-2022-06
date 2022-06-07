@@ -1,8 +1,8 @@
-Tue Jun 7 01:20:54 EDT 2022
+Tue Jun 7 01:20:56 EDT 2022
 #!/bin/sh -l
 #SBATCH --account=s2326
-#SBATCH -o test-intel_19.1.3_intelmpi_g.bat_%j.o
-#SBATCH -e test-intel_19.1.3_intelmpi_g.bat_%j.e
+#SBATCH -o test-gfortran_8.3.0_intelmpi_g.bat_%j.o
+#SBATCH -e test-gfortran_8.3.0_intelmpi_g.bat_%j.e
 #SBATCH --time=1:00:00
 #SBATCH --partition=compute
 #SBATCH --qos=allnccs
@@ -10,16 +10,14 @@ Tue Jun 7 01:20:54 EDT 2022
 #SBATCH --ntasks-per-node=28
 #SBATCH --exclusive
 export JOBID=$SLURM_JOBID
-module load comp/intel/19.1.3.304 mpi/impi/19.1.3.304 netcdf4/4.7.4
-module load hdf5/1.13.0 
+module load comp/gcc/8.3.0 mpi/impi/19.1.3.304 
+
 module list >& module-test.log
 
 set -x
-export ESMF_NETCDF=nc-config
 
-export ESMF_NETCDF_LIBS="-lhdf5_hl -lhdf5"
-export ESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/intel_19.1.3_intelmpi_g_develop
-export ESMF_COMPILER=intel
+export ESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/gfortran_8.3.0_intelmpi_g_v8.3.0
+export ESMF_COMPILER=gfortran
 export ESMF_COMM=intelmpi
 export ESMF_BOPT='g'
 export ESMF_TESTEXHAUSTIVE='ON'
