@@ -1,0 +1,383 @@
+build time -- 2022-06-07 01:12:09.114873
+srun: cluster configuration lacks support for cpu binding
+--- ESMCI::ArrayBundle::print start ------ ESMCI::ArrayBundle::print start ---
+ArrayBundle: MyArrayBundle
+arrayCount = 3
+Container::print() multipmap:item=0 key=AonFly value=0x827f00
+Container::print() multipmap:item=1 key=Array002 value=0x823d40
+Container::print() multipmap:item=2 key=Array003--- ESMCI::ArrayBundle::print start ---
+ArrayBundle: MyArrayBundle
+arrayCount = 3
+Container::print() multipmap:item=0 key=AonFly value=--- ESMCI::ArrayBundle::print start ---
+ArrayBundle: MyArrayBundle
+arrayCount = 3
+Container::print() multipmap:item=0 key=AonFly value=0x826c80
+Container::print() multipmap:item=1 key=Array002 value=0x8238c0
+Container::print() multipmap:item=2 key= value=0x824b90
+Container::print()      list:item=0 key=Array002 value=0x823d40
+Container::print()      list:item=1 key=Array003 value=0x824b90
+Container::print()      list:item=2 key=AonFly value=0x827f00
+--- ESMCI::ArrayBundle::print end ---
+0x826ca0
+Container::print() multipmap:item=1 key=Array002 value=0x823890
+Container::print() multipmap:item=2 key=Array003 value=0x8243c0
+Container::print()      list:item=0 key=Array002 value=0x823890
+Container::print()      list:item=1 key=Array003 value=0x8243c0
+Container::print()      list:item=2 key=AonFly value=0x826ca0
+--- ESMCI::ArrayBundle::print end ---
+Array003 value=0x8243c0
+Container::print()      list:item=0 key=Array002 value=0x8238c0
+Container::print()      list:item=1 key=Array003 value=0x8243c0
+Container::print()      list:item=2 key=AonFly value=0x826c80
+--- ESMCI::ArrayBundle::print end ---
+--- ESMCI::Array::print start ---
+ Base name    = AonFly
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+--- ESMCI::Array::print start ---
+ Base name    = AonFly
+--- ESMCI::Array::print start ---
+ Base name    = AonFly
+ Status: Base = Ready,  Status: Base = Ready,  object = Ready
+ Proxy        =  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+no
+ Root Info (Attributes):
+
+{}ArrayBundle: MyArrayBundle
+arrayCount = 3
+Container::print() multipmap:item=Array typekind/rank: Real*4 / 2 
+{}Array typekind/rank: Real*4 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+0 key=AonFly value=0x827960
+{}Array typekind/rank: Real*4 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 6
+localDeCount = 1
+~ local data in LocalArray for DE 2 ~
+LocalArrayPrint: Array at address 0x826970:
+            rank = 2, typekind = 5, deCount = 6
+localDeCount = 1
+~ local data in LocalArray for DE 3 ~
+LocalArrayPrint: Array at address 0x826950:
+            rank = 2, typekind = 5, base_addr = 0x826930
+            dim[0] = 2  Container::print() multipmap:item=1 key=Array002 value=0x823750
+Container::print() multipmap:item=2 key=Array003 value=0x8245d0
+Container::print()      list:item=0base_addr = 0x826950
+            dim[0] = 3  dim[1] = 2  
+  Real, *4, Dim 2, Data values:
+dim[1] = 2  
+  Real, *4, Dim 2, Data values:
+ key=Array002 value=0x823750
+Container::print()      list:item=1 key=Array003 value=0x8245d0
+Container::print()      list:item=2 key=AonFly value=0x827960
+--- ESMCI::ArrayBundle::print end ---
+( 1, 1) =  1.19763e-38
+( 2, 1) =  0
+( 3, 1) =  0
+( 1, 1) =  1.19762e-38
+( 2, 1) =  0
+( 1, 2) =  0
+( 2, 2) =  0
+( 1, 2) =  0
+( 2, 2) =  0
+( 3, 2) =  0
+dim 1: [0]: [1 [1 [1, 3] 3] 3]
+dim 2: [1]: [1 [1 [1, 2] 2] 2]
+dim 1: [0]: [1 [1 [1, 2] 2] 2]
+dim 2: [1]: [1 [1 [1, 2] 2] 2]
+--- ESMCI::Array::print end ---
+--- ESMCI::Array::print start ---
+ Base name    = --- ESMCI::Array::print end ---
+--- ESMCI::Array::print start ---
+ Base name    = Array002Array002
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+--- ESMCI::Array::print start ---
+ Base name    = AonFly
+ Status: Base = Ready, 
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+ Root Info (Attributes):
+{}Array typekind/rank: Real*8 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+ object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}Array typekind/rank: Real*8 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 6
+localDeCount = 1
+~ local data in LocalArray for DE 3 ~
+LocalArrayPrint: Array at address 0x823590:
+            rank = 2, typekind = 6, base_addr = 0x7de400
+            dim[0] = 2  deCount = 6
+localDeCount = 1
+~ local data in LocalArray for DE 2 ~
+LocalArrayPrint: Array at address 0x823560:
+            rank = 2, typekind = 6, base_addr = 0x822fe0
+            dim[1] = 2  
+  Real, *8, Dim 2, Data values:
+dim[0] = 3  dim[1] = 2  
+  Real, *8, Dim 2, Data values:
+( 1, 1) =  4.07618e-317
+( 2, 1) =  4.24399e-314
+( 1, 2) =  0
+( 1, 1) =  4.21544e-317
+( 2, 1) =  4.24399e-314
+( 2, 2) =  0
+dim 1: [0]: [1 [1 [1, 2] 2] 2]
+dim 2: [1]: [1 [1 [1, 2] 2] 2]
+--- ESMCI::Array::print end ---
+--- ESMCI::Array::print start ---
+ Base name    = {}( 3, 1) =  4.24399e-314
+( 1, 2) =  4.24399e-314
+( 2, 2) =  2.122e-314
+( 3, 2) =  2.122e-314
+dim 1: [0]: [1 [1 [1, 3] 3] 3]
+Array003
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):Array typekind/rank: Real*4 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 6
+dim 2: [1]: [1 [1 [1, 2] 2] 2]
+--- ESMCI::Array::print end ---
+--- ESMCI::Array::print start ---
+ Base name    = Array003
+ Status: Base = Ready, 
+{}Array typekind/rank: Real*8 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 6
+localDeCount = 1
+~ local data in LocalArray for DE 3 ~
+localDeCount = 2
+~ local data in LocalArray for DE 0 ~
+LocalArrayPrint: Array at address 0x827300:
+            rank = 2, typekind = 5, base_addr = 0x827280
+             object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}LocalArrayPrint: Array at address 0x824060:
+            rank = 2, typekind = 6, base_addr = 0x824390
+            dim[0] = 2  dim[1] = 2  
+  Real, *8, Dim 2, Data values:
+dim[0] = 3  dim[1] = 2  
+  Real, *4, Dim 2, Data values:
+Array typekind/rank: Real*8 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 6
+localDeCount = 1
+~ local data in LocalArray for DE 2 ~
+LocalArrayPrint: Array at address 0x824050:
+            rank = 2, typekind = 6, base_addr = 0x824380
+( 1, 1) =  0
+( 2, 1) =  0
+( 1, 2) =  0
+( 2, 2) =  0
+dim 1: [0]: [1 [1 [1, 2] 2] 2]
+dim 2: [1]: [1 [1 [1, 2] 2] 2]
+--- ESMCI::Array::print end ---
+( 1, 1) =  1.19797e-38
+( 2, 1) =  0
+( 3, 1) =  0
+( 1, 2) =  0
+            dim[0] = 3  dim[1] = 2  
+  Real, *8, Dim 2, Data values:
+( 1, 1) =  0
+( 2, 1) =  0
+( 3, 1) =  0
+( 2, 2) =  0
+( 3, 2) =  0
+dim 1: [0]: [1 [1 [1, 3] 3] 3]
+dim 2: [1]: [1 [1 [1, 2] 2] 2]
+( 1, 2) =  0
+( 2, 2) =  0
+( 3, 2) =  0
+dim 1: [0]: [1 [1 [1, 3] 3] 3]
+~ local data in LocalArray for DE 4 ~
+LocalArrayPrint: Array at address 0x827630:
+            rank = 2, typekind = 5, base_addr = 0x8272a0
+            dim[0] = 3  dim 2: [1]: [1 [1 [1, 2] 2] 2]
+--- ESMCI::Array::print end ---
+dim[1] = 1  
+  Real, *4, Dim 2, Data values:
+( 1, 1) =  1.19798e-38
+( 2, 1) =  0
+( 3, 1) =  0
+dim 1: [0]: [1 [1 [1, 3] 3] 3]
+dim 2: [1]: [1 [1 [1, 1] 1] 1]
+--- ESMCI::Array::print end ---
+--- ESMCI::Array::print start ---
+ Base name    = Array002
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}Array typekind/rank: Real*8 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 6
+localDeCount = 2
+~ local data in LocalArray for DE 0 ~
+LocalArrayPrint: Array at address 0x8230d0:
+            rank = 2, typekind = 6, base_addr = 0x7c4b90
+            dim[0] = 3  dim[1] = 2  
+  PASS  Example ESMF_ArrayBundleEx, ESMF_ArrayBundleEx.F90, line 267
+  Real, *8, Dim 2, Data values:
+( 1, 1) =  4.02467e-317
+( 2, 1) =  4.24399e-314
+( 3, 1) =  4.24399e-314
+( 1, 2) =  4.24399e-314
+  PASS  Example ESMF_ArrayBundleEx, ESMF_ArrayBundleEx.F90, line 267
+( 2, 2) =  2.122e-314
+( 3, 2) =  2.122e-314
+dim 1: [0]: [1 [1 [1, 3] 3] 3]
+dim 2: [1]: [1 [1 [1, 2] 2] 2]
+~ local data in LocalArray for DE 4 ~
+LocalArrayPrint: Array at address 0x823400:
+            rank = 2, typekind = 6, base_addr = 0x823730
+            dim[0] = 3  dim[1] = 1  
+  Real, *8, Dim 2, Data values:
+( 1, 1) =  0
+( 2, 1) =  0
+( 3, 1) =  0
+dim 1: [0]: [1 [1 [1, 3] 3] 3]
+dim 2: [1]: [1 [1 [1, 1] 1] 1]
+--- ESMCI::Array::print end ---
+--- ESMCI::Array::print start ---
+ Base name    = Array003
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}Array typekind/rank: Real*8 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 6
+localDeCount = 2
+~ local data in LocalArray for DE 0 ~
+LocalArrayPrint: Array at address 0x823f30:
+            rank = 2, typekind = 6, base_addr = 0x824260
+            dim[0] = 3  dim[1] = 2  
+  Real, *8, Dim 2, Data values:
+( 1, 1) =  0
+( 2, 1) =  0
+( 3, 1) =  0
+( 1, 2) =  0
+( 2, 2) =  0
+( 3, 2) =  0
+dim 1: [0]: [1 [1 [1, 3] 3] 3]
+dim 2: [1]: [1 [1 [1, 2] 2] 2]
+~ local data in LocalArray for DE 4 ~
+LocalArrayPrint: Array at address 0x8242a0:
+            rank = 2, typekind = 6, base_addr = 0x823eb0
+            dim[0] = 3  dim[1] = 1  
+  Real, *8, Dim 2, Data values:
+( 1, 1) =  4.21722e-317
+( 2, 1) =  0
+( 3, 1) =  0
+dim 1: [0]: [1 [1 [1, 3] 3] 3]
+dim 2: [1]: [1 [1 [1, 1] 1] 1]
+--- ESMCI::Array::print end ---
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 6
+  PASS  Example ESMF_ArrayBundleEx, ESMF_ArrayBundleEx.F90, line 267
+localDeCount = 2
+~ local data in LocalArray for DE 1 ~
+LocalArrayPrint: Array at address 0x8278a0:
+            rank = 2, typekind = 5, base_addr = 0x827820
+            dim[0] = 2  dim[1] = 2  
+  Real, *4, Dim 2, Data values:
+( 1, 1) =  1.19817e-38
+( 2, 1) =  0
+( 1, 2) =  0
+( 2, 2) =  0
+dim 1: [0]: [1 [1 [1, 2] 2] 2]
+dim 2: [1]: [1 [1 [1, 2] 2] 2]
+~ local data in LocalArray for DE 5 ~
+LocalArrayPrint: Array at address 0x827bd0:
+            rank = 2, typekind = 5, base_addr = 0x827840
+            dim[0] = 2  dim[1] = 1  
+  Real, *4, Dim 2, Data values:
+( 1, 1) =  1.19818e-38
+( 2, 1) =  0
+dim 1: [0]: [1 [1 [1, 2] 2] 2]
+dim 2: [1]: [1 [1 [1, 1] 1] 1]
+--- ESMCI::Array::print end ---
+--- ESMCI::Array::print start ---
+ Base name    = Array002
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}Array typekind/rank: Real*8 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 6
+localDeCount = 2
+~ local data in LocalArray for DE 1 ~
+LocalArrayPrint: Array at address 0x8236c0:
+            rank = 2, typekind = 6, base_addr = 0x660fb0
+            dim[0] = 2  dim[1] = 2  
+  Real, *8, Dim 2, Data values:
+( 1, 1) =  3.3046e-317
+( 2, 1) =  4.24399e-314
+( 1, 2) =  0
+( 2, 2) =  0
+dim 1: [0]: [1 [1 [1, 2] 2] 2]
+dim 2: [1]: [1 [1 [1, 2] 2] 2]
+~ local data in LocalArray for DE 5 ~
+LocalArrayPrint: Array at address 0x8239f0:
+            rank = 2, typekind = 6, base_addr = 0x823d20
+            dim[0] = 2  dim[1] = 1  
+  Real, *8, Dim 2, Data values:
+( 1, 1) =  0
+( 2, 1) =  0
+dim 1: [0]: [1 [1 [1, 2] 2] 2]
+dim 2: [1]: [1 [1 [1, 1] 1] 1]
+--- ESMCI::Array::print end ---
+--- ESMCI::Array::print start ---
+ Base name    = Array003
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}Array typekind/rank: Real*8 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 6
+localDeCount = 2
+~ local data in LocalArray for DE 1 ~
+LocalArrayPrint: Array at address 0x824500:
+            rank = 2, typekind = 6, base_addr = 0x824830
+            dim[0] = 2  dim[1] = 2  
+  Real, *8, Dim 2, Data values:
+( 1, 1) =  0
+( 2, 1) =  0
+( 1, 2) =  0
+( 2, 2) =  0
+dim 1: [0]: [1 [1 [1, 2] 2] 2]
+dim 2: [1]: [1 [1 [1, 2] 2] 2]
+~ local data in LocalArray for DE 5 ~
+LocalArrayPrint: Array at address 0x824860:
+            rank = 2, typekind = 6, base_addr = 0x824480
+            dim[0] = 2  dim[1] = 1  
+  Real, *8, Dim 2, Data values:
+( 1, 1) =  4.21795e-317
+( 2, 1) =  0
+dim 1: [0]: [1 [1 [1, 2] 2] 2]
+dim 2: [1]: [1 [1 [1, 1] 1] 1]
+--- ESMCI::Array::print end ---
+  PASS  Example ESMF_ArrayBundleEx, ESMF_ArrayBundleEx.F90, line 267
+ PASS: ESMF_ArrayBundleEx.F90
+ PASS: ESMF_ArrayBundleEx.F90
+ PASS: ESMF_ArrayBundleEx.F90
+ PASS: ESMF_ArrayBundleEx.F90
