@@ -1,4 +1,4 @@
-Mon Jun 6 19:02:08 UTC 2022
+Tue Jun 7 06:06:09 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o build-intel_18.0.5a_mpiuni_O.bat_%j.o
@@ -12,7 +12,6 @@ Mon Jun 6 19:02:08 UTC 2022
 export JOBID=$SLURM_JOBID
 
 module load cmake
-export ESMF_MPIRUN=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5a_mpiuni_O_v8.3.0/src/Infrastructure/stubs/mpiuni/mpirun
 module load intel/18.0.5.274  netcdf/4.6.1
 module list >& module-build.log
 
