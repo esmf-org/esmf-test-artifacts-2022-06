@@ -1,8 +1,8 @@
-Tue Jun 7 01:12:41 EDT 2022
+Tue Jun 7 01:10:48 EDT 2022
 #!/bin/sh -l
 #SBATCH --account=s2326
-#SBATCH -o build-gfortran_10.1.0_intelmpi_O.bat_%j.o
-#SBATCH -e build-gfortran_10.1.0_intelmpi_O.bat_%j.e
+#SBATCH -o build-gfortran_8.3.0_mpiuni_O.bat_%j.o
+#SBATCH -e build-gfortran_8.3.0_mpiuni_O.bat_%j.e
 #SBATCH --time=1:00:00
 #SBATCH --partition=compute
 #SBATCH --qos=allnccs
@@ -10,16 +10,15 @@ Tue Jun 7 01:12:41 EDT 2022
 #SBATCH --ntasks-per-node=28
 #SBATCH --exclusive
 export JOBID=$SLURM_JOBID
-module load comp/gcc/10.1.0 mpi/impi/19.1.3.304 
+module load comp/gcc/8.3.0  
 
 module list >& module-build.log
 
 set -x
 
-export ESMF_F90COMPILEOPTS="-fallow-argument-mismatch -fallow-invalid-boz"
-export ESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/gfortran_10.1.0_intelmpi_O_develop
+export ESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/gfortran_8.3.0_mpiuni_O_v8.3.0
 export ESMF_COMPILER=gfortran
-export ESMF_COMM=intelmpi
+export ESMF_COMM=mpiuni
 export ESMF_BOPT='O'
 export ESMF_TESTEXHAUSTIVE='ON'
 export ESMF_TESTWITHTHREADS='ON'

@@ -1,4 +1,4 @@
-Tue Jun 7 01:12:41 EDT 2022
+Tue Jun 7 01:12:30 EDT 2022
 #!/bin/sh -l
 #SBATCH --account=s2326
 #SBATCH -o build-gfortran_10.1.0_intelmpi_O.bat_%j.o
@@ -17,7 +17,7 @@ module list >& module-build.log
 set -x
 
 export ESMF_F90COMPILEOPTS="-fallow-argument-mismatch -fallow-invalid-boz"
-export ESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/gfortran_10.1.0_intelmpi_O_develop
+export ESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/gfortran_10.1.0_intelmpi_O_v8.3.0
 export ESMF_COMPILER=gfortran
 export ESMF_COMM=intelmpi
 export ESMF_BOPT='O'
