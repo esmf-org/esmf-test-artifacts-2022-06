@@ -1,0 +1,73 @@
+build time -- 2022-06-08 06:10:29
+[1654669122.015108] [h22c29:223320:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1654669122.020369] [h22c29:223320:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1654669122.008437] [h22c29:223321:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1654669122.013193] [h22c29:223321:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1654669122.015052] [h22c29:223322:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1654669122.020302] [h22c29:223322:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1654669122.009225] [h22c29:223319:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1654669122.014021] [h22c29:223319:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+  Beginning Test, file ESMF_DELayoutWorkQueueUTest.F90, line 170
+  Beginning Test, file ESMF_DELayoutWorkQueueUTest.F90, line 170
+  NUMBER_OF_PROCESSORS           4
+  Beginning Test, file ESMF_DELayoutWorkQueueUTest.F90, line 170
+  NUMBER_OF_PROCESSORS           4
+  NUMBER_OF_PROCESSORS           4
+  Beginning Test, file ESMF_DELayoutWorkQueueUTest.F90, line 170
+  NUMBER_OF_PROCESSORS           4
+  PASS  GridCompCreate() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 187
+  PASS  GridCompCreate() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 187
+  PASS  GridCompCreate() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 187
+  PASS  GridCompCreate() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 187
+  PASS  GridCompSetServices() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 193
+  PASS  GridCompSetServices() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 193
+  PASS  GridCompSetServices() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 193
+  PASS  GridCompSetServices() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 193
+  PASS  Run work queue - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 201
+  PASS  Run work queue - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 201
+ <round 1> PET            0  time:    2.0241099991835654E-004
+ <round 1> PET            3  time:    2.0811500144191086E-004
+  PASS  GridCompDestroy() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 209
+  PASS  GridCompDestroy() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 209
+  PASS  Run work queue - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 201
+ <round 1> PET            1  time:    4.0135151619979297     
+  PASS  GridCompDestroy() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 209
+  PASS  Run work queue - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 201
+ <round 1> PET            2  time:    6.0135220150041278     
+  PASS  GridCompDestroy() - round 1, ESMF_DELayoutWorkQueueUTest.F90, line 209
+  PASS  GridCompCreate() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 217
+ *** hi from mygcomp_setvm_withthreads ***
+  PASS  GridCompSetVM() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 227
+  PASS  GridCompCreate() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 217
+  PASS  GridCompCreate() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 217
+ *** hi from mygcomp_setvm_withthreads ***
+  PASS  GridCompCreate() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 217
+ *** hi from mygcomp_setvm_withthreads ***
+ *** hi from mygcomp_setvm_withthreads ***
+  PASS  GridCompSetVM() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 227
+  PASS  GridCompSetVM() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 227
+  PASS  GridCompSetVM() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 227
+  PASS  GridCompSetServices() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 233
+  PASS  GridCompSetServices() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 233
+  PASS  GridCompSetServices() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 233
+  PASS  GridCompSetServices() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 233
+  PASS  Run work queue - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 241
+ <round 2> PET            3  time:    2.5040852500023902     
+  PASS  GridCompDestroy() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 249
+  Ending Test, file ESMF_DELayoutWorkQueueUTest.F90, line 257
+  PASS  Run work queue - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 241
+ <round 2> PET            2  time:    2.5079855459989631     
+  PASS  GridCompDestroy() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 249
+  Ending Test, file ESMF_DELayoutWorkQueueUTest.F90, line 257
+  PASS  Run work queue - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 241
+ <round 2> PET            0  time:    2.5434736109964433     
+  PASS  Run work queue - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 241
+ <round 2> PET            1  time:    2.5435493219993077     
+  PASS  GridCompDestroy() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 249
+  Ending Test, file ESMF_DELayoutWorkQueueUTest.F90, line 257
+  PASS  GridCompDestroy() - round 2, ESMF_DELayoutWorkQueueUTest.F90, line 249
+  Ending Test, file ESMF_DELayoutWorkQueueUTest.F90, line 257
+  PET           1  Test Elapsed Time    6024.7469999999994       msec.
+  PET           3  Test Elapsed Time    6028.0029999999997       msec.
+  PET           0  Test Elapsed Time    16032.842999999999       msec.
+  PET           2  Test Elapsed Time    6024.2970000000005       msec.
